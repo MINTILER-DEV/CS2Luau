@@ -1,21 +1,6 @@
 {
+  "build": "mntpack nuget init --path . && mntpack nuget source build-all --path . && mntpack nuget restore --path . && dotnet build .\\CS2Luau.slnx",
   "name": "cs2luau",
-  "nugetSources": {
-    "CS2Luau": {
-      "autoBuild": false,
-      "autoUpdate": null,
-      "configuration": null,
-      "outputMode": "feed",
-      "packageId": "CS2Luau",
-      "project": "src/CS2Luau.Roblox/CS2Luau.Roblox.csproj",
-      "ref": null,
-      "repo": "MINTILER-DEV/CS2Luau",
-      "solution": null,
-      "subdir": null,
-      "type": "github",
-      "version": "1.0.0"
-    }
-  },
   "nuget": {
     "packages": [
       {
@@ -47,9 +32,40 @@
         "name": "xunit.runner.visualstudio",
         "source": null,
         "version": "3.1.4"
+      },
+      {
+        "name": ".",
+        "source": null,
+        "version": null
+      },
+      {
+        "name": "src/CS2Luau.Cli",
+        "source": null,
+        "version": null
+      },
+      {
+        "name": "d",
+        "source": null,
+        "version": null
       }
     ]
   },
-  "build": "mntpack nuget init --path . && mntpack nuget source build-all --path . && mntpack nuget restore --path . && dotnet build .\\CS2Luau.slnx",
+  "nugetSources": {
+    "CS2Luau": {
+      "autoBuild": false,
+      "autoUpdate": null,
+      "configuration": null,
+      "outputMode": "feed",
+      "packageId": "CS2Luau",
+      "project": "src/CS2Luau.Roblox/CS2Luau.Roblox.csproj",
+      "ref": null,
+      "repo": "MINTILER-DEV/CS2Luau",
+      "solution": null,
+      "subdir": null,
+      "type": "github",
+      "version": "1.0.0"
+    }
+  },
+  "postinstall": "mntpack nuget add CS2Luau 1.0.0 --source mntpack-local --path . --project .\\src\\CS2Luau.Roblox\\CS2Luau.Roblox.csproj",
   "run": "dotnet run --project .\\src\\CS2Luau.Cli --"
 }
