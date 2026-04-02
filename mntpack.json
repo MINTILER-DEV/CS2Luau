@@ -1,5 +1,28 @@
 {
   "name": "cs2luau",
-  "build": "dotnet build .\\CS2Luau.slnx",
+  "version": "0.1.0",
+  "nuget": [
+    {
+      "id": "Microsoft.CodeAnalysis.CSharp",
+      "version": "5.3.0"
+    },
+    {
+      "id": "coverlet.collector",
+      "version": "6.0.4"
+    },
+    {
+      "id": "Microsoft.NET.Test.Sdk",
+      "version": "17.14.1"
+    },
+    {
+      "id": "xunit",
+      "version": "2.9.3"
+    },
+    {
+      "id": "xunit.runner.visualstudio",
+      "version": "3.1.4"
+    }
+  ],
+  "build": "mntpack nuget ensure --path . && mntpack nuget install --path . && dotnet build .\\CS2Luau.slnx",
   "run": "dotnet run --project .\\src\\CS2Luau.Cli --"
 }

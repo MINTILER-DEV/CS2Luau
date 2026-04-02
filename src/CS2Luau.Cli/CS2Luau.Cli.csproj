@@ -8,4 +8,8 @@
   <ItemGroup>
     <ProjectReference Include="..\CS2Luau.Compiler\CS2Luau.Compiler.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CS2Luau" Version="1.0.0" />
+  </ItemGroup>
 </Project>
