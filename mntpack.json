@@ -1,6 +1,5 @@
 {
   "name": "cs2luau",
-  "version": "0.1.0",
   "nugetSources": {
     "CS2Luau": {
       "autoBuild": false,
