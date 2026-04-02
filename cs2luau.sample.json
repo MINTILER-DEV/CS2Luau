@@ -1,0 +1,14 @@
+{
+  "name": "MyGame",
+  "sourceDir": "src",
+  "outDir": "out",
+  "emitRbxmx": false,
+  "includeRuntime": true,
+  "rootNamespace": "MyGame",
+  "entrypoints": [
+    "Program.cs"
+  ],
+  "scriptType": "ModuleScript",
+  "robloxApiMode": "Manual",
+  "warningsAsErrors": false
+}

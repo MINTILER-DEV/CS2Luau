@@ -1,0 +1,8 @@
+{
+  "name": "ServiceExample",
+  "sourceDir": "src",
+  "outDir": "out",
+  "emitRbxmx": false,
+  "includeRuntime": true,
+  "scriptType": "ModuleScript"
+}

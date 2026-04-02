@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/CS2Luau.Cli/CS2Luau.Cli.csproj" />
+    <Project Path="src/CS2Luau.Compiler/CS2Luau.Compiler.csproj" />
+    <Project Path="src/CS2Luau.Roblox/CS2Luau.Roblox.csproj" />
+    <Project Path="src/CS2Luau.Runtime/CS2Luau.Runtime.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/CS2Luau.Tests/CS2Luau.Tests.csproj" />
+  </Folder>
+</Solution>

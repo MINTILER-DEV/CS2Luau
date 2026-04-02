@@ -1,0 +1,8 @@
+{
+  "name": "BasicPartExample",
+  "sourceDir": "src",
+  "outDir": "out",
+  "emitRbxmx": true,
+  "includeRuntime": true,
+  "scriptType": "ModuleScript"
+}
