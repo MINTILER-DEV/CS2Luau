@@ -1,0 +1,5 @@
+{
+  "name": "cs2luau",
+  "build": "dotnet build .\\CS2Luau.slnx",
+  "run": "dotnet run --project .\\src\\CS2Luau.Cli --"
+}
