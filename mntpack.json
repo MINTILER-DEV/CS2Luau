@@ -1,28 +1,56 @@
 {
   "name": "cs2luau",
   "version": "0.1.0",
-  "nuget": [
-    {
-      "id": "Microsoft.CodeAnalysis.CSharp",
-      "version": "5.3.0"
-    },
-    {
-      "id": "coverlet.collector",
-      "version": "6.0.4"
-    },
-    {
-      "id": "Microsoft.NET.Test.Sdk",
-      "version": "17.14.1"
-    },
-    {
-      "id": "xunit",
-      "version": "2.9.3"
-    },
-    {
-      "id": "xunit.runner.visualstudio",
-      "version": "3.1.4"
+  "nugetSources": {
+    "CS2Luau": {
+      "autoBuild": false,
+      "autoUpdate": null,
+      "configuration": null,
+      "outputMode": "feed",
+      "packageId": "CS2Luau",
+      "project": "src/CS2Luau.Roblox/CS2Luau.Roblox.csproj",
+      "ref": null,
+      "repo": "MINTILER-DEV/CS2Luau",
+      "solution": null,
+      "subdir": null,
+      "type": "github",
+      "version": "1.0.0"
     }
-  ],
-  "build": "mntpack nuget ensure --path . && mntpack nuget install --path . && dotnet build .\\CS2Luau.slnx",
+  },
+  "nuget": {
+    "packages": [
+      {
+        "name": "CS2Luau",
+        "source": "mntpack-local",
+        "version": "1.0.0"
+      },
+      {
+        "name": "Microsoft.CodeAnalysis.CSharp",
+        "source": null,
+        "version": "5.3.0"
+      },
+      {
+        "name": "coverlet.collector",
+        "source": null,
+        "version": "6.0.4"
+      },
+      {
+        "name": "Microsoft.NET.Test.Sdk",
+        "source": null,
+        "version": "17.14.1"
+      },
+      {
+        "name": "xunit",
+        "source": null,
+        "version": "2.9.3"
+      },
+      {
+        "name": "xunit.runner.visualstudio",
+        "source": null,
+        "version": "3.1.4"
+      }
+    ]
+  },
+  "build": "mntpack nuget init --path . && mntpack nuget source build-all --path . && mntpack nuget restore --path . && dotnet build .\\CS2Luau.slnx",
   "run": "dotnet run --project .\\src\\CS2Luau.Cli --"
 }
