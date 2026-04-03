@@ -8,6 +8,10 @@ public partial class Instance
     public static Instance New(string className) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 
     public T? FindFirstChild<T>(string name) where T : Instance => throw new NotSupportedException("Roblox shim methods are compile-time only.");
+    public T? FindFirstChildOfClass<T>(string className) where T : Instance => throw new NotSupportedException("Roblox shim methods are compile-time only.");
+    public Instance? FindFirstChildWhichIsA(string className) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
+    public T? FindFirstChildWhichIsA<T>(string className, bool recursive = false) where T : Instance => throw new NotSupportedException("Roblox shim methods are compile-time only.");
+    public Instance? WaitForChild(string childName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class DataModel

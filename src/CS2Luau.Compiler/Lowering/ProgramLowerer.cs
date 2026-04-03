@@ -482,6 +482,8 @@ internal sealed class ProgramLowerer
                 return LowerElementAccess(elementAccess, semanticModel);
             case AssignmentExpressionSyntax assignment:
                 return new IrRawExpression($"{IrRendering.RenderExpression(LowerExpression(assignment.Left, semanticModel))} = {IrRendering.RenderExpression(LowerExpression(assignment.Right, semanticModel))}");
+            case BinaryExpressionSyntax binary when binary.IsKind(SyntaxKind.AsExpression):
+                return LowerExpression(binary.Left, semanticModel);
             case BinaryExpressionSyntax binary:
                 return new IrRawExpression($"{IrRendering.RenderExpression(LowerExpression(binary.Left, semanticModel))} {MapBinaryOperator(binary.OperatorToken)} {IrRendering.RenderExpression(LowerExpression(binary.Right, semanticModel))}");
             case PrefixUnaryExpressionSyntax prefix:

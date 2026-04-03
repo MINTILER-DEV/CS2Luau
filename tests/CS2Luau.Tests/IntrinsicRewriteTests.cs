@@ -95,4 +95,26 @@ public sealed class IntrinsicRewriteTests
         Assert.Contains("local sourceName = script.Name", luau);
         Assert.Contains("warn(kind, value, toolbar, module, sourceName)", luau);
     }
+
+    [Fact]
+    public async Task RewritesAsExpressionsAndChildLookupHelpers()
+    {
+        var source =
+            """
+            using static Roblox.Globals;
+
+            var child = workspace.WaitForChild("Spawn") as Part;
+            var byClass = workspace.FindFirstChildOfClass<Part>("Part");
+            var byIsa = workspace.FindFirstChildWhichIsA<Model>("Model");
+            """;
+
+        var result = await CompilerHarness.CompileSourceAsync(source);
+
+        Assert.True(result.Success);
+        var luau = result.Outputs.Single(output => output.Kind == GeneratedOutputKind.Luau).Content;
+        Assert.Contains("local child = workspace:WaitForChild(\"Spawn\")", luau);
+        Assert.DoesNotContain(" as ", luau);
+        Assert.Contains("local byClass = workspace:FindFirstChildOfClass(\"Part\")", luau);
+        Assert.Contains("local byIsa = workspace:FindFirstChildWhichIsA(\"Model\")", luau);
+    }
 }

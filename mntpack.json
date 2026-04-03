@@ -6,7 +6,7 @@
       {
         "name": "CS2Luau",
         "source": "mntpack-local",
-        "version": "1.0.0"
+        "version": "1.0.1"
       },
       {
         "name": "Microsoft.CodeAnalysis.CSharp",
@@ -48,9 +48,9 @@
       "solution": null,
       "subdir": null,
       "type": "github",
-      "version": "1.0.0"
+      "version": "1.0.1"
     }
   },
-  "postinstall": "mntpack nuget cache clear CS2Luau.Roblox",
+  "postinstall": "mntpack nuget cache clear CS2Luau",
   "run": "dotnet run --no-build --project .\\src\\CS2Luau.Cli --"
 }
