@@ -32,21 +32,6 @@
         "name": "xunit.runner.visualstudio",
         "source": null,
         "version": "3.1.4"
-      },
-      {
-        "name": ".",
-        "source": null,
-        "version": null
-      },
-      {
-        "name": "src/CS2Luau.Cli",
-        "source": null,
-        "version": null
-      },
-      {
-        "name": "d",
-        "source": null,
-        "version": null
       }
     ]
   },
@@ -66,6 +51,6 @@
       "version": "1.0.0"
     }
   },
-  "postinstall": "mntpack nuget add CS2Luau 1.0.0 --source mntpack-local --path . --project .\\src\\CS2Luau.Roblox\\CS2Luau.Roblox.csproj",
-  "run": "dotnet run --project .\\src\\CS2Luau.Cli --"
+  "postinstall": "mntpack nuget cache clear CS2Luau",
+  "run": "dotnet run --no-build --project .\\src\\CS2Luau.Cli --"
 }
