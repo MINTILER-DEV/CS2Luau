@@ -34,7 +34,7 @@ internal sealed class ProgramLowerer
         var classes = new List<IrClassDeclaration>();
         var topLevelStatements = new List<IrStatement>();
 
-        foreach (var tree in compilation.SyntaxTrees.Where(tree => tree.FilePath != "<implicit-globals>").OrderBy(tree => tree.FilePath, StringComparer.OrdinalIgnoreCase))
+        foreach (var tree in compilation.SyntaxTrees.Where(tree => !IsImplicitSyntaxTree(tree)).OrderBy(tree => tree.FilePath, StringComparer.OrdinalIgnoreCase))
         {
             var root = tree.GetCompilationUnitRoot(cancellationToken);
             var semanticModel = compilation.GetSemanticModel(tree);
@@ -48,6 +48,11 @@ internal sealed class ProgramLowerer
             Classes = classes,
             TopLevelStatements = topLevelStatements,
         };
+    }
+
+    private static bool IsImplicitSyntaxTree(SyntaxTree tree)
+    {
+        return tree.FilePath.StartsWith("<implicit-", StringComparison.Ordinal);
     }
 
     private void CollectMembers(
@@ -519,6 +524,8 @@ internal sealed class ProgramLowerer
         {
             IFieldSymbol field when field.ContainingType?.TypeKind == TypeKind.Enum && roblox.IsRobloxEnum(field.ContainingType) =>
                 new IrRawExpression($"Enum.{field.ContainingType.Name}.{field.Name}"),
+            _ when roblox.TryGetEnumWrapperMember(symbol, out var wrapperEnumName, out var wrapperMemberName) =>
+                new IrRawExpression($"Enum.{wrapperEnumName}.{wrapperMemberName}"),
             IFieldSymbol field when field.IsStatic => new IrRawExpression($"{field.ContainingType?.Name}.{field.Name}"),
             IFieldSymbol => new IrRawExpression($"self.{identifier.Identifier.ValueText}"),
             IPropertySymbol property when property.IsStatic => new IrRawExpression($"{property.ContainingType?.Name}.{property.Name}"),
@@ -538,6 +545,11 @@ internal sealed class ProgramLowerer
         if (symbol is IFieldSymbol field && field.ContainingType?.TypeKind == TypeKind.Enum && roblox.IsRobloxEnum(field.ContainingType))
         {
             return new IrRawExpression($"Enum.{field.ContainingType.Name}.{field.Name}");
+        }
+
+        if (roblox.TryGetEnumWrapperMember(symbol, out var wrapperEnumName, out var wrapperMemberName))
+        {
+            return new IrRawExpression($"Enum.{wrapperEnumName}.{wrapperMemberName}");
         }
 
         if (symbol is IPropertySymbol property &&

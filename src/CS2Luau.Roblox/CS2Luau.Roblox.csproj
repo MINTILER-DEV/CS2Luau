@@ -3,4 +3,10 @@
     <TargetFramework>net10.0</TargetFramework>
     <RootNamespace>Roblox</RootNamespace>
   </PropertyGroup>
+
+  <Target Name="GenerateRobloxApiShim"
+          BeforeTargets="BeforeCompile"
+          Condition="Exists('$(MSBuildProjectDirectory)\..\..\ignore\apidump.json')">
+    <Exec Command="dotnet run --project &quot;$(MSBuildProjectDirectory)\..\..\tools\CS2Luau.Roblox.Generator\CS2Luau.Roblox.Generator.csproj&quot; -- --api-dump &quot;$(MSBuildProjectDirectory)\..\..\ignore\apidump.json&quot; --output-dir &quot;$(MSBuildProjectDirectory)\Generated&quot;" />
+  </Target>
 </Project>

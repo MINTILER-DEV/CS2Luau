@@ -50,4 +50,22 @@ public sealed class IntrinsicRewriteTests
         Assert.Contains("part.Touched:Connect(function(hit)", luau);
         Assert.Contains("print(hit.Name)", luau);
     }
+
+    [Fact]
+    public async Task RewritesRobloxStyleEnumWrapperSyntax()
+    {
+        var source =
+            """
+            using static Roblox.Globals;
+
+            var part = Instance.New<Part>();
+            part.Material = Enum.Material.Neon;
+            """;
+
+        var result = await CompilerHarness.CompileSourceAsync(source);
+
+        Assert.True(result.Success);
+        var luau = result.Outputs.Single(output => output.Kind == GeneratedOutputKind.Luau).Content;
+        Assert.Contains("part.Material = Enum.Material.Neon", luau);
+    }
 }
