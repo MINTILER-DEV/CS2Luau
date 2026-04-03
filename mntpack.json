@@ -51,6 +51,6 @@
       "version": "1.0.0"
     }
   },
-  "postinstall": "mntpack nuget cache clear CS2Luau",
+  "postinstall": "mntpack nuget cache clear CS2Luau.Roblox",
   "run": "dotnet run --no-build --project .\\src\\CS2Luau.Cli --"
 }
