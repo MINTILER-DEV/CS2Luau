@@ -13,55 +13,23 @@ public partial class DataModel : Roblox.Instances.ServiceProvider
     public void BindToClose(Roblox.Datatypes.Function function) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public long CreatorId { get; set; }
     public Roblox.Enums.CreatorType CreatorType { get; set; }
-    public bool DefineFastFlag(string? name, bool defaultValue) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int DefineFastInt(string? name, int defaultValue) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? DefineFastString(string? name, string? defaultValue) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? Environment { get; set; }
     public long GameId { get; set; }
     public Roblox.Enums.Genre Genre { get; set; }
-    public bool GetEngineFeature(string? name) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool GetFastFlag(string? name) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int GetFastInt(string? name) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetFastString(string? name) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetJobsInfo() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Datatypes.Instances GetObjects(Roblox.Datatypes.ContentId url) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Datatypes.Instances GetObjectsAllOrNone(Roblox.Datatypes.ContentId url, bool binaryFormatOnly) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Datatypes.Instances GetObjectsAsync(Roblox.Datatypes.ContentId url) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetObjectsList(object? urls) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetPlaySessionId() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<bool> GraphicsQualityChangeRequest => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public string? HttpGetAsync(string? url, Roblox.Enums.HttpRequestType httpRequestType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? HttpPostAsync(string? url, string? data, string? contentType, Roblox.Enums.HttpRequestType httpRequestType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Datatypes.Instances InsertObjectsAndJoinIfLegacyAsync(Roblox.Datatypes.ContentId url) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsContentLoaded() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool IsLoaded() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsSFFlagsLoaded { get; set; }
-    public bool IsUniverseMetadataLoaded() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public string? JobId { get; set; }
-    public void Load(Roblox.Datatypes.ContentId url) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal Loaded => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Enums.MatchmakingType MatchmakingType { get; set; }
-    public void OpenLogsFolder() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void OpenScreenshotsFolder() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void OpenVideosFolder() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public long PlaceId { get; set; }
     public int PlaceVersion { get; set; }
     public string? PrivateServerId { get; set; }
     public long PrivateServerOwnerId { get; set; }
     public Roblox.Services.RunService? RunService { get; set; }
-    public Roblox.Signals.RBXScriptSignal<string?> ScreenshotReady => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, bool, string?> ScreenshotSavedToAlbum => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public bool SetFastFlagForTesting(string? name, bool newValue) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int SetFastIntForTesting(string? name, int newValue) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? SetFastStringForTesting(string? name, string? newValue) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetFlagVersion(string? name, int version) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetIsLoaded(bool value, object? placeSizeInBytes) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void SetPlaceId(long placeId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void SetUniverseId(long universeId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void Shutdown() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal UniverseMetadataLoaded => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Services.Workspace? Workspace { get; set; }
-    public double getGameTime() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class Instance : Object
@@ -110,9 +78,7 @@ public partial class Instance : Object
     public bool RobloxLocked { get; set; }
     public bool Sandboxed { get; set; }
     public void SetAttribute(string? attribute, object? value) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public long SourceAssetId { get; set; }
     public Roblox.Signals.RBXScriptSignal StyledPropertiesChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Datatypes.UniqueId UniqueId { get; set; }
     public Instance? WaitForChild(string? childName, double timeOut) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 

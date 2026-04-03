@@ -25,17 +25,23 @@ internal sealed class RobloxSymbolRegistry
             SymbolEqualityComparer.Default.Equals(property.ContainingType, globalsType))
         {
             name = property.Name;
-            return name is "game" or "workspace" or "script";
+            return true;
         }
 
         name = string.Empty;
         return false;
     }
 
+    public bool IsGlobalMethod(IMethodSymbol? method)
+    {
+        return method is not null &&
+               SymbolEqualityComparer.Default.Equals(method.ContainingType, globalsType);
+    }
+
     public bool IsGlobalMethod(IMethodSymbol? method, string expectedName)
     {
         return method is not null &&
-               SymbolEqualityComparer.Default.Equals(method.ContainingType, globalsType) &&
+               IsGlobalMethod(method) &&
                string.Equals(method.Name, expectedName, StringComparison.Ordinal);
     }
 

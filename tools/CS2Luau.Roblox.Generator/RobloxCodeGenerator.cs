@@ -33,6 +33,13 @@ internal static class RobloxCodeGenerator
         "className",
     };
 
+    private static readonly HashSet<string> BlockedSecurity = new(StringComparer.Ordinal)
+    {
+        "RobloxScriptSecurity",
+        "RobloxSecurity",
+        "LocalUserSecurity",
+    };
+
     private static readonly Dictionary<string, string> PrimitiveTypeMap = new(StringComparer.OrdinalIgnoreCase)
     {
         ["bool"] = "bool",
@@ -66,23 +73,24 @@ internal static class RobloxCodeGenerator
         Directory.CreateDirectory(outputDirectory);
         var classLookup = dump.Classes.ToDictionary(definition => definition.Name, StringComparer.Ordinal);
         var enumNames = dump.Enums.Select(definition => SanitizeTypeName(definition.Name)).ToHashSet(StringComparer.Ordinal);
-        var datatypes = CollectReferencedDatatypes(dump);
+        var visibleClasses = dump.Classes.Where(definition => !ShouldSkipClass(definition)).ToArray();
+        var datatypes = CollectReferencedDatatypes(visibleClasses);
 
         File.WriteAllText(Path.Combine(outputDirectory, "Core.g.cs"), GenerateClassesFile(
             namespaceName: "Roblox",
-            classes: dump.Classes.Where(definition => RootTypes.Contains(definition.Name)).ToArray(),
+            classes: visibleClasses.Where(definition => RootTypes.Contains(definition.Name)).ToArray(),
             classLookup: classLookup,
             enumNames: enumNames));
 
         File.WriteAllText(Path.Combine(outputDirectory, "Instances.g.cs"), GenerateClassesFile(
             namespaceName: "Roblox.Instances",
-            classes: dump.Classes.Where(definition => !RootTypes.Contains(definition.Name) && !definition.Tags.Contains("Service")).ToArray(),
+            classes: visibleClasses.Where(definition => !RootTypes.Contains(definition.Name) && !definition.Tags.Contains("Service")).ToArray(),
             classLookup: classLookup,
             enumNames: enumNames));
 
         File.WriteAllText(Path.Combine(outputDirectory, "Services.g.cs"), GenerateClassesFile(
             namespaceName: "Roblox.Services",
-            classes: dump.Classes.Where(definition => !RootTypes.Contains(definition.Name) && definition.Tags.Contains("Service")).ToArray(),
+            classes: visibleClasses.Where(definition => !RootTypes.Contains(definition.Name) && definition.Tags.Contains("Service")).ToArray(),
             classLookup: classLookup,
             enumNames: enumNames));
 
@@ -91,12 +99,12 @@ internal static class RobloxCodeGenerator
         File.WriteAllText(Path.Combine(outputDirectory, "Datatypes.g.cs"), GenerateDatatypesFile(datatypes));
     }
 
-    private static IReadOnlyList<string> CollectReferencedDatatypes(ApiDumpModel dump)
+    private static IReadOnlyList<string> CollectReferencedDatatypes(IReadOnlyList<ApiClassDefinition> classes)
     {
         var names = new HashSet<string>(StringComparer.Ordinal);
-        foreach (var definition in dump.Classes)
+        foreach (var definition in classes)
         {
-            foreach (var member in definition.Members)
+            foreach (var member in FilterMembers(definition.Members))
             {
                 CollectTypeNames(member.Type, names);
                 foreach (var parameter in member.Parameters)
@@ -187,7 +195,7 @@ internal static class RobloxCodeGenerator
             writer.WriteLine();
         }
 
-        return writer.ToString();
+        return RemoveInternalCoreScriptClasses(writer.ToString());
     }
 
     private static string GenerateEnumsFile(IReadOnlyList<ApiEnumDefinition> enums)
@@ -273,6 +281,7 @@ internal static class RobloxCodeGenerator
         {
             if (IgnoredMembers.Contains(member.Name) ||
                 member.Tags.Contains("Deprecated") ||
+                ShouldSkipMember(member) ||
                 string.IsNullOrWhiteSpace(member.MemberType))
             {
                 continue;
@@ -286,6 +295,17 @@ internal static class RobloxCodeGenerator
         }
 
         return grouped.Values.OrderBy(member => member.Name, StringComparer.Ordinal).ThenBy(member => member.MemberType, StringComparer.Ordinal).ToArray();
+    }
+
+    private static bool ShouldSkipClass(ApiClassDefinition definition)
+    {
+        return definition.Name.Contains("CoreScript", StringComparison.OrdinalIgnoreCase);
+    }
+
+    private static bool ShouldSkipMember(ApiMemberDefinition member)
+    {
+        return member.Security.Any(security => BlockedSecurity.Contains(security)) ||
+               member.Name.Contains("CoreScript", StringComparison.OrdinalIgnoreCase);
     }
 
     private static string ResolveBaseType(string? superclass, IReadOnlyDictionary<string, ApiClassDefinition> classLookup)
@@ -531,6 +551,59 @@ internal static class RobloxCodeGenerator
         }
 
         return typeName + "?";
+    }
+
+    private static string RemoveInternalCoreScriptClasses(string source)
+    {
+        var lines = source.Split(Environment.NewLine);
+        var filtered = new List<string>(lines.Length);
+        var skipping = false;
+        var braceDepth = 0;
+
+        foreach (var line in lines)
+        {
+            if (!skipping &&
+                line.StartsWith("public partial class ", StringComparison.Ordinal) &&
+                line.Contains("CoreScript", StringComparison.OrdinalIgnoreCase))
+            {
+                skipping = true;
+                braceDepth = CountBraceDelta(line);
+                continue;
+            }
+
+            if (skipping)
+            {
+                braceDepth += CountBraceDelta(line);
+                if (braceDepth <= 0)
+                {
+                    skipping = false;
+                }
+
+                continue;
+            }
+
+            filtered.Add(line);
+        }
+
+        return string.Join(Environment.NewLine, filtered);
+    }
+
+    private static int CountBraceDelta(string line)
+    {
+        var delta = 0;
+        foreach (var character in line)
+        {
+            if (character == '{')
+            {
+                delta++;
+            }
+            else if (character == '}')
+            {
+                delta--;
+            }
+        }
+
+        return delta;
     }
 }
 

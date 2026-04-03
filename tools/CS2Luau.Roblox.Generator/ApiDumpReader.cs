@@ -126,7 +126,8 @@ internal static class ApiDumpReader
             memberObject.Value<string>("Name") ?? throw new InvalidOperationException("Encountered a member without a name."),
             type,
             parameters,
-            ReadTags(memberObject["Tags"]));
+            ReadTags(memberObject["Tags"]),
+            ReadSecurity(memberObject["Security"]));
     }
 
     private static ApiParameterDefinition ParseParameter(JObject parameterObject)
@@ -169,6 +170,31 @@ internal static class ApiDumpReader
         return token is JArray tagArray
             ? new HashSet<string>(tagArray.Values<string>().Where(value => !string.IsNullOrWhiteSpace(value))!, StringComparer.Ordinal)
             : new HashSet<string>(StringComparer.Ordinal);
+    }
+
+    private static IReadOnlySet<string> ReadSecurity(JToken? token)
+    {
+        var values = new HashSet<string>(StringComparer.Ordinal);
+        switch (token)
+        {
+            case JValue value when value.Type == JTokenType.String:
+                AddSecurityValue(values, value.Value<string>());
+                break;
+            case JObject securityObject:
+                AddSecurityValue(values, securityObject.Value<string>("Read"));
+                AddSecurityValue(values, securityObject.Value<string>("Write"));
+                break;
+        }
+
+        return values;
+    }
+
+    private static void AddSecurityValue(ISet<string> values, string? value)
+    {
+        if (!string.IsNullOrWhiteSpace(value))
+        {
+            values.Add(value);
+        }
     }
 
     private static void Require(bool condition, string message)

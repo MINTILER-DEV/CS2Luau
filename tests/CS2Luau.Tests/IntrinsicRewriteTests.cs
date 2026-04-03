@@ -68,4 +68,31 @@ public sealed class IntrinsicRewriteTests
         var luau = result.Outputs.Single(output => output.Kind == GeneratedOutputKind.Luau).Content;
         Assert.Contains("part.Material = Enum.Material.Neon", luau);
     }
+
+    [Fact]
+    public async Task RewritesAdditionalLuaAndRobloxGlobals()
+    {
+        var source =
+            """
+            using static Roblox.Globals;
+
+            var kind = type(workspace);
+            var value = shared["answer"];
+            var toolbar = plugin.CreateToolbar("Tools");
+            var module = require(123);
+            var sourceName = script.Name;
+            warn(kind, value, toolbar, module, sourceName);
+            """;
+
+        var result = await CompilerHarness.CompileSourceAsync(source);
+
+        Assert.True(result.Success);
+        var luau = result.Outputs.Single(output => output.Kind == GeneratedOutputKind.Luau).Content;
+        Assert.Contains("local kind = type(workspace)", luau);
+        Assert.Contains("local value = shared[\"answer\"]", luau);
+        Assert.Contains("local toolbar = plugin:CreateToolbar(\"Tools\")", luau);
+        Assert.Contains("local module = require(123)", luau);
+        Assert.Contains("local sourceName = script.Name", luau);
+        Assert.Contains("warn(kind, value, toolbar, module, sourceName)", luau);
+    }
 }

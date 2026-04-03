@@ -10,56 +10,25 @@ namespace Roblox.Services;
 
 public partial class AccountService : Instance
 {
-    public bool DeviceAccessTokenAvailable() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool DeviceIntegrityAvailable() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetCredentialsHeaders() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetDeviceAccessToken() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetDeviceIntegrityToken(string? data) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetDeviceIntegrityTokenYield(string? data) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void MagicLogin(string? data) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> MagicLoginEvent => throw new NotSupportedException("Roblox shim members are compile-time only.");
 }
 
 public partial class AchievementService : Instance
 {
-    public bool GrantAchievement(string? achievementName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool HasAchieved(string? achievementName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsAvailable() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class ActivityHistoryEventService : Instance
 {
-    public Roblox.Signals.RBXScriptSignal<int, long, string?> WriteActivityHistoryEventFromStudio => throw new NotSupportedException("Roblox shim members are compile-time only.");
 }
 
 public partial class AdService : Instance
 {
-    public Roblox.Signals.RBXScriptSignal AdTeleportEnded => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal AdTeleportInitiated => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Datatypes.AdReward CreateAdRewardFromDevProductId(long devProductId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetAdAvailabilityNowAsync(Roblox.Enums.AdFormat adFormat) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetAdAvailabilityNowForUniverseAsync(Roblox.Enums.AdFormat adFormat, long universeId, bool isUniversalAppDM) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetAdTeleportInfo() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetCampaignEligibilityAsync(string? campaignId, Roblox.Instances.Player? player) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetReportAdInfo() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void HandleWhyThisAdClicked(string? advertiserName, string? payerName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void HideEudsaDisclosure() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void OnDemandVideoCompleteFromUI(Roblox.Enums.ShowAdResult result, string? encryptedAdTrackingData, string? encryptionMetadata, string? rewardDetails) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void OnImmersiveBrandedAdDisclosureButtonActivated(object? data) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void RegisterAdOpportunityAsync(Instance? instance, object? placementId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void RegisterDisclosureButton(Roblox.Instances.GuiButton? disclosureButton, string? immersiveBrandedAdId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ReturnToPublisherExperience(Roblox.Enums.AdTeleportMethod adTeleportMethod) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal RewardedVideoAdEnded => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal RewardedVideoAdStarted => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void SetAdGuiInteractivityHandlerInitialized() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, string?> ShowDynamicEudsaDisclosure => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<object?> ShowReportAdPopup => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Enums.ShowAdResult ShowRewardedVideoAdAsync(Roblox.Instances.Player? player, Roblox.Datatypes.AdReward reward, object? placementId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.ShowAdResult ShowRewardedVideoAdAtClientAsync(long universeId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SubmitAdNotification(long universeId, bool isShowAdSuccessful, bool earnedReward, string? rewardProductName, long rewardProductImageAssetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void UnregisterAdOpportunity(Instance? instance) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?> adGuiRegisterUI => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Instances.VideoFrame? onDemandVideoPlayInUI(object? data) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class AnalyticsService : Instance
@@ -79,85 +48,34 @@ public partial class AnalyticsService : Instance
 public partial class AnimationClipProvider : Instance
 {
     public Roblox.Instances.AnimationClip? GetAnimationClipAsync(Roblox.Datatypes.ContentId assetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetAnimationNodeDefinition(Roblox.Enums.AnimationNodeType type) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetAnimationNodeTypes() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Instance? GetAnimationsAsync(long userId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Datatypes.ClipEvaluator GetClipEvaluatorAsync(Roblox.Datatypes.ContentId assetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetMemStats() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Datatypes.ContentId RegisterActiveAnimationClip(Roblox.Instances.AnimationClip? animationClip) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Datatypes.ContentId RegisterAnimationClip(Roblox.Instances.AnimationClip? animationClip) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class AnimationFromVideoCreatorService : Instance
 {
-    public string? CreateJob(string? filePath) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? DownloadJobResult(string? jobId, string? outputFilePath) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? FullProcess(string? videoFilePath, Roblox.Datatypes.Function progressCallback) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetJobStatus(string? jobId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class AnimationFromVideoCreatorStudioService : Instance
 {
-    public string? CreateAnimationByUploadingVideo(Roblox.Datatypes.Function progressCallback) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? ImportVideoWithPrompt() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsAgeRestricted() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class AnnotationsService : Instance
 {
-    public Roblox.Signals.RBXScriptSignal<string?, Roblox.Instances.Annotation?, string?> AnnotationAdded => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, Roblox.Instances.Annotation?> AnnotationDeleted => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, string?, string?, string?> AnnotationEdited => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, Roblox.Instances.Annotation?, bool> AnnotationResolved => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Enums.AnnotationRequestStatus AnnotationsLoadingStatus { get; set; }
-    public bool AnnotationsVisible { get; set; }
-    public void CreateAnnotation(Roblox.Instances.Annotation? annotation) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void CreateOrUpdateChannelPreferenceAsync(long userId, string? channelId, long placeId, Roblox.Enums.AnnotationChannelContentPreference channelContentPreference) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void CreateOrUpdatePlacePreference(long placeId, long userId, Roblox.Enums.PlaceContentPreference placeContentPreference) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void CreateOrUpdatePlacePreferenceAsync(long userId, Roblox.Enums.AnnotationPlaceContentPreference placeContentPreference, long placeId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void DeleteAnnotation(Roblox.Instances.Annotation? annotation) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void EditAnnotation(string? uniqueId, string? contents, string? taggedUsers) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Datatypes.Instances GetAnnotationThreads() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.AnnotationChannelContentPreference GetChannelPreferenceAsync(long userId, string? channelId, long placeId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.PlaceContentPreference GetPlacePreference(long placeId, long userId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.AnnotationPlaceContentPreference GetPlacePreferenceAsync(long userId, long placeId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Instances.Annotation? Hovered { get; set; }
-    public void LoadAnnotationReplies(Roblox.Instances.Annotation? annotation, bool reverseOrder, bool loadAll) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void LoadAnnotations(bool resolved) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.AnnotationEditingMode Mode { get; set; }
-    public void ResolveAnnotation(Roblox.Instances.Annotation? annotation, bool resolved) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.AnnotationRequestStatus ResolvedLoadingStatus { get; set; }
-    public Roblox.Instances.Annotation? Selected { get; set; }
-    public Roblox.Signals.RBXScriptSignal<Roblox.Instances.Annotation?, bool, bool> ServerLoadAnnotationReplies => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<bool> ServerLoadAnnotations => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<int> ServerLoadResolvedAnnotations => throw new NotSupportedException("Roblox shim members are compile-time only.");
 }
 
 public partial class AppAgeSignalsService : Instance
 {
-    public object? GetAppAgeSignalsAsync() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsAvailable() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class AppLifecycleObserverService : Instance
 {
-    public Roblox.Enums.AppLifecycleManagerState GetCurrentState() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsDidDetachSupported() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal OnBecomeActive => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal OnDetach => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal OnHide => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal OnResignActive => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal OnStart => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal OnUnhide => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void TriggerOnLandingPageMount() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void TriggerOnLuaAppInteractive() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class AppRatingPromptService : Instance
 {
-    public Roblox.Signals.RBXScriptSignal<double> OnGameLeft => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public bool isAppRatingPromptAvailable() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void showAppRatingPrompt() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class AppStorageService : Roblox.Services.LocalStorageService
@@ -166,9 +84,6 @@ public partial class AppStorageService : Roblox.Services.LocalStorageService
 
 public partial class AppUpdateService : Instance
 {
-    public bool CanPerformBinaryUpdate() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void CheckForUpdate(Roblox.Datatypes.Function handler) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool PerformManagedUpdate() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class AssetCounterService : Instance
@@ -184,67 +99,18 @@ public partial class AssetDeliveryProxy : Instance
 
 public partial class AssetImportService : Instance
 {
-    public object? GetAllPresets() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetFilesInDirAsync(string? path) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetPreset(string? name) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? PickFileWithPromptAsync() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? PickImageFileWithPrompt() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? PickMeshFileWithPrompt() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? PickMultipleFilesWithPrompt() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RemovePreset(string? name) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool SavePreset(string? name, object? preset) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Instances.AssetImportSession? StartSessionWithPath(string? filePath) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Instances.AssetImportSession? StartSessionWithPathAsync(string? filePath) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> StartSingleMeshImport => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public object? UploadAssetFromContentAsync(string? content, object? createAssetRequest) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? UploadAssetFromPathAsync(string? filepath, object? createAssetRequest) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class AssetManagerService : Instance
 {
-    public long AddNewPlace() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Enums.AssetType, string?, long> AssetImportedSignal => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void CreateAlias(int assetType, long assetId, string? aliasName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void DeleteAlias(string? aliasName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public long GetMeshIdFromAliasName(string? aliasName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public long GetMeshIdFromAssetId(long assetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public long GetTextureIdFromAliasName(string? aliasName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public long GetTextureIdFromAssetId(long assetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal ImportSessionFinished => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal ImportSessionStarted => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void InsertAudio(long assetId, string? assetName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void InsertImage(long assetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void InsertImages(object? assetIds) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void InsertMesh(string? aliasName, bool insertWithLocation, long sourceAssetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void InsertMeshesWithLocation(object? aliasNames, object? meshIds) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void InsertModel(long modelId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void InsertPackage(long packageId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void InsertVideo(long assetId, string? assetName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void OpenPlace(long placeId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RemovePlace(long placeId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RenameAlias(int assetType, long assetId, string? oldAliasName, string? newAliasName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RenameModel(long modelId, string? newName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RenamePlace(long placeId, string? newName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ShowPackageDetails(long packageId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void UpdateAllPackages(long packageId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ViewPackageOnWebsite(long packageId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class AssetQualityService : Instance
 {
-    public object? FetchAssetQualitySummaryFromGltfAsync(string? gltfData, object? desiredQualityChecks) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? FetchAssetQualityVisualizationDataFromUrlAsync(string? visualizationUrl) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GenerateAssetQualityGltfFromInstanceAsync(Roblox.Instances.Model? uploadModel) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class AssetService : Instance
 {
-    public bool AllowInsertFreeAssets { get; set; }
-    public Roblox.Signals.RBXScriptSignal<long> AudioMetadataFailedResponse => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<long, object?> AudioMetadataRequest => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<long, object?> AudioMetadataResponse => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void CachePartOperationsAsync(object? partOperations) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool CanEditAssetAsync(Roblox.Datatypes.Content content) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void ComposeDecalAsync(Roblox.Instances.Decal? decal, object? layers) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? CreateAssetAsync(Object? @object, Roblox.Enums.AssetType assetType, object? requestParameters) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? CreateAssetVersionAsync(Object? @object, Roblox.Enums.AssetType assetType, long assetId, object? requestParameters) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
@@ -257,15 +123,11 @@ public partial class AssetService : Instance
     public long CreatePlaceAsync(string? placeName, long templatePlaceID, string? description) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public long CreatePlaceInPlayerInventoryAsync(Instance? player, string? placeName, long templatePlaceID, string? description) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Instances.SurfaceAppearance? CreateSurfaceAppearanceAsync(object? content) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Instance? DeserializeInstance(string? serializedInstance) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetAssetIdsForPackageAsync(long packageAssetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetAudioMetadataAsync(object? idList) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetBundleDetailsAsync(long bundleId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Instance? GetGamePlacesAsync() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetOpaqueContentMetadataMap(Roblox.Datatypes.Content opaqueContent) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Instance? LoadAssetAsync(long assetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Enums.PromptCreateAssetResult> OpenCreateResultModal => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Enums.PromptPublishAssetResult> OpenPublishResultModal => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public object? PromptCreateAssetAsync(Roblox.Instances.Player? player, Instance? instance, Roblox.Enums.AssetType assetType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? PromptImportAnimationClipFromVideoAsync(Roblox.Instances.Player? player, Roblox.Datatypes.Function progressCallback) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void SavePlaceAsync(object? requestParameters) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
@@ -274,32 +136,10 @@ public partial class AssetService : Instance
 
 public partial class AudioFocusService : Instance
 {
-    public bool AcquireFocus(int contextId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int GetFocusedContextId() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetRegisteredContexts() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<int> OnContextRegistered => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<int> OnContextUnregistered => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<int> OnDeafenVoiceAudio => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<int> OnUndeafenVoiceAudio => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void RegisterContextIdFromLua(int contextId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool RequestFocus(int contextId, int priority) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class AvatarChatService : Instance
 {
-    public int ClientFeatures { get; set; }
-    public bool ClientFeaturesInitialized { get; set; }
-    public long DebugCounterGet(string? label, long playerId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool EnableVoice() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int GetClientFeaturesAsync() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int GetServerFeaturesAsync() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsEnabled(int mask, Roblox.Enums.AvatarChatServiceFeature feature) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsPlaceEnabled() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsUniverseEnabled() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int PollClientFeatures() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int PollServerFeatures() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int ServerFeatures { get; set; }
-    public bool deviceMeetsRequirementsForFeature(Roblox.Enums.DeviceFeatureType feature) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class AvatarCreationService : Instance
@@ -307,25 +147,17 @@ public partial class AvatarCreationService : Instance
     public string? AutoSetupAvatarAsync(Roblox.Instances.Player? player, object? autoSetupParams, Roblox.Datatypes.Function_ progressCallback) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<long, Roblox.Enums.ModerationStatus> AvatarAssetModerationCompleted => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<long, Roblox.Enums.ModerationStatus> AvatarModerationCompleted => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Instances.Folder? CreateCageMeshPartsWithScaleForExportAsync(Roblox.Instances.Model? model) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Instance? DeserializeAvatarModel(string? serializedModel) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public string? GenerateAvatar2DPreviewAsync(object? avatarGeneration2dPreviewParams) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public string? GenerateAvatarAsync(object? avatarGenerationParams) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetBatchTokenDetailsAsync(object? tokenIds) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetValidationRules() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void HandleSelfieConsentResult(bool consentAccepted) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void HandleSelfieQRResult(bool success, string? resultString) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Instances.EditableImage? LoadAvatar2DPreviewAsync(string? previewId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Instances.HumanoidDescription? LoadGeneratedAvatarAsync(string? generationId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal OpenSelfieConsent => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, string?> OpenSelfieQRCode => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public void PrepareAvatarForPreviewAsync(Roblox.Instances.Model? humanoidModel) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? PromptCreateAvatarAssetAsync(string? tokenId, Roblox.Instances.Player? player, Instance? assetInstance, Roblox.Enums.AvatarAssetType assetType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? PromptCreateAvatarAsync(string? tokenId, Roblox.Instances.Player? player, Roblox.Instances.HumanoidDescription? humanoidDescription) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public string? PromptSelectAvatarGenerationImageAsync(Roblox.Instances.Player? player) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? RequestAvatarGenerationSessionAsync(Roblox.Instances.Player? player, Roblox.Datatypes.Function callback) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, string?> UgcValidationFailure => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, string?, long> UgcValidationSuccess => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public object? ValidateUGCAccessoryAsync(Roblox.Instances.Player? player, Instance? accessory, Roblox.Enums.AccessoryType accessoryType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? ValidateUGCBodyPartAsync(Roblox.Instances.Player? player, Instance? instance, Roblox.Enums.BodyPart bodyPart) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? ValidateUGCFullBodyAsync(Roblox.Instances.Player? player, Roblox.Instances.HumanoidDescription? humanoidDescription) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
@@ -333,7 +165,6 @@ public partial class AvatarCreationService : Instance
 
 public partial class AvatarEditorService : Instance
 {
-    public void BustAvatarFetchCache() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Instances.HumanoidDescription? CheckApplyDefaultClothingAsync(Roblox.Instances.HumanoidDescription? humanoidDescription) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Instances.HumanoidDescription? ConformToAvatarRulesAsync(Roblox.Instances.HumanoidDescription? humanoidDescription) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Enums.AccessoryType GetAccessoryType(Roblox.Enums.AvatarAssetType avatarAssetType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
@@ -347,26 +178,6 @@ public partial class AvatarEditorService : Instance
     public Roblox.Instances.OutfitPages? GetOutfitsAsync(Roblox.Enums.OutfitSource outfitSource, Roblox.Enums.OutfitType outfitType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetRecommendedAssetsAsync(Roblox.Enums.AvatarAssetType assetType, long contextAssetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetRecommendedBundlesAsync(long bundleId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool NoPromptCreateOutfit(Roblox.Instances.HumanoidDescription? humanoidDescription, Roblox.Enums.HumanoidRigType rigType, string? name, long gearAssetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool NoPromptDeleteOutfit(long outfitId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool NoPromptRenameOutfit(long outfitId, string? name) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool NoPromptSaveAvatar(Roblox.Instances.HumanoidDescription? humanoidDescription, Roblox.Enums.HumanoidRigType rigType, object? saveDict, long gearAssetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool NoPromptSaveAvatarThumbnailCustomization(Roblox.Enums.AvatarThumbnailCustomizationType thumbnailType, long emoteAssetId, float cameraDistanceScale, float yRotDeg, float fieldOfViewDeg) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool NoPromptSetFavorite(long itemId, Roblox.Enums.AvatarItemType itemType, bool shouldFavorite) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool NoPromptUpdateOutfit(long outfitId, Roblox.Instances.HumanoidDescription? humanoidDescription, Roblox.Enums.HumanoidRigType rigType, long gearAssetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal OpenAllowInventoryReadAccess => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Instances.HumanoidDescription?, Roblox.Enums.HumanoidRigType> OpenPromptCreateOufit => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<long> OpenPromptDeleteOutfit => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<long> OpenPromptRenameOutfit => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Instances.HumanoidDescription?, Roblox.Enums.HumanoidRigType> OpenPromptSaveAvatar => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<long, Roblox.Enums.AvatarItemType, bool> OpenPromptSetFavorite => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<long, Roblox.Instances.HumanoidDescription?, Roblox.Enums.HumanoidRigType> OpenPromptUpdateOutfit => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void PerformCreateOutfitWithDescription(Roblox.Instances.HumanoidDescription? humanoidDescription, string? name) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void PerformDeleteOutfit() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void PerformRenameOutfit(string? name) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void PerformSaveAvatarWithDescription(Roblox.Instances.HumanoidDescription? humanoidDescription, object? addedAssets, object? removedAssets) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void PerformSetFavorite() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void PerformUpdateOutfit(Roblox.Instances.HumanoidDescription? humanoidDescription) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void PromptAllowInventoryReadAccess() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Enums.AvatarPromptResult> PromptAllowInventoryReadAccessCompleted => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public void PromptCreateOutfit(Roblox.Instances.HumanoidDescription? outfit, Roblox.Enums.HumanoidRigType rigType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
@@ -377,85 +188,39 @@ public partial class AvatarEditorService : Instance
     public Roblox.Signals.RBXScriptSignal<Roblox.Enums.AvatarPromptResult> PromptRenameOutfitCompleted => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public void PromptSaveAvatar(Roblox.Instances.HumanoidDescription? humanoidDescription, Roblox.Enums.HumanoidRigType rigType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Enums.AvatarPromptResult, Roblox.Instances.HumanoidDescription?> PromptSaveAvatarCompleted => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Enums.AvatarPromptResult, object?> PromptSaveAvatarThumbnailCustomizationCompleted => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public void PromptSetFavorite(long itemId, Roblox.Enums.AvatarItemType itemType, bool shouldFavorite) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Enums.AvatarPromptResult> PromptSetFavoriteCompleted => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public void PromptUpdateOutfit(long outfitId, Roblox.Instances.HumanoidDescription? updatedOutfit, Roblox.Enums.HumanoidRigType rigType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Enums.AvatarPromptResult> PromptUpdateOutfitCompleted => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Instances.CatalogPages? SearchCatalogAsync(Roblox.Datatypes.CatalogSearchParams searchParameters) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetAllowInventoryReadAccess(bool inventoryReadAccessGranted) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalCreateOutfitFailed() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalCreateOutfitPermissionDenied() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalDeleteOutfitFailed() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalDeleteOutfitPermissionDenied() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalRenameOutfitFailed() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalRenameOutfitPermissionDenied() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalSaveAvatarFailed() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalSaveAvatarPermissionDenied() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalSetFavoriteFailed() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalSetFavoritePermissionDenied() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalUpdateOutfitFailed() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalUpdateOutfitPermissionDenied() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void refreshAvatarThumbnails(object? thumbnailTypes) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class AvatarImportService : Instance
 {
-    public Instance? ImportFBXAnimationFromFilePathUserMayChooseModel(string? fbxFilePath, Instance? selectedRig, Roblox.Datatypes.Function userChooseModelThenImportCB) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Instance? ImportFBXAnimationUserMayChooseModel(Instance? selectedRig, Roblox.Datatypes.Function userChooseModelThenImportCB) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Instance? ImportFbxRigWithoutSceneLoad(bool isR15) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Instance? ImportLoadedFBXAnimation(bool useFBXModel) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Instance? LoadRigAndDetectType(Roblox.Datatypes.Function promptR15Callback) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class AvatarSettings : Instance
 {
-    public void Discard() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool Loaded { get; set; }
-    public void Publish() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal RefreshPluginState => throw new NotSupportedException("Roblox shim members are compile-time only.");
 }
 
 public partial class BadgeService : Instance
 {
     public bool AwardBadgeAsync(long userId, long badgeId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, long, long> BadgeAwarded => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public object? CheckUserBadgesAsync(long userId, object? badgeIds) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetBadgeInfoAsync(long badgeId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<long, long, long> OnBadgeAwarded => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public bool UserHasBadgeAsync(long userId, long badgeId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class BrowserService : Instance
 {
-    public Roblox.Signals.RBXScriptSignal AuthCookieCopiedToEngine => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal BrowserWindowClosed => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> BrowserWindowWillNavigate => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void CloseBrowserWindow() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void CopyAuthCookieFromBrowserToEngine() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void EmitHybridEvent(string? moduleName, string? eventName, string? @params) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ExecuteJavaScript(string? javascript) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> JavaScriptCallback => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void OpenBrowserWindow(string? url) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void OpenNativeOverlay(string? title, string? url) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void OpenWeChatAuthWindow() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ReturnToJavaScript(string? callbackId, bool success, string? @params) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SendCommand(string? command) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class BugReporterService : Instance
 {
-    public Roblox.Signals.RBXScriptSignal<string?> BugReportRequested => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public bool IsAvailable() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class BulkImportService : Instance
 {
-    public Roblox.Signals.RBXScriptSignal<Roblox.Enums.AssetType, string?, long> AssetImported => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<int> BulkImportFinished => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal BulkImportStarted => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void LaunchBulkImport(int assetTypeToImport) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ShowBulkImportView() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class CSGDictionaryService : Roblox.Services.FlyweightService
@@ -468,69 +233,27 @@ public partial class CacheableContentProvider : Instance
 
 public partial class CalloutService : Instance
 {
-    public void AttachCallout(string? definitionId, string? locationId, Instance? target) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void DefineCallout(string? definitionId, string? title, string? description, string? learnMoreURL) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void DetachCalloutsByDefinitionId(string? definitionId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class CaptureService : Instance
 {
-    public bool CanCaptureVideo() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Enums.CaptureType> CaptureBegan => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Enums.CaptureType> CaptureEnded => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Instances.Capture?, string?> CaptureObjectSavedInternal => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<object?, string?> CaptureSavedInternal => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public void CaptureScreenshot(Roblox.Datatypes.Function onCaptureReady) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? CheckUploadCaptureStatusAsync(string? token) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? CreatePostAsync(object? pathArr, string? caption) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void DeleteCapture(string? capturePath) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public long DeleteCapturesAsync(object? pathArr) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void DeleteVideoCapture(Roblox.Instances.VideoCapture? videoCapture) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool DeleteVideoCaptureAsync(Roblox.Instances.VideoCapture? videoCapture) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetCaptureFilePathAsync(Roblox.Datatypes.Content captureContent) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Datatypes.Vector2 GetCaptureSizeAsync(Roblox.Datatypes.Content captureContent) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public long GetCaptureStorageSizeAsync(object? pathArr) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetCaptureUploadDataAsync(string? capturePath) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetDeviceInfo() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Instances.Capture? GetScreenshotCaptureObject(string? capturePath) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool InternalCheckPlayabilityAsync(long universeId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public long InternalGetStartPlaceIdAsync(long universeId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsCapturingVideo() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void OnCaptureBegan() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void OnCaptureEnded() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void OnCaptureObjectShared(Roblox.Instances.Capture? capture) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void OnCapturePermissionsPromptFinished(long promptId, bool wasAccepted) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void OnCaptureShared(string? capturePath) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void OnSavePromptFinished(long promptId, object? results) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void OnSharePromptFinished(long promptId, bool accepted) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void OnVideoCaptureShared(Roblox.Instances.VideoCapture? videoCapture) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<long, Roblox.Enums.CaptureGalleryPermission> OpenCapturePermissionsPrompt => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<long, object?> OpenSaveCapturesPrompt => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<long, object?, string?> OpenShareCapturePrompt => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public string? PreCaptureShared(Roblox.Instances.Capture? capture) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? PreVideoCaptureShared(Roblox.Instances.VideoCapture? videoCapture) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool PromptCaptureGalleryPermissionAsync(Roblox.Enums.CaptureGalleryPermission captureGalleryPermission) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void PromptSaveCapturesToGallery(object? captures, Roblox.Datatypes.Function resultCallback) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void PromptShareCapture(Roblox.Datatypes.Content captureContent, string? launchData, Roblox.Datatypes.Function onAcceptedCallback, Roblox.Datatypes.Function onDeniedCallback) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? ReadCapturesFromGalleryAsync(object? captureTypeFilters, bool readFromAllEligibleExperiences) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? RetrieveCaptures() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SaveCaptureObjectToExternalStorage(Roblox.Instances.Capture? capture) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SaveCaptureToExternalStorage(string? capturePath) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public long SaveCapturesToExternalStorageAsync(object? pathArr) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SaveScreenshotCapture(string? additionalInfo) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SaveVideoCaptureToExternalStorage(Roblox.Instances.VideoCapture? videoCapture) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? StartUploadCaptureAsync(Roblox.Instances.Capture? capture) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Enums.VideoCaptureStartedResult StartVideoCaptureAsync(Roblox.Datatypes.Function onCaptureReady, object? captureParams) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.VideoCaptureStartedResult StartVideoCaptureInternalAsync() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void StopVideoCapture() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void StopVideoCaptureInternal() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void TakeScreenshotCaptureAsync(Roblox.Datatypes.Function onCaptureReady, object? captureParams) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void UploadCaptureAndPostMoment(Roblox.Instances.Capture? capture, object? momentMetadata, object? feedRegistrationInfo) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? UploadCaptureAsync(Roblox.Instances.Capture? capture) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Datatypes.ContentId> UserCaptureSaved => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Enums.VideoCaptureResult> UserVideoCaptureFailed => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Enums.VideoCaptureStartedResult> UserVideoCaptureStartFailed => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<bool, string?> VideoCaptureInProgress => throw new NotSupportedException("Roblox shim members are compile-time only.");
 }
 
 public partial class ChangeHistoryService : Instance
@@ -553,35 +276,21 @@ public partial class ChangeHistoryService : Instance
 
 public partial class ChangeHistoryStreamingService : Instance
 {
-    public Roblox.Signals.RBXScriptSignal<Instance?, Instance?> SendCreateInstanceFromStudio => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?, bool> SendDeleteInstanceFromStudio => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?, Instance?> SendReparentInstanceFromStudio => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?, int, int, int, string?> SendTerrainChangeFromStudio => throw new NotSupportedException("Roblox shim members are compile-time only.");
 }
 
 public partial class Chat : Instance
 {
     public bool BubbleChatEnabled { get; set; }
-    public Roblox.Signals.RBXScriptSignal<object?> BubbleChatSettingsChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public bool CanUserChatAsync(long userId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool CanUsersChatAsync(long userIdFrom, long userIdTo) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void ChatMember(Instance? partOrCharacter, string? message, Roblox.Enums.ChatColor color) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ChatLocal(Instance? partOrCharacter, string? message, Roblox.Enums.ChatColor color) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Instance?, string?, Roblox.Enums.ChatColor> Chatted => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public string? FilterStringAsync(string? stringToFilter, Roblox.Instances.Player? playerFrom, Roblox.Instances.Player? playerTo) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public string? FilterStringForBroadcast(string? stringToFilter, Roblox.Instances.Player? playerFrom) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool GetShouldUseLuaChat() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? InvokeChatCallback(Roblox.Enums.ChatCallbackType callbackType, object? callbackArguments) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsAutoMigrated { get; set; }
     public bool LoadDefaultChat { get; set; }
-    public string? ModerationMode { get; set; }
-    public Roblox.Signals.RBXScriptSignal<Roblox.Instances.Player?> PlayerChatAvailabilityStatusChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void ReconcileCommunicationAccess() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> ReconcileCommunicationAccessCompleted => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public void RegisterChatCallback(Roblox.Enums.ChatCallbackType callbackType, Roblox.Datatypes.Function callbackFunction) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RequestModerationModeEnabled(bool enabled) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void SetBubbleChatSettings(object? settings) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<bool, long> TimeoutChatAttempt => throw new NotSupportedException("Roblox shim members are compile-time only.");
 }
 
 public partial class CloudCRUDService : Instance
@@ -594,19 +303,6 @@ public partial class ClusterPacketCache : Instance
 
 public partial class CollaboratorsService : Instance
 {
-    public Roblox.Signals.RBXScriptSignal<long, bool> CollaboratorIdleUpdate => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<long> CollaboratorInstanceCreatedSignal => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<long> CollaboratorInstanceDestroyedSignal => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<long, Roblox.Enums.CollaboratorStatus> CollaboratorStatusUpdatedSignal => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Datatypes.Instances GetCollaboratorsList() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool GetSelectionHighlightsEnabled() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void MultiGetCanCollaborate(string? userIds) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, object?> MultiGetCanCollaborateRetrieved => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void RequestFlyToCollaborator(long collaboratorId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> ServerMultiGetCanCollaborateRequested => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void ToggleSelectionHighlights(bool showHighlights) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<bool> ToggleSelectionHighlightsSignal => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void ToggleTeamCreate(bool on) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class CollectionService : Instance
@@ -625,17 +321,10 @@ public partial class CollectionService : Instance
 
 public partial class CommerceService : Instance
 {
-    public Roblox.Signals.RBXScriptSignal<bool> BenefitStatusReceived => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal FetchReceipt => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public object? GetCommerceProductInfoAsync(string? commerceProductId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> InExperienceBrowserRequested => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public object? PrepareCommerceProductPurchase(string? commerceProductId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void PromptCommerceProductPurchase(Roblox.Instances.Player? user, string? commerceProductId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Instances.Player?, string?> PromptCommerceProductPurchaseFinished => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> PromptCommerceProductPurchaseRequested => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public void PromptRealWorldCommerceBrowser(Roblox.Instances.Player? player, string? url) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal PurchaseBrowserClosed => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void SignalPromptCommerceProductPurchaseFinished(string? productId, bool didTryPurchase, string? checkoutSessionId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool UserEligibleForRealWorldCommerceAsync() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
@@ -653,8 +342,6 @@ public partial class ConfigureServerService : Instance
 
 public partial class ConnectivityService : Instance
 {
-    public bool IsNetworkStateAvailable() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.NetworkStatus NetworkStatus { get; set; }
 }
 
 public partial class ContentProvider : Instance
@@ -663,9 +350,6 @@ public partial class ContentProvider : Instance
     public string? BaseUrl { get; set; }
     public Roblox.Enums.AssetFetchStatus GetAssetFetchStatus(Roblox.Datatypes.ContentId contentId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal GetAssetFetchStatusChangedSignal(Roblox.Datatypes.ContentId contentId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetDependencyContentIds(Instance? root) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetDetailedFailedRequests() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetFailedRequests() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? ListEncryptedAssets() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void PreloadAsync(object? contentIdList, Roblox.Datatypes.Function callbackFunction) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void RegisterDefaultEncryptionKey(string? encryptionKey) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
@@ -673,7 +357,6 @@ public partial class ContentProvider : Instance
     public void RegisterEncryptedAsset(Roblox.Datatypes.ContentId assetId, string? encryptionKey) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void RegisterSessionEncryptedAsset(Roblox.Datatypes.ContentId contentId, string? sessionKey) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public int RequestQueueSize { get; set; }
-    public void SetBaseUrl(string? url) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void UnregisterDefaultEncryptionKey() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void UnregisterEncryptedAsset(Roblox.Datatypes.ContentId assetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
@@ -683,27 +366,12 @@ public partial class ContextActionService : Instance
     public void BindAction(string? actionName, Roblox.Datatypes.Function functionToBind, bool createTouchButton, object? inputTypes) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void BindActionAtPriority(string? actionName, Roblox.Datatypes.Function functionToBind, bool createTouchButton, int priorityLevel, object? inputTypes) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void BindActivate(Roblox.Enums.UserInputType userInputTypeForActivation, object? keyCodesForActivation) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void BindCoreAction(string? actionName, Roblox.Datatypes.Function functionToBind, bool createTouchButton, object? inputTypes) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void BindCoreActionAtPriority(string? actionName, Roblox.Datatypes.Function functionToBind, bool createTouchButton, int priorityLevel, object? inputTypes) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void BindCoreActivate(Roblox.Enums.UserInputType userInputTypeForActivation, object? keyCodesForActivation) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, bool, object?, bool> BoundActionAdded => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, string?, object?> BoundActionChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, object?, bool> BoundActionRemoved => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public object? CallFunction(string? actionName, Roblox.Enums.UserInputState state, Instance? inputObject) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void FireActionButtonFoundSignal(string? actionName, Instance? actionButton) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> GetActionButtonEvent => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public object? GetAllBoundActionInfo() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetAllBoundCoreActionInfo() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetBoundActionInfo(string? actionName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetBoundCoreActionInfo(string? actionName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Instance? GetButton(string? actionName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public string? GetCurrentLocalToolIcon() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Datatypes.Instances GetInputContexts() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetInputSchemaKeyCodeTree() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal InputContextsChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Instance?> LocalToolEquipped => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Instance?> LocalToolUnequipped => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public int NetcodeInputLatency { get; set; }
     public void SetDescription(string? actionName, string? description) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void SetImage(string? actionName, string? image) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void SetPosition(string? actionName, Roblox.Datatypes.UDim2 position) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
@@ -711,8 +379,6 @@ public partial class ContextActionService : Instance
     public void UnbindAction(string? actionName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void UnbindActivate(Roblox.Enums.UserInputType userInputTypeForActivation, Roblox.Enums.KeyCode keyCodeForActivation) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void UnbindAllActions() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void UnbindCoreAction(string? actionName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void UnbindCoreActivate(Roblox.Enums.UserInputType userInputTypeForActivation, Roblox.Enums.KeyCode keyCodeForActivation) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class ControllerService : Instance
@@ -725,11 +391,6 @@ public partial class CookiesService : Instance
 
 public partial class CoreGui : Roblox.Instances.BasePlayerGui
 {
-    public Roblox.Instances.GuiObject? SelectionImageObject { get; set; }
-    public void SetUserGuiRendering(bool enabled, Instance? guiAdornee, Roblox.Enums.NormalId faceId, float horizontalCurvature) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void TakeScreenshot() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ToggleRecording() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<bool, Instance?, Roblox.Enums.NormalId, float> UserGuiRenderingChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public int Version { get; set; }
 }
 
@@ -744,45 +405,24 @@ public partial class CorePackages : Instance
 {
 }
 
-public partial class CoreScriptDebuggingManagerHelper : Instance
-{
-}
-
-public partial class CoreScriptSyncService : Instance
-{
-    public object? GetScriptFilePath(Instance? script) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-}
-
 public partial class CreationDBService : Instance
 {
 }
 
 public partial class CreatorStoreService : Instance
 {
-    public object? GetAssetInfoAsync(long assetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetCreatorStoreProductInfoAsync(long productTargetId, string? assetType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? PerformCreatorStorePurchase(long productTargetId, string? assetType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class CrossDMScriptChangeListener : Instance
 {
-    public Roblox.Signals.RBXScriptSignal<string?, int, string?> GuidLineContentsChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, string?> GuidNameChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public bool IsWatchingScriptLine(string? scriptRef, int lineNumber) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void StartWatchingScriptLine(string? scriptRef, int debuggerConnectionId, int lineNumber) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class DataModelPatchService : Instance
 {
-    public string? GetLuaVersion(string? patchName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Instance? GetPatch(string? patchName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RegisterPatch(string? patchName, string? behaviorName, string? localConfigPath, long userId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void UpdatePatch(long userId, string? patchName, Roblox.Datatypes.Function callbackFunction) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class DataStoreService : Instance
 {
-    public bool AutomaticRetry { get; set; }
     public Roblox.Instances.DataStore? GetDataStore(string? name, string? scope, Instance? options) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Instances.DataStore? GetGlobalDataStore() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Instances.OrderedDataStore? GetOrderedDataStore(string? name, string? scope) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
@@ -794,7 +434,6 @@ public partial class DataStoreService : Instance
 public partial class Debris : Instance
 {
     public void AddItem(Instance? item, double lifetime) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetLegacyMaxItems(bool enabled) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class DebugSettings : Instance
@@ -815,14 +454,6 @@ public partial class DebuggablePluginWatcher : Instance
 
 public partial class DebuggerConnectionManager : Instance
 {
-    public int ConnectLocal(DataModel? dataModel) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Instances.DebuggerConnection?, Roblox.Enums.DebuggerEndReason> ConnectionEnded => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Instances.DebuggerConnection?> ConnectionStarted => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Instances.DebuggerConnection?> FocusChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void FocusConnection(Roblox.Instances.DebuggerConnection? connection) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Instances.DebuggerConnection? GetAvailableConnection() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Instances.DebuggerConnection? GetConnectionById(int id) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public double Timeout { get; set; }
 }
 
 public partial class DebuggerManager : Instance
@@ -831,57 +462,24 @@ public partial class DebuggerManager : Instance
     public Roblox.Signals.RBXScriptSignal<Instance?> DebuggerAdded => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Instance?> DebuggerRemoved => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public bool DebuggingEnabled { get; set; }
-    public void EnableDebugging() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Datatypes.Instances GetDebuggers() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void Resume() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class DebuggerUIService : Instance
 {
-    public void EditBreakpoint(int metaBreakpointId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void EditWatch(string? expression) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> ExpressionAdded => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal ExpressionsCleared => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public bool IsConnectionForPlayDataModel(int debuggerConnectionId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void OpenExceptionMessagePopup(string? exceptionMessage, int pausedLine) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void OpenScriptAtLine(string? guid, int debuggerConnectionId, int line, bool showErrorOnFail) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void Pause() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RemoveScriptLineMarkers(int debuggerConnectionId, bool allMarkers) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void Resume() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetCurrentThreadId(int debuggerThreadId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetScriptLineMarker(string? guid, int debuggerConnectionId, int line, bool lineMarkerType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetWatchExpressions(object? expressions) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class DeferredAssetManagerService : Instance
 {
-    public Roblox.Enums.PrefetchDownloadStatus GetPrefetchDownloadStatus() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Enums.PrefetchDownloadStatus> PrefetchDownloadStatusChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
 }
 
 public partial class DeviceIdService : Instance
 {
-    public string? GetDeviceId() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class DraftsService : Instance
 {
-    public void CommitEdits(Roblox.Datatypes.Instances scripts) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?, Roblox.Enums.DraftStatusCode> CommitStatusChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void DiscardEdits(Roblox.Datatypes.Instances scripts) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?> DraftAdded => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?> DraftRemoved => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?> DraftStatusChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?> EditorsListChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Enums.DraftStatusCode GetDraftStatus(Instance? script) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Datatypes.Instances GetDrafts() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Datatypes.Instances GetEditors(Instance? script) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RestoreScripts(Roblox.Datatypes.Instances scripts) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ShowDiffsAgainstBase(Roblox.Datatypes.Instances scripts) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ShowDiffsAgainstServer(Roblox.Datatypes.Instances scripts) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ShowSourceDiffsAgainstCurrent(object? sources, Roblox.Datatypes.Instances scripts) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?, Roblox.Enums.DraftStatusCode> UpdateStatusChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void UpdateToLatestVersion(Roblox.Datatypes.Instances scripts) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class DraggerService : Instance
@@ -895,13 +493,10 @@ public partial class DraggerService : Instance
     public Roblox.Enums.DraggerMovementMode DraggerMovementMode { get; set; }
     public Roblox.Datatypes.Color3 GeometrySnapColor { get; set; }
     public float HoverAnimateFrequency { get; set; }
-    public int HoverLineThickness { get; set; }
     public float HoverThickness { get; set; }
     public bool JointsEnabled { get; set; }
     public bool LinearSnapEnabled { get; set; }
     public float LinearSnapIncrement { get; set; }
-    public bool PartSnapEnabled { get; set; }
-    public bool PivotSnapToGeometry { get; set; }
     public bool ShowHover { get; set; }
     public bool ShowPivotIndicator { get; set; }
 }
@@ -923,74 +518,33 @@ public partial class EncodingService : Instance
 
 public partial class EventIngestService : Instance
 {
-    public void SendEventDeferred(string? target, string? eventContext, string? eventName, object? additionalArgs) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SendEventImmediately(string? target, string? eventContext, string? eventName, object? additionalArgs) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetRBXEvent(string? target, string? eventContext, string? eventName, object? additionalArgs) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetRBXEventStream(string? target, string? eventContext, string? eventName, object? additionalArgs) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class ExampleV2Service : Instance
 {
-    public Roblox.Signals.RBXScriptSignal<string?> OnPolo => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void PrintHello() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class ExperienceAuthService : Instance
 {
-    public Roblox.Signals.RBXScriptSignal<string?, object?, object?> OpenAuthPrompt => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void ScopeCheckUIComplete(string? guid, object? scopes, Roblox.Enums.ScopeCheckResult result, object? metadata) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class ExperienceNotificationService : Instance
 {
     public bool CanPromptOptInAsync() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void InvokeOptInPromptClosed() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal OptInPromptClosed => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public void PromptOptIn() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal PromptOptInRequested => throw new NotSupportedException("Roblox shim members are compile-time only.");
 }
 
 public partial class ExperienceService : Instance
 {
-    public void ExecuteCrossExperienceCall(string? callId, object? @params, Roblox.Datatypes.Function successCallback, Roblox.Datatypes.Function errorCallback) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetPendingJoinAttempt() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetPlaceJoinState() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? LaunchExperience(object? @params) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? LaunchExperienceFromSource(object? @params, string? source) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void LaunchExperienceFromSourceWithCallback(object? @params, string? source, Roblox.Datatypes.Function callback) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, object?> OnCrossExperienceStarted => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, object?> OnCrossExperienceStopped => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<object?> OnNewJoinAttempt => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> PlaceJoinStateChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptConnection RegisterForExperienceJoin(Roblox.Datatypes.Function callback) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptConnection RegisterForExperienceLeave(Roblox.Datatypes.Function callback) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void StartCrossExperience(string? type, object? @params) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void StopCrossExperience(string? type, object? @params) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class ExperienceStateCaptureService : Instance
 {
-    public bool CanEnterCaptureMode() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool HiddenSelectionEnabled { get; set; }
-    public bool IsInBackground { get; set; }
-    public bool IsInCaptureMode { get; set; }
-    public Roblox.Signals.RBXScriptSignal<Instance?> ItemSelectedInCaptureMode => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void ResetHighlight() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.ExperienceStateCaptureSelectionMode SelectionMode { get; set; }
-    public void ToggleCaptureMode() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class ExperienceStateRecordingService : Instance
 {
-    public void ExitPlayback() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetCurrentPlaybackRestartFrames() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public long GetPlaybackCurrentFrame() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.ExperienceStateRecordingPlaybackMode GetPlaybackMode() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? LoadPlaybackAsync(string? uri, object? placeFileUri, Roblox.Enums.ExperienceStateRecordingLoadMode mode, Roblox.Enums.ExperienceStateRecordingLoadSourceType sourceType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<float, long> PlaybackStatusUpdated => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void SetPlaybackFrame(long frame) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetPlaybackMode(Roblox.Enums.ExperienceStateRecordingPlaybackMode mode) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetPlaybackPercentage(float percentage) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class ExplorerServiceVisibilityService : Instance
@@ -1000,59 +554,26 @@ public partial class ExplorerServiceVisibilityService : Instance
 
 public partial class FaceAnimatorService : Instance
 {
-    public bool AudioAnimationEnabled { get; set; }
-    public Roblox.Enums.TrackerFaceTrackingStatus FaceTrackingStatusEnum { get; set; }
-    public bool FlipHeadOrientation { get; set; }
-    public Roblox.Instances.TrackerLodController? GetTrackerLodController() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void Init(bool videoEnabled, bool audioEnabled) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsStarted() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void Start() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void Step() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void Stop() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Enums.TrackerError> TrackerError => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Enums.TrackerPromptEvent> TrackerPrompt => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public bool VideoAnimationEnabled { get; set; }
 }
 
 public partial class FacialAgeEstimationService : Instance
 {
-    public object? InquiryAsync(object? inquiryRequest) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsAvailable() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class FacialAnimationRecordingService : Instance
 {
-    public bool BiometricDataConsent { get; set; }
-    public string? CheckOrRequestCameraPermission() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsAgeRestricted() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class FacialAnimationStreamingServiceV2 : Instance
 {
-    public Roblox.Instances.FacialAnimationStreamingServiceStats? GetStats() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsAudioEnabled(int mask) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsPlaceEnabled(int mask) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsServerEnabled(int mask) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsVideoEnabled(int mask) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int ResolveStateForUser(long userId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int ServiceState { get; set; }
 }
 
 public partial class FeatureRestrictionManager : Instance
 {
-    public Roblox.Signals.RBXScriptSignal<bool, long, long, Roblox.Enums.FeatureRestrictionAbuseVector> FeatureTimeoutAttempt => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Enums.FeatureRestrictionAbuseVector> FeatureTimeoutRestored => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Enums.FeatureRestrictionAbuseVector> ShowFeatureInterventionDetails => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Enums.FeatureRestrictionAbuseVector, bool> ShowFeatureInterventionDetailsV2 => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<bool, long> TimeoutChatAttempt => throw new NotSupportedException("Roblox shim members are compile-time only.");
 }
 
 public partial class FileManagerService : Instance
 {
-    public object? ListFilesInFolderAsync(Roblox.Enums.EngineFolder folder) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void OpenFileInWebBrowser(Roblox.Enums.EngineFolder folder, string? fileName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void OpenFolder(Roblox.Enums.EngineFolder folder) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RevealFileInFolder(Roblox.Enums.EngineFolder folder, string? fileName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class FlagStandService : Instance
@@ -1065,8 +586,6 @@ public partial class FlyweightService : Instance
 
 public partial class FriendService : Instance
 {
-    public Roblox.Signals.RBXScriptSignal<object?> FriendsUpdated => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public object? GetPlatformFriends() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class GamePassService : Instance
@@ -1075,40 +594,23 @@ public partial class GamePassService : Instance
 
 public partial class GameSettings : Instance
 {
-    public Roblox.Signals.RBXScriptSignal<bool> VideoRecordingChangeRequest => throw new NotSupportedException("Roblox shim members are compile-time only.");
 }
 
 public partial class GamepadService : Instance
 {
     public void DisableGamepadCursor() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void EnableGamepadCursor(Instance? guiObject) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool GamepadCursorEnabled { get; set; }
-    public Roblox.Signals.RBXScriptSignal<Roblox.Datatypes.Vector2> GamepadThumbstick1Changed => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Datatypes.Vector2 GetGamepadCursorPosition() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetGamepadCursorPosition(Roblox.Datatypes.Vector2 position) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class GenerationService : Instance
 {
     public object? GenerateMeshAsync(object? inputs, Roblox.Instances.Player? player, object? options, Roblox.Datatypes.Function_ intermediateResultCallback) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GenerateModelAsync(object? inputs, object? schema, object? options) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? InternalGenerateMeshAsync(object? inputs, long userId, object? options, Roblox.Datatypes.Function_ intermediateResultCallback) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Instances.MeshPart? LoadGeneratedMeshAsync(string? generationId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Instances.Model? LoadModelFromGlbAsync(string? glbPath) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class GenericChallengeService : Instance
 {
-    public Roblox.Signals.RBXScriptSignal<string?> ChallengeAbandonedEvent => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, string?, string?> ChallengeCompletedEvent => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> ChallengeInvalidatedEvent => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, bool> ChallengeLoadedEvent => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, string?, string?> ChallengeRequiredEvent => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void SignalChallengeAbandoned(string? challengeID) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalChallengeCompleted(string? challengeID, string? challengeType, string? challengeMetadata) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalChallengeInvalidated(string? challengeID) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalChallengeLoaded(string? challengeID, bool success) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalChallengeRequired(string? challengeID, string? challengeType, string? challengeMetadata) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class Geometry : Instance
@@ -1121,12 +623,9 @@ public partial class GeometryService : Instance
     public Roblox.Instances.MeshPart? CreateSolidPrimitive(Roblox.Enums.SolidPrimitiveType type, object? options) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? FragmentAsync(Roblox.Instances.BasePart? part, object? sites, object? options) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GenerateFragmentSites(Roblox.Instances.BasePart? part, object? options) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? HashMeshAsync(Roblox.Datatypes.ContentId meshId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? IntersectAsync(Instance? part, object? parts, object? options) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? SubtractAsync(Instance? part, object? parts, object? options) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Instances.MeshPart? SweepPartAsync(Roblox.Instances.BasePart? part, object? cframes, object? options) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void TranscodeMesh(Instance? instance) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? TranscodeModel(Instance? instance) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? UnionAsync(Instance? part, object? parts, object? options) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
@@ -1141,103 +640,38 @@ public partial class GroupService : Instance
     public object? GetGroupInfoAsync(long groupId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetGroupsAsync(long userId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Enums.GroupMembershipStatus PromptJoinAsync(long groupId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void PromptJoinCompleted(long groupId, bool success, Roblox.Enums.GroupMembershipStatus groupMembershipStatus, string? errorMessage) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<long> ShowJoinPrompt => throw new NotSupportedException("Roblox shim members are compile-time only.");
 }
 
 public partial class GuiService : Instance
 {
-    public void AddCenterDialog(Instance? dialog, Roblox.Enums.CenterDialogType centerDialogType, Roblox.Datatypes.Function showFunction, Roblox.Datatypes.Function hideFunction) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void AddKey(string? key) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void AddSpecialKey(Roblox.Enums.SpecialKey key) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool AutoSelectGuiEnabled { get; set; }
-    public void BroadcastNotification(string? data, int notificationType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ClearError() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void CloseInspectMenu() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal CloseInspectMenuRequest => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public bool CloseStatsBasedOnInputString(string? input) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Instances.Folder? CoreEffectFolder { get; set; }
-    public Roblox.Instances.Folder? CoreGuiFolder { get; set; }
     public bool CoreGuiNavigationEnabled { get; set; }
-    public Roblox.Signals.RBXScriptSignal CoreGuiRenderOverflowed => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public bool DismissNotification(string? notificationId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.DisplayScalingMode DisplayScalingMode { get; set; }
-    public Roblox.Signals.RBXScriptSignal<bool> EmotesMenuOpenChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void ForceTenFootInterface(bool isForced) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int GetBrickCount() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Instance? GetClosestDialogToPosition(Roblox.Datatypes.Vector3 position) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Instances.Dialog? GetClosestVisibleDialogToPosition(Roblox.Datatypes.Vector3 position) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool GetEmotesMenuOpen() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.ConnectionError GetErrorCode() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetErrorDetails() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.ConnectionError GetErrorType() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool GetGameplayPausedNotificationEnabled() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetGuiInset() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool GetGuiIsVisible(Roblox.Enums.GuiType guiType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Datatypes.Vector2 GetHardwareSafeViewport() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Datatypes.Rect GetInsetArea(Roblox.Enums.ScreenInsets screenInsets) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool GetInspectMenuEnabled() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetNotificationTypeList() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public float GetRawScreenScale() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int GetResolutionScale() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetSafeZoneOffsets() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Datatypes.Vector2 GetScreenResolution() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetUiMessage() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool GuiNavigationEnabled { get; set; }
-    public Roblox.Signals.RBXScriptSignal<Roblox.Enums.GuiType, bool> GuiVisibilityChangedSignal => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<bool> InspectMenuEnabledChangedSignal => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public void InspectPlayerFromHumanoidDescription(Instance? humanoidDescription, string? name) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?, string?> InspectPlayerFromHumanoidDescriptionRequest => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public void InspectPlayerFromUserId(long userId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void InspectPlayerFromUserIdWithCtx(long userId, string? ctx) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<long, string?> InspectPlayerFromUserIdWithCtxRequest => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public bool IsMemoryTrackerEnabled() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool IsTenFootInterface() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, string?> KeyPressed => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal MenuClosed => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public bool MenuIsOpen { get; set; }
     public Roblox.Signals.RBXScriptSignal MenuOpened => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal NativeClose => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<bool> NetworkPausedEnabledChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void OnNotificationDisplayed(string? notificationId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void OnNotificationInteraction(string? notificationId, int buttonIndex) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?> Open9SliceEditor => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?> OpenStyleEditor => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Enums.PreferredTextSize PreferredTextSize { get; set; }
     public float PreferredTransparency { get; set; }
-    public Roblox.Signals.RBXScriptSignal PurchasePromptShown => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public bool ReducedMotionEnabled { get; set; }
-    public void RemoveCenterDialog(Instance? dialog) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RemoveKey(string? key) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RemoveSpecialKey(Roblox.Enums.SpecialKey key) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal SafeZoneOffsetsChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public void Select(Instance? selectionParent) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Instances.GuiObject? SelectedCoreObject { get; set; }
     public Roblox.Instances.GuiObject? SelectedObject { get; set; }
-    public void SendCoreUiNotification(string? title, string? text) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public string? SendNotification(object? notificationInfo) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SendUIOcclusionMetricsForQueryRegion(Roblox.Datatypes.UDim2 position, Roblox.Datatypes.UDim2 size, string? regionName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void SetEmotesMenuOpen(bool isOpen) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void SetGameplayPausedNotificationEnabled(bool enabled) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetGlobalGuiInset(int x1, int y1, int x2, int y2) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetHardwareSafeAreaInsets(float left, float top, float right, float bottom) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void SetInspectMenuEnabled(bool enabled) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetMenuIsOpen(bool open, string? menuName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetPurchasePromptIsShown(bool isShown) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetSafeZoneOffsets(float top, float bottom, float left, float right) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetTopbarInset(Roblox.Datatypes.Rect topbarInset) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetUiMessage(Roblox.Enums.UiMessageType msgType, string? uiMessage) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal ShowLeaveConfirmation => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public bool ShowStatsBasedOnInputString(string? input) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Enums.SpecialKey, string?> SpecialKeyPressed => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void ToggleFullscreen() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ToggleGuiIsVisibleForCaptures(Roblox.Enums.GuiType guiType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ToggleGuiIsVisibleIfAllowed(Roblox.Enums.GuiType guiType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Datatypes.Rect TopbarInset { get; set; }
     public bool TouchControlsEnabled { get; set; }
-    public Roblox.Signals.RBXScriptSignal<Roblox.Enums.UiMessageType, string?> UiMessageChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Enums.DisplaySize ViewportDisplaySize { get; set; }
-    public Roblox.Datatypes.Vector2 ViewportSizeInMM { get; set; }
 }
 
 public partial class GuidRegistryService : Instance
@@ -1273,14 +707,6 @@ public partial class HeatmapService : Instance
 
 public partial class HeightmapImporterService : Instance
 {
-    public void CancelImportHeightmap() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal ColormapHasUnknownPixels => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public object? GetHeightmapPreviewAsync(Roblox.Datatypes.ContentId heightmapAssetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ImportHeightmap(Roblox.Datatypes.Region3 region, Roblox.Datatypes.ContentId heightmapAssetId, Roblox.Datatypes.ContentId colormapAssetId, Roblox.Enums.Material defaultMaterial) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? IsValidColormap(Roblox.Datatypes.ContentId colormapAssetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? IsValidHeightmap(Roblox.Datatypes.ContentId heightmapAssetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<float, string?> ProgressUpdate => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void SetImportHeightmapPaused(bool paused) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class Hopper : Instance
@@ -1289,33 +715,19 @@ public partial class Hopper : Instance
 
 public partial class HttpRbxApiService : Instance
 {
-    public string? GetAsync(string? apiUrlPath, Roblox.Enums.ThrottlingPriority priority, Roblox.Enums.HttpRequestType httpRequestType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetAsyncFullUrl(string? apiUrl, Roblox.Enums.ThrottlingPriority priority, Roblox.Enums.HttpRequestType httpRequestType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetDocumentationUrl(string? partialUrl) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? PostAsync(string? apiUrlPath, string? data, Roblox.Enums.ThrottlingPriority priority, Roblox.Enums.HttpContentType content_type, Roblox.Enums.HttpRequestType httpRequestType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? PostAsyncFullUrl(string? apiUrl, string? data, Roblox.Enums.ThrottlingPriority priority, Roblox.Enums.HttpContentType content_type, Roblox.Enums.HttpRequestType httpRequestType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? RequestAsync(object? requestOptions, Roblox.Enums.ThrottlingPriority priority, Roblox.Enums.HttpContentType content_type, Roblox.Enums.HttpRequestType httpRequestType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public string? RequestLimitedAsync(object? requestOptions, Roblox.Enums.ThrottlingPriority priority, Roblox.Enums.HttpContentType content_type, Roblox.Enums.HttpRequestType httpRequestType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class HttpService : Instance
 {
     public Roblox.Instances.WebStreamClient? CreateWebStreamClient(Roblox.Enums.WebStreamClientType streamClientType, object? requestOptions) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Instances.WebStreamClient? CreateWebStreamClientInternal(Roblox.Enums.WebStreamClientType streamClientType, object? requestOptions) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public string? GenerateGUID(bool wrapInCurlyBraces) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public string? GetAsync(object? url, bool nocache, object? headers) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool GetHttpEnabled() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Datatypes.Secret GetSecret(string? key) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetUserAgent() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool HttpEnabled { get; set; }
     public object? JSONDecode(string? input) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? JSONDecodeAsync(string? input) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public string? JSONEncode(object? input) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? JSONEncodeAsync(object? obj) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public string? PostAsync(object? url, string? data, Roblox.Enums.HttpContentType content_type, bool compress, object? headers) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? RequestAsync(object? requestOptions) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Instance? RequestInternal(object? options) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetHttpEnabled(bool enabled) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public string? UrlEncode(string? input) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
@@ -1325,30 +737,6 @@ public partial class ILegacyStudioBridge : Instance
 
 public partial class IXPService : Instance
 {
-    public void ClearCreatorLayers() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ClearUserLayers() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.IXPLoadingStatus GetBrowserTrackerLayerLoadingStatus() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetBrowserTrackerLayerVariables(string? layerName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int GetBrowserTrackerStatusForLayer(string? layerName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.IXPLoadingStatus GetCreatorLayerLoadingStatus() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetCreatorLayerVariables(string? layerName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int GetCreatorStatusForLayer(string? layerName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetRegisteredCreatorLayersToStatus() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetRegisteredUserLayersToStatus() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.IXPLoadingStatus GetUserLayerLoadingStatus() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetUserLayerVariables(string? layerName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int GetUserStatusForLayer(string? layerName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void InitializeCreatorLayers(long creatorId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void InitializeUserLayers(long userId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void LogBrowserTrackerLayerExposure(string? layerName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void LogCreatorLayerExposure(string? layerName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void LogFlagLinkedUserLayerExposure(string? layerName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void LogUserLayerExposure(string? layerName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Enums.IXPLoadingStatus> OnBrowserTrackerLayerLoadingStatusChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Enums.IXPLoadingStatus> OnCreatorLayerLoadingStatusChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Enums.IXPLoadingStatus> OnUserLayerLoadingStatusChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void RegisterCreatorLayers(object? creatorLayers) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RegisterUserLayers(object? userLayers) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class ImageScreenCaptureService : Instance
@@ -1372,17 +760,12 @@ public partial class InsertService : Instance
     public object? GetFreeDecalsAsync(string? searchText, int pageNum) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetFreeModelsAsync(string? searchText, int pageNum) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public long GetLatestAssetVersionAsync(long assetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetLocalFileContents(string? contentId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Instance? LoadAsset(long assetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Instance? LoadAssetVersion(long assetVersionId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Datatypes.Instances LoadAssetWithFormat(long assetId, string? format) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Instance? LoadLocalAsset(string? assetPath) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Datatypes.Instances LoadPackageAssetAsync(Roblox.Datatypes.ContentId url) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class InstanceExtensionsService : Instance
 {
-    public int CountChildren(Instance? instance) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class InstanceFileSyncService : Instance
@@ -1390,7 +773,6 @@ public partial class InstanceFileSyncService : Instance
     public Roblox.Datatypes.Instances GetAllInstances() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Enums.InstanceFileSyncStatus GetStatus(Instance? instance) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Instance? GetSyncedInstance(string? filePath) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetTooltip(Instance? instance) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Instance?, Roblox.Enums.InstanceFileSyncStatus> StatusChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
 }
 
@@ -1415,7 +797,6 @@ public partial class KeyframeSequenceProvider : Instance
 {
     public Instance? GetAnimationsAsync(long userId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Instance? GetKeyframeSequenceAsync(Roblox.Datatypes.ContentId assetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetMemStats() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Datatypes.ContentId RegisterActiveKeyframeSequence(Instance? keyframeSequence) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Datatypes.ContentId RegisterKeyframeSequence(Instance? keyframeSequence) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
@@ -1454,28 +835,14 @@ public partial class Lighting : Instance
     public Roblox.Datatypes.Vector3 GetSunDirection() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool GlobalShadows { get; set; }
     public Roblox.Signals.RBXScriptSignal<bool> LightingChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Enums.LightingStyle LightingStyle { get; set; }
     public Roblox.Datatypes.Color3 OutdoorAmbient { get; set; }
-    public bool PrioritizeLightingQuality { get; set; }
     public void SetMinutesAfterMidnight(double minutes) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public float ShadowSoftness { get; set; }
-    public Roblox.Enums.Technology Technology { get; set; }
     public string? TimeOfDay { get; set; }
 }
 
 public partial class LinkingService : Instance
 {
-    public void DetectUrl(string? url) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetAndClearLastPendingUrl() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetLastLuaUrl() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsUrlRegistered(string? url) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, string?, object?> OnLuaUrl => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public bool OpenUrl(string? url) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RegisterLuaUrl(string? url) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? StartLuaUrlDelivery() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void StopLuaUrlDelivery() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool SupportsSwitchToSettingsApp() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SwitchToSettingsApp(object? route) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class LiveScriptingService : Instance
@@ -1491,38 +858,16 @@ public partial class LiveSyncService : Instance
 
 public partial class LocalStorageService : Instance
 {
-    public void Flush() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetItem(string? key) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, string?> ItemWasSet => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void SetItem(string? key, string? value) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal StoreWasCleared => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void WhenLoaded(Roblox.Datatypes.Function callback) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class LocalizationService : Instance
 {
-    public Roblox.Signals.RBXScriptSignal AutoTranslateWillRun => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public string? ForcePlayModeGameLocaleId { get; set; }
-    public string? ForcePlayModeRobloxLocaleId { get; set; }
-    public Roblox.Datatypes.Instances GetCorescriptLocalizations() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public string? GetCountryRegionForPlayerAsync(Instance? player) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool GetIsLoadingInternalTranslations() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetTableEntries(Instance? instance) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Instance? GetTranslatorForLocaleAsync(string? locale) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Instance? GetTranslatorForPlayer(Instance? player) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Instance? GetTranslatorForPlayerAsync(Instance? player) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void IsLoadingInternalTranslationsSettingChanged(bool newIsLoadingInternalTranslations) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsTextScraperRunning { get; set; }
-    public void PromptDownloadGameTableToCSV(Instance? table) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void PromptExportToCSVs() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void PromptImportFromCSVs() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Instance? PromptUploadCSVToGameTable() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? RobloxForcePlayModeGameLocaleId { get; set; }
-    public string? RobloxForcePlayModeRobloxLocaleId { get; set; }
     public string? RobloxLocaleId { get; set; }
-    public void SetRobloxLocaleId(string? locale) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void StartTextScraper() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void StopTextScraper() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public string? SystemLocaleId { get; set; }
 }
 
@@ -1532,32 +877,17 @@ public partial class LodDataService : Instance
 
 public partial class LogReporterService : Instance
 {
-    public bool ReportLog(string? fingerprint, string? uuid, string? desc, object? attributes, object? annotations) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool ReportMultipleLogs(string? fingerprint, string? uuid, string? desc, object? attributes, object? annotations, int numLogs) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class LogService : Instance
 {
     public void ClearOutput() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ExecuteScript(string? source) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetHttpResultHistory() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetLogHistory() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<object?> HttpResultOut => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<string?, Roblox.Enums.MessageType> MessageOut => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<bool> OnHttpResultApproved => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void RequestHttpResultApproved() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RequestServerHttpResult() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RequestServerOutput() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<object?> ServerHttpResultOut => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, Roblox.Enums.MessageType, double> ServerMessageOut => throw new NotSupportedException("Roblox shim members are compile-time only.");
 }
 
 public partial class LoginService : Instance
 {
-    public Roblox.Signals.RBXScriptSignal<string?> LoginFailed => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> LoginSucceeded => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void Logout() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void PromptLogin() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class LuaSettings : Instance
@@ -1583,94 +913,37 @@ public partial class MLService : Instance
 
 public partial class MarketplaceService : Instance
 {
-    public void ClearProductInfoCaches() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<object?> ClientLuaDialogRequested => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, long, long> ClientPurchaseSuccess => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public object? GetAvailableSubscriptionProductsAsync(string? productType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Instance? GetDeveloperProductsAsync() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetProductInfoAsync(long assetId, Roblox.Enums.InfoType infoType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetRobloxSubscriptionDetailsAsync(Roblox.Instances.Player? user) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int GetRobuxBalance() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetSubscriptionProductInfoAsync(string? subscriptionId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetSubscriptionPurchaseInfoAsync(string? subscriptionId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetUserSubscriptionDetailsAsync(Roblox.Instances.Player? user, string? subscriptionId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetUserSubscriptionDetailsInternalAsync(string? subscriptionId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetUserSubscriptionPaymentHistoryAsync(Roblox.Instances.Player? user, string? subscriptionId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetUserSubscriptionStatusAsync(Roblox.Instances.Player? user, string? subscriptionId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetUsersPriceLevelsAsync(object? userIds) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?, string?, bool> NativePurchaseFinished => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, bool> NativePurchaseFinishedWithLocalPlayer => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public object? PerformBulkPurchase(object? orderRequest, object? options) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void PerformCancelSubscription(string? subscriptionId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? PerformPurchase(Roblox.Enums.InfoType infoType, long productId, int expectedPrice, string? requestId, bool isRobloxPurchase, string? collectibleItemId, string? collectibleProductId, string? idempotencyKey, string? purchaseAuthToken, long timedOptionsDays) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? PerformPurchaseV2(Roblox.Enums.InfoType infoType, long productId, int expectedPrice, string? requestId, bool isRobloxPurchase, object? collectiblesProductDetails) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? PerformSubscriptionPurchase(string? subscriptionId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void PerformSubscriptionPurchaseV2(string? subscriptionId, string? paymentProvider) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void PerformSubscriptionPurchaseV3Async(string? productType, string? productId, string? paymentProvider, string? paymentSessionId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void PerformSubscriptionPurchaseWithRobuxAsync(string? subscriptionId, int priceInRobux) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool PlayerCanMakePurchases(Instance? player) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool PlayerOwnsAssetAsync(Instance? player, long assetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool PlayerOwnsBundleAsync(Roblox.Instances.Player? player, long bundleId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void PrepareCollectiblesPurchase(Instance? player, long assetId, string? collectibleItemId, string? collectibleItemInstanceId, string? collectibleProductId, int expectedPrice) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?, long, string?, string?, string?, int> PrepareCollectiblesPurchaseRequested => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Enums.ProductPurchaseDecision ProcessReceipt(object? receiptInfo) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void PromptBulkPurchase(Roblox.Instances.Player? player, object? lineItems, object? options) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Instance?, Roblox.Enums.MarketplaceBulkPurchasePromptStatus, object?> PromptBulkPurchaseFinished => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?, object?, object?, long, long, object?> PromptBulkPurchaseRequested => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public void PromptBundlePurchase(Instance? player, long bundleId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Instance?, long, bool> PromptBundlePurchaseFinished => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?, long> PromptBundlePurchaseRequested => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public void PromptCancelSubscription(Roblox.Instances.Player? user, string? subscriptionId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> PromptCancelSubscriptionRequested => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?, long, string?, string?, string?, int, string?, string?> PromptCollectibleBundlePurchaseRequested => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void PromptCollectiblesPurchase(Instance? player, long assetId, string? collectibleItemId, string? collectibleItemInstanceId, string? collectibleProductId, int expectedPrice) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?, long, string?, string?, string?, int, string?, string?> PromptCollectiblesPurchaseRequested => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public void PromptGamePassPurchase(Instance? player, long gamePassId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Instance?, long, bool> PromptGamePassPurchaseFinished => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?, long> PromptGamePassPurchaseRequested => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void PromptNativePurchase(Instance? player, string? productId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void PromptNativePurchaseWithLocalPlayer(string? productId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void PromptPremiumPurchase(Instance? player) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal PromptPremiumPurchaseFinished => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?> PromptPremiumPurchaseRequested => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public void PromptProductPurchase(Instance? player, long productId, bool equipIfPurchased, Roblox.Enums.CurrencyType currencyType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<long, long, bool> PromptProductPurchaseFinished => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?, long, bool, Roblox.Enums.CurrencyType> PromptProductPurchaseRequested => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public void PromptPurchase(Instance? player, long assetId, bool equipIfPurchased, Roblox.Enums.CurrencyType currencyType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Instance?, long, bool> PromptPurchaseFinished => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?, long, bool, Roblox.Enums.CurrencyType> PromptPurchaseRequested => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?, long, bool, Roblox.Enums.CurrencyType, string?, string?> PromptPurchaseRequestedV2 => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void PromptRobloxPurchase(long assetId, bool equipIfPurchased) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<long, bool> PromptRobloxPurchaseRequested => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public void PromptRobloxSubscriptionPurchase(Roblox.Instances.Player? user) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Instances.Player?, bool> PromptRobloxSubscriptionPurchaseFinished => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal PromptRobloxSubscriptionPurchaseRequested => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public void PromptSubscriptionPurchase(Roblox.Instances.Player? user, string? subscriptionId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Instances.Player?, string?, bool> PromptSubscriptionPurchaseFinished => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> PromptSubscriptionPurchaseRequested => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void PromptThirdPartyPurchase(Instance? player, string? productId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? RankProductsAsync(object? productIdentifiers) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? RecommendTopProductsAsync(object? infoTypes) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ReportAssetSale(string? assetId, int robuxAmount) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ReportRobuxUpsellStarted() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<object?> ServerPurchaseVerification => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void SignalAssetTypePurchased(Instance? player, Roblox.Enums.AssetType assetType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalClientPurchaseSuccess(string? ticket, long playerId, long productId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalMockPurchasePremium() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalMockPurchaseRobloxSubscription() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalPromptBulkPurchaseFinished(Roblox.Enums.MarketplaceBulkPurchasePromptStatus status, object? results) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalPromptBundlePurchaseFinished(Instance? player, long bundleId, bool success) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalPromptGamePassPurchaseFinished(Instance? player, long gamePassId, bool success) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalPromptPremiumPurchaseFinished(bool didTryPurchasing) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalPromptProductPurchaseFinished(long userId, long productId, bool success) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalPromptPurchaseFinished(Instance? player, long assetId, bool success) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalPromptRobloxSubscriptionPurchaseFinished(string? subscriptionId, bool didTryPurchasing) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalPromptSubscriptionPurchaseFinished(string? subscriptionId, bool didTryPurchasing) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalServerLuaDialogClosed(bool value) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalUserSubscriptionStatusChanged(string? subscriptionId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?, string?, string?, bool> ThirdPartyPurchaseFinished => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public bool UserOwnsGamePassAsync(long userId, long gamePassId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> UserSubscriptionStatusChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
 }
 
 public partial class MatchmakingService : Instance
@@ -1682,74 +955,17 @@ public partial class MatchmakingService : Instance
 
 public partial class MaterialGenerationService : Instance
 {
-    public object? GenerateMaterialVariantsAsync(string? prompt, long samples) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class MaterialService : Instance
 {
-    public string? AsphaltName { get; set; }
-    public string? BasaltName { get; set; }
-    public string? BrickName { get; set; }
-    public string? CardboardName { get; set; }
-    public string? CarpetName { get; set; }
-    public string? CeramicTilesName { get; set; }
-    public string? ClayRoofTilesName { get; set; }
-    public string? CobblestoneName { get; set; }
-    public string? ConcreteName { get; set; }
-    public string? CorrodedMetalName { get; set; }
-    public string? CrackedLavaName { get; set; }
-    public string? DiamondPlateName { get; set; }
-    public string? FabricName { get; set; }
-    public string? FoilName { get; set; }
     public string? GetBaseMaterialOverride(Roblox.Enums.Material material) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool GetIsMaterialActionAsToolEnabled() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal GetMaterialOverrideChanged(Roblox.Enums.Material material) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Instances.MaterialVariant? GetMaterialVariant(Roblox.Enums.Material material, string? name) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.PropertyStatus GetOverrideStatus(Roblox.Enums.Material material) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GlacierName { get; set; }
-    public string? GraniteName { get; set; }
-    public string? GrassName { get; set; }
-    public string? GroundName { get; set; }
-    public string? IceName { get; set; }
-    public string? LeafyGrassName { get; set; }
-    public string? LeatherName { get; set; }
-    public string? LimestoneName { get; set; }
-    public string? MarbleName { get; set; }
-    public Roblox.Signals.RBXScriptSignal<bool> MaterialFillToolEnabledChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public string? MetalName { get; set; }
-    public string? MudName { get; set; }
-    public Roblox.Signals.RBXScriptSignal<Roblox.Enums.Material> OverrideStatusChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public string? PavementName { get; set; }
-    public string? PebbleName { get; set; }
-    public string? PlasterName { get; set; }
-    public string? PlasticName { get; set; }
-    public string? RockName { get; set; }
-    public string? RoofShinglesName { get; set; }
-    public string? RubberName { get; set; }
-    public string? SaltName { get; set; }
-    public string? SandName { get; set; }
-    public string? SandstoneName { get; set; }
     public void SetBaseMaterialOverride(Roblox.Enums.Material material, string? name) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetCurrentMaterial(Roblox.Enums.Material baseMaterial, string? materialVariant) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? SlateName { get; set; }
-    public string? SmoothPlasticName { get; set; }
-    public string? SnowName { get; set; }
-    public void ToggleMaterialFillToolEnabled() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool Use2022Materials { get; set; }
-    public string? WoodName { get; set; }
-    public string? WoodPlanksName { get; set; }
 }
 
 public partial class MemStorageService : Instance
 {
-    public Roblox.Instances.MemStorageConnection? Bind(string? key, Roblox.Datatypes.Function callback) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Instances.MemStorageConnection? BindAndFire(string? key, Roblox.Datatypes.Function callback) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? Call(string? key, object? input) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void Fire(string? key, string? value) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetItem(string? key, string? defaultValue) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool HasItem(string? key) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool RemoveItem(string? key) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetItem(string? key, string? value) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class MemoryStoreService : Instance
@@ -1761,24 +977,10 @@ public partial class MemoryStoreService : Instance
 
 public partial class MeshContentProvider : Roblox.Services.CacheableContentProvider
 {
-    public object? GetContentMemoryData() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class MessageBusService : Instance
 {
-    public object? Call(string? key, object? input) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetLast(string? mid) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetMessageId(string? domainName, string? messageName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetProtocolMethodRequestMessageId(string? protocolName, string? methodName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetProtocolMethodResponseMessageId(string? protocolName, string? methodName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void MakeRequest(string? protocolName, string? methodName, object? message, Roblox.Datatypes.Function callback, object? customTelemetryData) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void Publish(string? mid, object? @params) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void PublishProtocolMethodRequest(string? protocolName, string? methodName, object? message, object? customTelemetryData) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void PublishProtocolMethodResponse(string? protocolName, string? methodName, object? message, int responseCode, object? customTelemetryData) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetRequestHandler(string? protocolName, string? methodName, Roblox.Datatypes.Function callback) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Instance? Subscribe(string? mid, Roblox.Datatypes.Function callback, bool once, bool sticky) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Instance? SubscribeToProtocolMethodRequest(string? protocolName, string? methodName, Roblox.Datatypes.Function callback, bool once, bool sticky) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Instance? SubscribeToProtocolMethodResponse(string? protocolName, string? methodName, Roblox.Datatypes.Function callback, bool once, bool sticky) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class MessagingService : Instance
@@ -1789,19 +991,10 @@ public partial class MessagingService : Instance
 
 public partial class MetaBreakpointManager : Instance
 {
-    public Instance? AddBreakpoint(Instance? script, int line, Instance? condition) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Instances.MetaBreakpoint? GetBreakpointById(int metaBreakpointId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Instances.MetaBreakpoint?> MetaBreakpointAdded => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Instances.MetaBreakpoint?> MetaBreakpointChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Instances.MetaBreakpoint?> MetaBreakpointRemoved => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Instances.MetaBreakpoint?, object?> MetaBreakpointSetChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void RemoveBreakpointById(int metaBreakpointId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class MicroProfilerService : Instance
 {
-    public string? ContextLabel { get; set; }
-    public string? DumpToFileAsync(int secondsToDelay, int framesToDump) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class ModerationService : Instance
@@ -1814,8 +1007,6 @@ public partial class ModerationService : Instance
 
 public partial class MouseService : Instance
 {
-    public Roblox.Signals.RBXScriptSignal MouseEnterStudioViewport => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal MouseLeaveStudioViewport => throw new NotSupportedException("Roblox shim members are compile-time only.");
 }
 
 public partial class NetworkClient : Roblox.Instances.NetworkPeer
@@ -1833,8 +1024,6 @@ public partial class NetworkSettings : Instance
 {
     public int EmulatedTotalMemoryInMB { get; set; }
     public float FreeMemoryMBytes { get; set; }
-    public bool HttpProxyEnabled { get; set; }
-    public string? HttpProxyURL { get; set; }
     public double IncomingReplicationLag { get; set; }
     public bool PrintJoinSizeBreakdown { get; set; }
     public bool PrintPhysicsErrors { get; set; }
@@ -1850,37 +1039,16 @@ public partial class NonReplicatedCSGDictionaryService : Roblox.Services.Flyweig
 
 public partial class NotificationService : Instance
 {
-    public void ActionEnabled(Roblox.Enums.AppShellActionType actionType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ActionTaken(Roblox.Enums.AppShellActionType actionType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void CancelAllNotification(long userId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void CancelNotification(long userId, int alertId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetScheduledNotifications(long userId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsConnected { get; set; }
-    public bool IsLuaChatEnabled { get; set; }
-    public bool IsLuaGameDetailsEnabled { get; set; }
-    public Roblox.Signals.RBXScriptSignal<string?, Roblox.Enums.ConnectionState, string?, object?> RccConnectionChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<object?, long> RccEventReceived => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<string?, Roblox.Enums.ConnectionState, string?> Roblox17sConnectionChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<object?> Roblox17sEventReceived => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, Roblox.Enums.ConnectionState, string?, string?> RobloxConnectionChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<object?> RobloxEventReceived => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void ScheduleNotification(long userId, int alertId, string? alertMsg, int minutesToFire) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? SelectedTheme { get; set; }
-    public void SwitchedToAppShellFeature(Roblox.Enums.AppShellFeature appShellFeature) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class OmniRecommendationsService : Instance
 {
-    public void ClearSessionId() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetSessionId() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Instances.HttpRequest? MakeRequest(string? nextPageToken) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class OpenCloudService : Instance
 {
-    public object? HttpRequestAsync(object? options) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RegisterOpenCloud(string? version, string? methodName, Roblox.Datatypes.Function method) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RegistrationComplete() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class PackageService : Instance
@@ -1889,29 +1057,10 @@ public partial class PackageService : Instance
 
 public partial class PackageUIService : Instance
 {
-    public void ConvertToMockPackage(Instance? instance) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Instance? ConvertToPackageAsync(Instance? sourceRoot, string? name, Instance? cloneRoot) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ConvertToPackageClosedCallback(Instance? sourceRoot) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ConvertToPackageUpload(string? uploadUrl, Roblox.Datatypes.Instances cloneInstances, Roblox.Datatypes.Instances originalInstances) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetPackageInfo(long packageAssetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<bool, string?> OnConvertToPackageResult => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Datatypes.Instances, string?, Roblox.Datatypes.Instances> OnOpenConvertToPackagePlugin => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void PublishPackage(Instance? packageInstance, bool addUndoWayPoint) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Instance? SetPackageVersion(Instance? packageInstance, long versionNumber) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class PartyEmulatorService : Instance
 {
-    public Roblox.Signals.RBXScriptSignal<object?> ConfigurationChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public string? CreateNewParty() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void DeleteParty(string? partyId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetEmulatedPartyAsync(string? partyId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetEmulatedPartyConfiguration() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool GetIsEmulationEnabled() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void OnTestPlayerCountChanged(int newPlayerCount) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetIsEmulationEnabled(bool isEnabled) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetPlayerPartyId(long userId, string? partyId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void applyPartyIdToPlayer(Roblox.Instances.Player? player) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class PatchBundlerFileWatch : Instance
@@ -1926,16 +1075,10 @@ public partial class PathfindingService : Instance
 
 public partial class PerformanceControlService : Instance
 {
-    public bool IsCrossExperienceLaunchFeasible(string? type) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class PermissionsService : Instance
 {
-    public bool GetIsThirdPartyAssetAllowed() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool GetIsThirdPartyPurchaseAllowed() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool GetIsThirdPartyTeleportAllowed() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetPermissions(string? assetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetPermissions(string? assetId, object? permissions) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class PhysicsService : Instance
@@ -1944,9 +1087,7 @@ public partial class PhysicsService : Instance
     public bool CollisionGroupsAreCollidable(string? name1, string? name2) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public int GetMaxCollisionGroups() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetRegisteredCollisionGroups() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void IkSolve(Roblox.Instances.BasePart? part, Roblox.Datatypes.CFrame target, float translateStiffness, float rotateStiffness) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool IsCollisionGroupRegistered(string? name) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void LocalIkSolve(Roblox.Instances.BasePart? part, Roblox.Datatypes.CFrame target, float translateStiffness, float rotateStiffness) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void RegisterCollisionGroup(string? name) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void RenameCollisionGroup(string? from, string? to) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void UnregisterCollisionGroup(string? name) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
@@ -1957,50 +1098,29 @@ public partial class PhysicsSettings : Instance
     public bool AllowSleep { get; set; }
     public bool AreAnchorsShown { get; set; }
     public bool AreAssembliesShown { get; set; }
-    public bool AreAssemblyCentersOfMassShown { get; set; }
     public bool AreAwakePartsHighlighted { get; set; }
     public bool AreBodyTypesShown { get; set; }
-    public bool AreCollisionCostsShown { get; set; }
-    public bool AreConstraintForcesShownForSelectedOrHoveredInstances { get; set; }
-    public bool AreConstraintTorquesShownForSelectedOrHoveredInstances { get; set; }
-    public bool AreContactForcesShownForSelectedOrHoveredAssemblies { get; set; }
     public bool AreContactIslandsShown { get; set; }
     public bool AreContactPointsShown { get; set; }
-    public bool AreGravityForcesShownForSelectedOrHoveredAssemblies { get; set; }
     public bool AreJointCoordinatesShown { get; set; }
-    public bool AreMagnitudesShownForDrawnForcesAndTorques { get; set; }
     public bool AreMechanismsShown { get; set; }
     public bool AreModelCoordsShown { get; set; }
     public bool AreNonAnchorsShown { get; set; }
     public bool AreOwnersShown { get; set; }
     public bool ArePartCoordsShown { get; set; }
     public bool AreRegionsShown { get; set; }
-    public bool AreSolverIslandsShown { get; set; }
     public bool AreTerrainReplicationRegionsShown { get; set; }
-    public bool AreTimestepsShown { get; set; }
     public bool AreUnalignedPartsShown { get; set; }
     public bool AreWorldCoordsShown { get; set; }
     public bool DisableCSGv2 { get; set; }
     public bool DisableCSGv3ForPlugins { get; set; }
-    public bool DrawConstraintsNetForce { get; set; }
-    public bool DrawContactsNetForce { get; set; }
-    public bool DrawTotalNetForce { get; set; }
-    public bool EnableForceVisualizationSmoothing { get; set; }
-    public float FluidForceDrawScale { get; set; }
     public bool ForceCSGv2 { get; set; }
-    public float ForceDrawScale { get; set; }
-    public int ForceVisualizationSmoothingSteps { get; set; }
     public bool IsInterpolationThrottleShown { get; set; }
     public bool IsReceiveAgeShown { get; set; }
     public bool IsTreeShown { get; set; }
     public Roblox.Enums.EnviromentalPhysicsThrottle PhysicsEnvironmentalThrottle { get; set; }
     public bool ShowDecompositionGeometry { get; set; }
-    public bool ShowFluidForcesForSelectedOrHoveredMechanisms { get; set; }
-    public bool ShowInstanceNamesForDrawnForcesAndTorques { get; set; }
-    public Roblox.Enums.SolverConvergenceMetricType SolverConvergenceMetricType { get; set; }
-    public Roblox.Enums.SolverConvergenceVisualizationMode SolverConvergenceVisualizationMode { get; set; }
     public double ThrottleAdjustTime { get; set; }
-    public float TorqueDrawScale { get; set; }
     public bool UseCSGv2 { get; set; }
 }
 
@@ -2014,24 +1134,14 @@ public partial class PlaceStatsService : Instance
 
 public partial class PlacesService : Instance
 {
-    public void StartPlaySolo() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void StopPlaySolo() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class PlatformCloudStorageService : Instance
 {
-    public object? GetUserDataAsync(string? key) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsUserDataAvailable() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetUserDataAsync(string? key, object? data) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class PlatformFriendsService : Instance
 {
-    public object? GetPartyMembers() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsInviteFriendsEnabled() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsProfileEnabled() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ShowInviteFriendsUI() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ShowProfile(string? platformUserId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class PlatformLibraries : Instance
@@ -2046,16 +1156,6 @@ public partial class PlayerDataService : Instance
 
 public partial class PlayerEmulatorService : Instance
 {
-    public bool CustomPoliciesEnabled { get; set; }
-    public string? EmulatedCountryCode { get; set; }
-    public string? EmulatedGameLocale { get; set; }
-    public object? GetEmulatedPolicyInfo() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool PlayerEmulationEnabled { get; set; }
-    public bool PseudolocalizationEnabled { get; set; }
-    public bool RegionCodeWillHaveAutomaticNonCustomPolicies(string? regionCode) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Datatypes.BinaryString SerializedEmulatedPolicyInfo { get; set; }
-    public void SetEmulatedPolicyInfo(object? emulatedPolicyInfo) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int TextElongationFactor { get; set; }
 }
 
 public partial class PlayerHydrationService : Instance
@@ -2065,9 +1165,6 @@ public partial class PlayerHydrationService : Instance
 public partial class PlayerViewService : Instance
 {
     public Roblox.Datatypes.CFrame GetDeviceCameraCFrame(Roblox.Instances.Player? player) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Datatypes.CFrame GetDeviceCameraCFrameForSelfView() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void OnCameraCFrameReplicationRequest() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void UpdateDeviceCFrame(Roblox.Instances.Player? player, Roblox.Datatypes.CFrame cframe, long timestamp) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class Players : Instance
@@ -2080,8 +1177,6 @@ public partial class Players : Instance
     public bool ClassicChat { get; set; }
     public Roblox.Instances.Model? CreateHumanoidModelFromDescriptionAsync(Roblox.Instances.HumanoidDescription? description, Roblox.Enums.HumanoidRigType rigType, Roblox.Enums.AssetTypeVerification assetTypeVerification) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Instances.Model? CreateHumanoidModelFromUserIdAsync(long userId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Instances.Player? CreateLocalPlayer() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Instances.Player?, Roblox.Instances.Player?, Roblox.Enums.FriendRequestEvent> FriendRequestEvent => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Instances.BanHistoryPages? GetBanHistoryAsync(long userId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetCharacterAppearanceInfoAsync(long userId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Instances.FriendPages? GetFriendsAsync(long userId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
@@ -2095,29 +1190,16 @@ public partial class Players : Instance
     public object? GetUserThumbnailAsync(long userId, Roblox.Enums.ThumbnailType thumbnailType, Roblox.Enums.ThumbnailSize thumbnailSize) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Instances.Player? LocalPlayer { get; set; }
     public int MaxPlayers { get; set; }
-    public int MaxPlayersInternal { get; set; }
     public Roblox.Signals.RBXScriptSignal<Roblox.Instances.Player?> PlayerAdded => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Enums.PlayerChatType, Roblox.Instances.Player?, string?, Roblox.Instances.Player?> PlayerChatted => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Instances.Player?> PlayerConnecting => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Instances.Player?> PlayerDisconnecting => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Instances.Player?> PlayerMembershipChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Instances.Player?> PlayerRejoining => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Instances.Player?, Roblox.Enums.PlayerExitReason> PlayerRemoving => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public int PreferredPlayers { get; set; }
-    public int PreferredPlayersInternal { get; set; }
-    public void ReportAbuse(Roblox.Instances.Player? player, string? reason, string? optionalMessage) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ReportAbuseV3(Roblox.Instances.Player? player, string? jsonTags) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ReportAvatarAbuse(long targetUserId, object? tags) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ReportChatAbuse(object? eligibleChatLines, object? targetChatLines, object? tags) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ResetLocalPlayer() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public float RespawnTime { get; set; }
     public void SetChatStyle(Roblox.Enums.ChatStyle style) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetLocalPlayerInfo(long userId, string? userName, string? displayName, Roblox.Enums.MembershipType membershipType, bool isUnder13, bool hasRobloxSubscription) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void TeamChat(string? message) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void UnbanAsync(object? config) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool UseStrafingAnimations { get; set; }
     public Roblox.Signals.RBXScriptSignal<Roblox.Instances.Player?, string?> UserSubscriptionStatusChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void WhisperChat(string? message, Instance? player) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class PluginConnectionService : Instance
@@ -2137,13 +1219,10 @@ public partial class PluginGuiService : Instance
 
 public partial class PluginManagementService : Instance
 {
-    public long GetOTAPluginVersion(string? pluginName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetAutoUpdate(long pluginId, bool state) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class PluginPolicyService : Instance
 {
-    public object? GetPluginPolicy(string? pluginName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class PointsService : Instance
@@ -2155,9 +1234,6 @@ public partial class PolicyService : Instance
 {
     public bool CanViewBrandProjectAsync(Roblox.Instances.Player? player, string? brandProjectId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetPolicyInfoForPlayerAsync(Instance? player) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetPolicyInfoForServerRobloxOnlyAsync() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.TriStateBoolean IsLuobuServer { get; set; }
-    public Roblox.Enums.TriStateBoolean LuobuWhitelisted { get; set; }
 }
 
 public partial class ProceduralBehaviorSchedulerService : Instance
@@ -2185,38 +1261,10 @@ public partial class ProximityPromptService : Instance
 
 public partial class PublishService : Instance
 {
-    public long CreateAssetAndWaitForAssetId(Roblox.Datatypes.Instances instances, string? operationId, Roblox.Enums.AssetCreatorType creatorType, long creatorId, string? assetType, string? name, string? description, int expectedPrice) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? CreateAssetOrAssetVersionAndPollAssetWithTelemetryAsync(string? serializedInstance, Roblox.Enums.AssetCreatorType creatorType, long creatorId, string? assetType, long assetId, string? name, string? description, string? token, string? contentType, int expectedPrice) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? CreateAssetOrAssetVersionAndPollAssetWithTelemetryAsyncWithAddParam(string? serializedInstance, object? publishInfo) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? CreateAssetOrAssetVersionAndPollAssetWithTelemetryAsyncWithAddParamErrorJson(string? serializedInstance, object? publishInfo) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Datatypes.ContentId PublishCageMeshAsync(Instance? wrap, Roblox.Enums.CageType cageType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool PublishDescendantAssets(Instance? instance) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool PublishDescendantAssetsAsync(Instance? instance) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class RbxAnalyticsService : Instance
 {
-    public void AddGlobalPointsField(string? key, int value) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void AddGlobalPointsTag(string? key, string? value) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void DEPRECATED_TrackEvent(string? category, string? action, string? label, long value) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void DEPRECATED_TrackEventWithArgs(string? category, string? action, string? label, object? args, long value) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetClientId() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetPlaySessionId() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetSessionId() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ReleaseRBXEventStream(string? target) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RemoveGlobalPointsField(string? key) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RemoveGlobalPointsTag(string? key) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ReportCounter(string? counterName, int amount) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ReportInfluxSeries(string? seriesName, object? points, int throttlingPercentage) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ReportStats(string? category, float value) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ReportToDiagByCountryCode(string? featureName, string? measureName, double seconds) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SendEventDeferred(string? target, string? eventContext, string? eventName, object? additionalArgs) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SendEventImmediately(string? target, string? eventContext, string? eventName, object? additionalArgs) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetRBXEvent(string? target, string? eventContext, string? eventName, object? additionalArgs) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetRBXEventStream(string? target, string? eventContext, string? eventName, object? additionalArgs) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void TrackEvent(string? category, string? action, string? label, long value) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void TrackEventWithArgs(string? category, string? action, string? label, object? args, long value) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void UpdateHeartbeatObject(object? args) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class RecommendationService : Instance
@@ -2237,14 +1285,10 @@ public partial class ReflectionService : Instance
     public object? GetEventsOfClass(string? className, object? filter) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetMethodsOfClass(string? className, object? filter) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetPropertiesOfClass(string? className, object? filter) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetPropertyNames(string? name) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetStyledPropertyNames(string? name) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class RemoteCommandService : Instance
 {
-    public Roblox.Instances.ExecutedRemoteCommand? ExecuteCommand(string? code, object? args) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? ExecuteCommandAsync(string? code, object? args) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Instances.Player? GetExecutingPlayer() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal GetReceivedUpdateSignal() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal GetStoppingSignal() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
@@ -2281,13 +1325,7 @@ public partial class RenderSettings : Instance
 
 public partial class ReplicatedFirst : Instance
 {
-    public Roblox.Signals.RBXScriptSignal DefaultLoadingGuiRemoved => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal FinishedReplicating => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public bool IsDefaultLoadingGuiRemoved() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsFinishedReplicating() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal RemoveDefaultLoadingGuiSignal => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public void RemoveDefaultLoadingScreen() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetDefaultLoadingGuiRemoved() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class ReplicatedStorage : Instance
@@ -2296,11 +1334,6 @@ public partial class ReplicatedStorage : Instance
 
 public partial class RibbonNotificationService : Instance
 {
-    public Roblox.Signals.RBXScriptSignal AllNotificationsReadFromRibbon => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> NewNotificationFromRibbon => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> NotificationReadFromRibbon => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void OnNotificationUpdateFromPlugin(string? newNotificationId, string? seenNotificationId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<bool, bool> ToggleNotificationTray => throw new NotSupportedException("Roblox shim members are compile-time only.");
 }
 
 public partial class RobloxPluginGuiService : Instance
@@ -2336,15 +1369,8 @@ public partial class RunService : Instance
 {
     public void BindToRenderStep(string? name, int priority, Roblox.Datatypes.Function function) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptConnection BindToSimulation(Roblox.Datatypes.Function function, Roblox.Enums.StepFrequency frequency) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? ClientGitHash { get; set; }
     public long FrameNumber { get; set; }
-    public object? GetControlAndVariantRolloutFlags() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetCoreScriptVersion() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Enums.PredictionStatus GetPredictionStatus(Instance? context) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetRobloxClientChannel() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool GetRobloxGuiFocused() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetRobloxVersion() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public double GetTotalScriptPlusExecutionTime() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<double> Heartbeat => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public bool IsClient() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool IsEdit() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
@@ -2359,18 +1385,13 @@ public partial class RunService : Instance
     public Roblox.Signals.RBXScriptSignal<double> PreRender => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<double> PreSimulation => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<double> RenderStepped => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<bool> RobloxGuiFocusedChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<double> Rollback => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public void Run() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Enums.RunState RunState { get; set; }
-    public void Set3dRenderingEnabled(bool enable) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void SetPredictionMode(Instance? context, Roblox.Enums.PredictionMode mode) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetRobloxGuiFocused(bool focus) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<double, double> Stepped => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public void Stop() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void UnbindFromRenderStep(string? name) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool getThrottleFramerateEnabled() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void setThrottleFramerateEnabled(bool enable) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class RuntimeContentService : Instance
@@ -2387,22 +1408,10 @@ public partial class RuntimeScriptService : Instance
 
 public partial class SafetyService : Instance
 {
-    public object? DecodeAvatarMovementProto(string? avatarMovementProtoString) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsCaptureModeForReport { get; set; }
-    public void ReportMenuTabClose() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ReportMenuTabOpen() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<long, Roblox.Datatypes.ContentId> ScreenshotContentReady => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<long, string?> ScreenshotUploaded => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public long TakeScreenshot(object? screenshotOptions) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class ScriptChangeService : Instance
 {
-    public Roblox.Signals.RBXScriptSignal<Roblox.Instances.LuaSourceContainer?> ScriptAdded => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Instances.LuaSourceContainer?> ScriptBeingRemoved => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Instances.LuaSourceContainer?, string?> ScriptChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Instances.LuaSourceContainer?> ScriptFullNameChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Instances.LuaSourceContainer?> ScriptSourceChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
 }
 
 public partial class ScriptCloneWatcher : Instance
@@ -2419,16 +1428,9 @@ public partial class ScriptCommitService : Instance
 
 public partial class ScriptContext : Instance
 {
-    public void AddCoreScriptLocal(string? name, Instance? parent) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void CompressLuaApp() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void EnableCoverage(Instance? instance) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<string?, string?, Instance?> Error => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, string?, Instance?, string?, int, string?> ErrorDetailed => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public object? GetCoverageStats() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetLuauHeapInstanceReferenceReport(string? target) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetLuauHeapMemoryReport(string? target) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ReportLuaRequireCount() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool ScriptsDisabled { get; set; }
     public void SetTimeout(double seconds) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
@@ -2436,17 +1438,12 @@ public partial class ScriptEditorService : Instance
 {
     public void DeregisterAutocompleteCallback(string? name) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void DeregisterScriptAnalysisCallback(string? name) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? EditSourceAsyncWithRanges(Roblox.Instances.LuaSourceContainer? script, string? newText, int startLine, int startCharacter, int endLine, int endCharacter) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Instances.ScriptDocument? FindScriptDocument(Roblox.Instances.LuaSourceContainer? script) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ForceReloadSource(string? uri, string? newsrc) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public string? GetEditorSource(Roblox.Instances.LuaSourceContainer? script) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Datatypes.Instances GetScriptDocuments() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsAutocompleteCallbackRegistered(string? name) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsScriptAnalysisCallbackRegistered(string? name) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? OpenScriptDocumentAsync(Roblox.Instances.LuaSourceContainer? script, object? options) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void RegisterAutocompleteCallback(string? name, int priority, Roblox.Datatypes.Function callbackFunction) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void RegisterScriptAnalysisCallback(string? name, int priority, Roblox.Datatypes.Function callbackFunction) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? StripComments(string? code) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Instances.ScriptDocument?, object?> TextDocumentDidChange => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Instances.ScriptDocument?> TextDocumentDidClose => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Instances.ScriptDocument?> TextDocumentDidOpen => throw new NotSupportedException("Roblox shim members are compile-time only.");
@@ -2460,7 +1457,6 @@ public partial class ScriptProfilerService : Instance
     public void ClientStop(Roblox.Instances.Player? player) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? DeserializeJSON(object? jsonString) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Instances.Player?, string?> OnNewData => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public string? SaveScriptProfilingData(string? jsonString, string? filename) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void ServerRequestData() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void ServerStart(object? frequency) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void ServerStop() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
@@ -2468,7 +1464,6 @@ public partial class ScriptProfilerService : Instance
 
 public partial class ScriptRegistrationService : Instance
 {
-    public Roblox.Instances.LuaSourceContainer? GetSourceContainerByScriptGuid(string? guid) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class ScriptService : Instance
@@ -2477,21 +1472,12 @@ public partial class ScriptService : Instance
 
 public partial class Selection : Instance
 {
-    public Instance? ActiveInstance { get; set; }
     public void Add(Roblox.Datatypes.Instances instancesToAdd) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptConnection AddFocusCallback(int priority, Roblox.Datatypes.Function function) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ClearTerrainSelectionHack() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Datatypes.Instances Get() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void Remove(Roblox.Datatypes.Instances instancesToRemove) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.SelectionRenderMode RenderMode { get; set; }
-    public float SelectionBoxThickness { get; set; }
     public Roblox.Signals.RBXScriptSignal SelectionChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal SelectionChangedThisFrame => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public int SelectionLineThickness { get; set; }
     public float SelectionThickness { get; set; }
     public void Set(Roblox.Datatypes.Instances selection) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetTerrainSelectionHack(Roblox.Datatypes.Vector3 center, Roblox.Datatypes.Vector3 size) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool ShowActiveInstanceHighlight { get; set; }
 }
 
 public partial class SelectionHighlightManager : Instance
@@ -2515,10 +1501,6 @@ public partial class ServerStorage : Instance
 
 public partial class ServiceVisibilityService : Instance
 {
-    public Roblox.Datatypes.BinaryString HiddenServices { get; set; }
-    public Roblox.Signals.RBXScriptSignal<string?> ServiceVisibilityChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void SetServiceVisibilityPreference(Instance? service, bool visible) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Datatypes.BinaryString VisibleServices { get; set; }
 }
 
 public partial class SessionCheckService : Instance
@@ -2527,22 +1509,6 @@ public partial class SessionCheckService : Instance
 
 public partial class SessionService : Instance
 {
-    public void AcquireContextFocus(string? context) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GenerateSessionInfoString(bool includeArbitrarySessions, bool includeTag, bool includeTimestamps, bool includeMetadata) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public long GetCreatedTimestampUtcMs(string? sid) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetMetadata(string? sid, string? key) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetRootSID() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetSessionID(string? structuralId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetSessionTag(string? sid) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsContextFocused(string? context) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ReleaseContextFocus(string? context) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RemoveMetadata(string? sid, string? key, string? context) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RemoveSession(string? sid, string? context) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RemoveSessionsWithMetadataKey(string? key) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ReplaceSession(string? sid, string? tag) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool SessionExists(string? sid) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetMetadata(string? sid, string? key, object? value, string? context) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetSession(string? parentSid, string? childSid, string? tag, string? context) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class SharedTableRegistry : Instance
@@ -2557,7 +1523,6 @@ public partial class SlimAnimationReplicationService : Instance
 
 public partial class SlimContentProvider : Roblox.Services.CacheableContentProvider
 {
-    public object? GetContentMemoryData() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class SlimReplicationService : Instance
@@ -2570,9 +1535,6 @@ public partial class SlimService : Instance
 
 public partial class SmoothVoxelsUpgraderService : Instance
 {
-    public void Cancel() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void Start() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<float> Status => throw new NotSupportedException("Roblox shim members are compile-time only.");
 }
 
 public partial class SnippetService : Instance
@@ -2591,32 +1553,15 @@ public partial class SocialService : Instance
     public Roblox.Datatypes.Instances GetPlayersByPartyId(string? partyId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetUpcomingExperienceEventsAsync() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void HideSelfView() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void InvokeGameInvitePromptClosed(Instance? player, object? recipientIds) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void InvokeIrisInvite(Instance? player, string? tag, object? irisParticipants) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void InvokeIrisInvitePromptClosed(Instance? player) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void InvokeShareSheetClosed() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Instance? OnCallInviteInvoked(string? tag, object? callParticipantIds) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> OpenShareSheetWithLink => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Instance?> PhoneBookPromptClosed => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> PlayerPartyDataChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public void PromptFeedbackSubmissionAsync() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void PromptGameInvite(Instance? player, Instance? experienceInviteOptions) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?, Instance?> PromptInviteRequested => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?, string?> PromptIrisInviteRequested => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public object? PromptLinkSharingAsync(Roblox.Instances.Player? player, object? options) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void PromptPhoneBook(Instance? player, string? tag) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Enums.RsvpStatus PromptRsvpToEventAsync(string? eventId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void PromptRsvpToEventCompleted(string? eventId, bool success, Roblox.Enums.RsvpStatus rsvpStatus, Roblox.Enums.RsvpStatus previousRsvpStatus) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal SelfViewHidden => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Enums.SelfViewPosition> SelfViewVisible => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Instances.Player?> ShareSheetClosed => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal ShowPromptFeedbackSubmission => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> ShowPromptFeedbackUnavailable => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> ShowPromptRsvpToEvent => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public void ShowSelfView(Roblox.Enums.SelfViewPosition selfViewPosition) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalFeedbackSubmissionCompleted(string? feedback) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SignalFeedbackSubmissionPermissionDenied() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void UpdatePlayerPartyData(string? partyId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class SolidModelContentProvider : Roblox.Services.CacheableContentProvider
@@ -2627,42 +1572,18 @@ public partial class SoundService : Instance
 {
     public bool AcousticSimulationEnabled { get; set; }
     public Roblox.Enums.ReverbType AmbientReverb { get; set; }
-    public Roblox.Enums.RolloutState AudioApiByDefault { get; set; }
-    public Roblox.Signals.RBXScriptSignal<Instance?> AudioInstanceAdded => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public bool BeginRecording() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Enums.RolloutState CharacterSoundsUseNewApi { get; set; }
     public Roblox.Enums.ListenerLocation DefaultListenerLocation { get; set; }
-    public Roblox.Signals.RBXScriptSignal<object?> DeviceListChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public float DistanceFactor { get; set; }
     public float DopplerScale { get; set; }
-    public object? EndRecording() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool GetAudioApiByDefault() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetAudioInstances() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetInputDevice() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetInputDevices() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetListener() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public double GetMixerTime() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetOutputDevice() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetOutputDevices() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetRecordingDevices() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetSoundMemoryData() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Datatypes.Instances InsertAsset(Roblox.Datatypes.ContentId assetId, string? assetName, bool useSelection) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsNewExpForAudioApiByDefault { get; set; }
     public void OpenAttenuationCurveEditor(Roblox.Datatypes.Instances selectedCurveObjects) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Datatypes.Instances> OpenAttenuationCurveEditorSignal => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Datatypes.Instances> OpenAudioCompressorEditorSignal => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Datatypes.Instances> OpenAudioEqualizerEditorSignal => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public void OpenDirectionalCurveEditor(Roblox.Datatypes.Instances selectedCurveObjects) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Datatypes.Instances> OpenDirectionalCurveEditorSignal => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public void PlayLocalSound(Instance? sound) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool RespectFilteringEnabled { get; set; }
     public float RolloffScale { get; set; }
-    public void SetAudioApiByDefault(bool enabled) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetInputDevice(string? name, string? guid) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void SetListener(Roblox.Enums.ListenerType listenerType, object? listener) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetOutputDevice(string? name, string? guid) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool SetRecordingDevice(int deviceIndex) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetSoundEnabled(bool enabled) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Enums.VolumetricAudio VolumetricAudio { get; set; }
 }
 
@@ -2676,43 +1597,18 @@ public partial class SpawnerService : Instance
 
 public partial class StartPageService : Instance
 {
-    public Roblox.Signals.RBXScriptSignal<string?, string?> ImageImportedSignal => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<object?> LocalGamesFromRegistryUpdatedSignal => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<object?> RecentApiGamesFromRegistryUpdatedSignal => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void generateTempUrlInContentProvider(string? url) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int getDaysSinceFirstUserLogin() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? getLocalGamesFromRegistry() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? getRecentAPIGamesFromRegistry() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? getTempUrlInContentProvider(string? url) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool isTutorialBannerClosed() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool isTutorialPopupClosed() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void openLink(string? link) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void openLocalFile(string? filePath) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void openPlace(long placeId, long universeId, bool launchTutorial) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void removeAPIGameFromRegistry(long gameId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void removeLocalFileFromRegistry(string? fileName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void setTutorialBannerClosed(bool closed) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void setTutorialPopupClosed(bool closed) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool shouldShowMacOSDeprecationWarning() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool shouldShowWinOSDeprecationWarning() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void startTutorial() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class StarterGui : Roblox.Instances.BasePlayerGui
 {
-    public Roblox.Signals.RBXScriptSignal<Roblox.Enums.CoreGuiType, bool> CoreGuiChangedSignal => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public object? GetCore(string? parameterName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool GetCoreGuiEnabled(Roblox.Enums.CoreGuiType coreGuiType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool ProcessUserInput { get; set; }
-    public void RegisterGetCore(string? parameterName, Roblox.Datatypes.Function getFunction) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RegisterSetCore(string? parameterName, Roblox.Datatypes.Function setFunction) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Enums.RtlTextSupport RtlTextSupport { get; set; }
     public Roblox.Enums.ScreenOrientation ScreenOrientation { get; set; }
     public void SetCore(string? parameterName, object? value) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void SetCoreGuiEnabled(Roblox.Enums.CoreGuiType coreGuiType, bool enabled) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool ShowDevelopmentGui { get; set; }
-    public Roblox.Instances.StyleSheet? StudioDefaultStyleSheet { get; set; }
-    public Roblox.Instances.StyleSheet? StudioInsertWidgetLayerCollectorAutoLinkStyleSheet { get; set; }
     public Roblox.Enums.VirtualCursorMode VirtualCursorMode { get; set; }
 }
 
@@ -2722,9 +1618,7 @@ public partial class StarterPack : Instance
 
 public partial class StarterPlayer : Instance
 {
-    public bool AllowCustomAnimations { get; set; }
     public bool AutoJumpEnabled { get; set; }
-    public Roblox.Enums.RolloutState AvatarJointUpgrade { get; set; }
     public float CameraMaxZoomDistance { get; set; }
     public float CameraMinZoomDistance { get; set; }
     public Roblox.Enums.CameraMode CameraMode { get; set; }
@@ -2735,7 +1629,6 @@ public partial class StarterPlayer : Instance
     public bool CharacterUseJumpPower { get; set; }
     public float CharacterWalkSpeed { get; set; }
     public bool ClassicDeath { get; set; }
-    public void ClearDefaults() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool CreateDefaultPlayerModule { get; set; }
     public Roblox.Enums.DevCameraOcclusionMode DevCameraOcclusionMode { get; set; }
     public Roblox.Enums.DevComputerCameraMovementMode DevComputerCameraMovementMode { get; set; }
@@ -2744,23 +1637,6 @@ public partial class StarterPlayer : Instance
     public Roblox.Enums.DevTouchMovementMode DevTouchMovementMode { get; set; }
     public Roblox.Enums.LoadDynamicHeads EnableDynamicHeads { get; set; }
     public bool EnableMouseLockOption { get; set; }
-    public long GameSettingsAssetIDFace { get; set; }
-    public long GameSettingsAssetIDHead { get; set; }
-    public long GameSettingsAssetIDLeftArm { get; set; }
-    public long GameSettingsAssetIDLeftLeg { get; set; }
-    public long GameSettingsAssetIDPants { get; set; }
-    public long GameSettingsAssetIDRightArm { get; set; }
-    public long GameSettingsAssetIDRightLeg { get; set; }
-    public long GameSettingsAssetIDShirt { get; set; }
-    public long GameSettingsAssetIDTeeShirt { get; set; }
-    public long GameSettingsAssetIDTorso { get; set; }
-    public Roblox.Enums.GameAvatarType GameSettingsAvatar { get; set; }
-    public Roblox.Enums.R15CollisionType GameSettingsR15Collision { get; set; }
-    public Roblox.Datatypes.NumberRange GameSettingsScaleRangeBodyType { get; set; }
-    public Roblox.Datatypes.NumberRange GameSettingsScaleRangeHead { get; set; }
-    public Roblox.Datatypes.NumberRange GameSettingsScaleRangeHeight { get; set; }
-    public Roblox.Datatypes.NumberRange GameSettingsScaleRangeProportion { get; set; }
-    public Roblox.Datatypes.NumberRange GameSettingsScaleRangeWidth { get; set; }
     public float HealthDisplayDistance { get; set; }
     public bool LoadCharacterAppearance { get; set; }
     public Roblox.Enums.LoadCharacterLayeredClothing LoadCharacterLayeredClothing_ { get; set; }
@@ -2771,7 +1647,6 @@ public partial class StarterPlayer : Instance
 
 public partial class StartupMessageService : Instance
 {
-    public object? GetStartupMessage() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class Stats : Instance
@@ -2780,12 +1655,10 @@ public partial class Stats : Instance
     public float DataReceiveKbps { get; set; }
     public float DataSendKbps { get; set; }
     public float FrameTime { get; set; }
-    public string? GetBrowserTrackerId() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public int GetHarmonyQualityLevel() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetMemoryCategoryNames() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetMemoryUsageMbAllCategories() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public float GetMemoryUsageMbForTag(Roblox.Enums.DeveloperMemoryTag tag) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetPaginatedMemoryByTexture(Roblox.Enums.TextureQueryType queryType, int pageIndex, int pageSize) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public float GetTotalMemoryUsageMb() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public float HeartbeatTime { get; set; }
     public int InstanceCount { get; set; }
@@ -2811,9 +1684,6 @@ public partial class Stats : Instance
 
 public partial class StopWatchReporter : Instance
 {
-    public void FinishTask(int taskId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SendReport(string? reportName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int StartTask(string? reportName, string? taskName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class Studio : Instance
@@ -2823,7 +1693,6 @@ public partial class Studio : Instance
     public Roblox.Datatypes.Color3 _local__Color { get; set; }
     public Roblox.Datatypes.Color3 _nil__Color { get; set; }
     public Roblox.Datatypes.Color3 _self__Color { get; set; }
-    public Roblox.Enums.ActionOnAutoResumeSync ActionOnAutoResumeSync { get; set; }
     public Roblox.Enums.ActionOnStopSync ActionOnStopSync { get; set; }
     public Roblox.Datatypes.Color3 Active_Color { get; set; }
     public Roblox.Datatypes.Color3 Active_Hover_Over_Color { get; set; }
@@ -2836,80 +1705,30 @@ public partial class Studio : Instance
     public Roblox.Enums.AutoIndentRule Auto_Indent_Rule { get; set; }
     public bool Auto_Recovery_Enabled { get; set; }
     public int Auto_Recovery_Interval__Minutes_ { get; set; }
-    public bool AutoResumeSyncOnPlaceOpen { get; set; }
-    public bool AutoUpdateEnabled { get; set; }
-    public Roblox.Enums.CompletionAcceptanceBehavior AutocompleteAcceptanceBehavior { get; set; }
-    public bool Automatically_trigger_AI_Code_Completion { get; set; }
     public Roblox.Datatypes.Color3 Background_Color { get; set; }
     public Roblox.Enums.ListDisplayMode Basic_Objects_Display_Mode { get; set; }
     public Roblox.Datatypes.Color3 Bool_Color { get; set; }
     public Roblox.Datatypes.Color3 Bracket_Color { get; set; }
     public Roblox.Datatypes.Color3 Built_in_Function_Color { get; set; }
     public float Camera_Mouse_Wheel_Speed { get; set; }
-    public float Camera_Pan_Speed { get; set; }
     public float Camera_Shift_Speed { get; set; }
     public float Camera_Speed { get; set; }
     public Roblox.Enums.CameraSpeedAdjustBinding Camera_Speed_Adjust_Binding { get; set; }
     public bool Camera_Zoom_to_Mouse_Position { get; set; }
-    public bool CameraAdaptiveSpeed { get; set; }
-    public Roblox.Enums.CameraNavigationModel CameraNavigationModel { get; set; }
-    public float CameraOrbitSensitivity { get; set; }
-    public float CameraPanSensitivity { get; set; }
-    public float CameraShiftFactor { get; set; }
-    public bool CameraTweenFocus { get; set; }
-    public float CameraZoomSpeed { get; set; }
     public bool Clear_Output_On_Start { get; set; }
-    public bool CommandBarEnterExec { get; set; }
-    public Roblox.Datatypes.QFont CommandBarFont { get; set; }
     public bool CommandBarLocalState { get; set; }
     public Roblox.Datatypes.Color3 Comment_Color { get; set; }
     public Roblox.Datatypes.Color3 Current_Line_Highlight_Color { get; set; }
     public Roblox.Datatypes.Color3 Debugger_Current_Line_Color { get; set; }
     public Roblox.Datatypes.Color3 Debugger_Error_Line_Color { get; set; }
-    public Roblox.Datatypes.QDir DefaultInstancesDir { get; set; }
-    public Roblox.Enums.DefaultScriptSyncFileType DefaultScriptSyncFileType { get; set; }
     public bool DeprecatedObjectsShown { get; set; }
-    public string? DisplayLanguage { get; set; }
-    public Roblox.Datatypes.Color3 Doc_View_Code_Background_Color { get; set; }
-    public Roblox.Datatypes.Color3 DraggerActiveColor { get; set; }
-    public float DraggerLengthFactor { get; set; }
-    public int DraggerMajorGridIncrement { get; set; }
-    public int DraggerMaxSoftSnaps { get; set; }
-    public Roblox.Datatypes.Color3 DraggerPassiveColor { get; set; }
-    public float DraggerScaleFactor { get; set; }
-    public bool DraggerShowAxisTicks { get; set; }
-    public bool DraggerShowHoverRuler { get; set; }
-    public bool DraggerShowMeasurement { get; set; }
-    public bool DraggerShowNegativeAxes { get; set; }
-    public bool DraggerShowPlanes { get; set; }
-    public bool DraggerShowTargetSnap { get; set; }
-    public bool DraggerShowTrackball { get; set; }
-    public bool DraggerShowWhileDragging { get; set; }
-    public float DraggerSoftSnapMarginFactor { get; set; }
-    public float DraggerSummonMarginFactor { get; set; }
-    public float DraggerTiltRotateDuration { get; set; }
     public bool Enable_Autocomplete { get; set; }
-    public bool Enable_Autocomplete_Doc_View { get; set; }
-    public bool Enable_CoreScript_Debugger { get; set; }
     public bool Enable_Http_Sandboxing { get; set; }
     public bool Enable_Internal_Beta_Features { get; set; }
     public bool Enable_Internal_Features { get; set; }
-    public bool Enable_Script_Analysis { get; set; }
-    public bool Enable_Scrollbar_Markers { get; set; }
-    public bool Enable_Signature_Help { get; set; }
-    public bool Enable_Signature_Help_Doc_View { get; set; }
     public bool Enable_Temporary_Tabs { get; set; }
     public bool Enable_Temporary_Tabs_In_Explorer { get; set; }
-    public bool Enable_Type_Hover { get; set; }
-    public bool EnableCodeAssist { get; set; }
-    public bool EnableFindOnType { get; set; }
-    public bool EnableIndentationRulers { get; set; }
-    public bool EnableOnTypeAutocomplete { get; set; }
-    public bool EnableSelectionTooltips { get; set; }
-    public bool EnableStudioStreaming { get; set; }
     public Roblox.Datatypes.Color3 Error_Color { get; set; }
-    public Roblox.Enums.ExternalEditorMode ExternalEditorMode { get; set; }
-    public Roblox.Datatypes.QDir ExternalEditorSelection { get; set; }
     public Roblox.Datatypes.Color3 Find_Selection_Background_Color { get; set; }
     public Roblox.Datatypes.QFont Font { get; set; }
     public bool Format_On_Paste { get; set; }
@@ -2920,27 +1739,15 @@ public partial class Studio : Instance
     public bool Highlight_Occurances { get; set; }
     public Roblox.Datatypes.Color3 HintColor { get; set; }
     public Roblox.Enums.HoverAnimateSpeed Hover_Animate_Speed { get; set; }
-    public float Hover_Box_Thickness { get; set; }
-    public int Hover_Line_Thickness { get; set; }
     public Roblox.Datatypes.Color3 Hover_Over_Color { get; set; }
-    public Roblox.Datatypes.QDir IconOverrideDir { get; set; }
     public bool Indent_Using_Spaces { get; set; }
-    public Roblox.Datatypes.Color3 IndentationRulerColor { get; set; }
     public Roblox.Datatypes.Color3 InformationColor { get; set; }
     public Roblox.Datatypes.Color3 Keyword_Color { get; set; }
-    public int LargeFileLineCountThreshold { get; set; }
-    public int LargeFileThreshold { get; set; }
     public float Line_Thickness { get; set; }
-    public bool LoadAllBuiltinPluginsInRunModes { get; set; }
-    public bool LoadInternalPlugins { get; set; }
-    public bool LoadUserPluginsInRunModes { get; set; }
-    public Roblox.Datatypes.QDir LocalAssetsFolder { get; set; }
     public bool LuaDebuggerEnabled { get; set; }
     public bool LuaDebuggerEnabledAtStartup { get; set; }
     public Roblox.Datatypes.Color3 Luau_Keyword_Color { get; set; }
-    public float Main_Volume { get; set; }
     public Roblox.Datatypes.Color3 Matching_Word_Background_Color { get; set; }
-    public int MaxFindReplaceAllResults { get; set; }
     public int Maximum_Output_Lines { get; set; }
     public Roblox.Datatypes.Color3 Menu_Item_Background_Color { get; set; }
     public Roblox.Datatypes.Color3 Method_Color { get; set; }
@@ -2950,14 +1757,10 @@ public partial class Studio : Instance
     public Roblox.Datatypes.QFont Output_Font { get; set; }
     public Roblox.Enums.OutputLayoutMode Output_Layout_Mode { get; set; }
     public Roblox.Enums.PermissionLevelShown PermissionLevelShown { get; set; }
-    public bool Physical_Draggers_Select_Scope_By_Default { get; set; }
-    public Roblox.Datatypes.Color3 Pivot_Snap_To_Geometry_Color { get; set; }
     public bool PluginDebuggingEnabled { get; set; }
     public Roblox.Datatypes.QDir PluginsDir { get; set; }
     public Roblox.Datatypes.Color3 Primary_Text_Color { get; set; }
     public Roblox.Datatypes.Color3 Property_Color { get; set; }
-    public bool ReloadBuiltinPluginsOnChange { get; set; }
-    public bool ReloadLocalPluginsOnChange { get; set; }
     public bool Respect_Studio_shortcuts_when_game_has_focus { get; set; }
     public Roblox.Datatypes.Color3 Ruler_Color { get; set; }
     public string? Rulers { get; set; }
@@ -2965,8 +1768,6 @@ public partial class Studio : Instance
     public Roblox.Enums.StudioScriptEditorColorPresets Script_Editor_Color_Preset { get; set; }
     public Roblox.Datatypes.Color3 Script_Editor_Scrollbar_Background_Color { get; set; }
     public Roblox.Datatypes.Color3 Script_Editor_Scrollbar_Handle_Color { get; set; }
-    public Roblox.Datatypes.Color3 ScriptEditorMenuBorderColor { get; set; }
-    public bool ScriptEditorShouldShowPluginMethods { get; set; }
     public int ScriptTimeoutLength { get; set; }
     public bool Scroll_Past_Last_Line { get; set; }
     public Roblox.Datatypes.Color3 Secondary_Text_Color { get; set; }
@@ -2975,24 +1776,17 @@ public partial class Studio : Instance
     public Roblox.Datatypes.Color3 Selected_Menu_Item_Background_Color { get; set; }
     public Roblox.Datatypes.Color3 Selected_Text_Color { get; set; }
     public Roblox.Datatypes.Color3 Selection_Background_Color { get; set; }
-    public float Selection_Box_Thickness { get; set; }
     public Roblox.Datatypes.Color3 Selection_Color { get; set; }
-    public int Selection_Line_Thickness { get; set; }
     public bool Set_Pivot_of_Imported_Parts { get; set; }
     public bool Show_Core_GUI_in_Explorer_while_Playing { get; set; }
     public bool Show_Diagnostics_Bar { get; set; }
     public bool Show_FileSyncService { get; set; }
     public bool Show_Hidden_Objects_in_Explorer { get; set; }
     public bool Show_Hover_Over { get; set; }
-    public bool Show_Light_Guides { get; set; }
-    public bool Show_Navigation_Labels { get; set; }
     public bool Show_Navigation_Mesh { get; set; }
-    public bool Show_Pathfinding_Links { get; set; }
     public bool Show_Plugin_GUI_Service_in_Explorer { get; set; }
-    public bool Show_Singly_Selected_Attachment_Parent_Frame { get; set; }
     public bool Show_Whitespace { get; set; }
     public bool Show_plus_button_on_hover_in_Explorer { get; set; }
-    public bool ShowCorePackagesInExplorer { get; set; }
     public bool Skip_Closing_Brackets_and_Quotes { get; set; }
     public Roblox.Datatypes.Color3 String_Color { get; set; }
     public int Tab_Width { get; set; }
@@ -3000,48 +1794,16 @@ public partial class Studio : Instance
     public bool Text_Wrapping { get; set; }
     public Instance? Theme { get; set; }
     public Roblox.Signals.RBXScriptSignal ThemeChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public bool Use_Bounding_Box_Move_Handles { get; set; }
-    public bool UseDefaultExternalEditor { get; set; }
     public Roblox.Datatypes.Color3 Warning_Color { get; set; }
     public Roblox.Datatypes.Color3 Whitespace_Color { get; set; }
 }
 
 public partial class StudioAssetService : Instance
 {
-    public Instance? AutoSetupAvatarAsync(Roblox.Datatypes.ContentId modelId, Roblox.Datatypes.Function progressCallback, Roblox.Datatypes.Function_ notificationCallback, object? options) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Instance? AutoSetupSerializedAvatarAsync(string? serializedInstance, object? publishInfo, object? telemetryMetadata, Roblox.Datatypes.Function progressCallback, Roblox.Datatypes.Function_ notificationCallback, object? options) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void CancelAutoSetupAvatarAsync(string? jobId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ConvertToPackageUpload(string? uploadUrl, Roblox.Datatypes.Instances cloneInstances, Roblox.Datatypes.Instances originalInstances) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? DEPRECATED_SerializeInstances(Roblox.Datatypes.Instances instances) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void FireOnUGCSubmitCompleted(bool cancelled) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<bool, string?> OnConvertToPackageResult => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?, object?, string?, object?> OnPromptSaveInstanceToRobloxAsync => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<object?, string?> OnPublishPackageResult => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Datatypes.Instances, object?, bool> OnSaveToRoblox => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<bool> OnUGCSubmitCompleted => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public object? PromptSaveInstanceToRobloxAsync(Instance? instance, object? assetType, object? groupId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void PublishPackage(Instance? instance, object? publishInfo) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Instance? RequestAvatarAutosetupAsync(Roblox.Datatypes.ContentId meshId, Roblox.Datatypes.ContentId textureId, Roblox.Datatypes.Function progressCallback) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ResolveSaveInstanceToRoblox(string? requestId, object? assetId, object? assetName, object? errorMessage) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? SerializeInstances(Roblox.Datatypes.Instances instances, long groupId, bool isPackage) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ShowSaveToRoblox(Roblox.Datatypes.Instances instances, object? assetType, bool hasSubsequent) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void UpdatePublishedPackage(object? assetmetadata, Instance? rootInstance, bool isConvert, bool addUndoWaypoint) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class StudioCameraService : Instance
 {
-    public float FocusDistance { get; set; }
-    public Roblox.Signals.RBXScriptSignal FocusStateChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public bool InFocusMode() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void InterpolateView(Roblox.Datatypes.CFrame target) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool LockCameraSpeed { get; set; }
-    public bool LoggingEnabled { get; set; }
-    public Roblox.Signals.RBXScriptSignal OnMouseCaptureBegin => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal OnMouseCaptureEnd => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Datatypes.Vector3> PointFocused => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void SetFocusLock(bool value) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<float> ShowCameraSpeed => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<double> UpdateUI => throw new NotSupportedException("Roblox shim members are compile-time only.");
 }
 
 public partial class StudioCaptureService : Instance
@@ -3053,49 +1815,14 @@ public partial class StudioCaptureService : Instance
 
 public partial class StudioData : Instance
 {
-    public bool EnableScriptCollabByDefaultOnLoad { get; set; }
 }
 
 public partial class StudioDeviceEmulatorService : Instance
 {
-    public Roblox.Signals.RBXScriptSignal CurrentDeviceIdChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public bool EmulatePCDeviceWithResolution(string? deviceId, Roblox.Datatypes.Vector2 resolution) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetCurrentDeviceId() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.ScreenOrientation GetCurrentOrientation() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int GetMaxNumTouches() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool GetTouchInBounds(int index) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Datatypes.Vector2 GetTouchPosition(int index) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool HasDeviceWithId(string? deviceId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool HasMultiTouchStarted { get; set; }
-    public bool IsMultiTouchEmulationOn { get; set; }
-    public bool IsMultiTouchEnabled { get; set; }
-    public Roblox.Signals.RBXScriptSignal OrientationChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Datatypes.Vector2 PivotPosition { get; set; }
-    public void SetCurrentDeviceId(string? deviceId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetCurrentOrientation(Roblox.Enums.ScreenOrientation orientation) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal TouchInBoundsChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal TouchPositionsChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
 }
 
 public partial class StudioPublishService : Instance
 {
-    public void ClearUploadNames() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void CloseAfterPublish(Roblox.Enums.StudioCloseMode closeMode) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> GameNameUpdated => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal GamePublishCancelled => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<bool, long, string?, Roblox.Enums.StudioPlaceUpdateFailureReason> GamePublishFinished => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<bool> OnPublishAttempt => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<bool, bool, Roblox.Enums.StudioCloseMode> OnSaveOrPublishPlaceToRoblox => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void PublishAs(long universeId, long placeId, long groupId, bool isPublish, object? publishParameters, bool willRetryOnConflict, bool allowOpeningNewPlace) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool PublishLocked { get; set; }
-    public void PublishThenTurnOnTeamCreate() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RefreshDocumentDisplayName() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptConnection RegisterPublishHold(int priority, Roblox.Datatypes.Function callback) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SaveOrPublishPlaceToRobloxIsCanceled() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetTeamCreateOnPublishInfo(bool shouldTurnOnTcOnPublish, string? newPlaceName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetUniverseDisplayName(string? newName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetUploadNames(string? placeName, string? universeName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ShowSaveOrPublishPlaceToRoblox(bool showGameSelect, bool isPublish, Roblox.Enums.StudioCloseMode closeMode) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class StudioScriptDebugEventListener : Instance
@@ -3104,56 +1831,21 @@ public partial class StudioScriptDebugEventListener : Instance
 
 public partial class StudioSdkService : Instance
 {
-    public Instance? GetSdk() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetSdk(Instance? sdk) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class StudioService : Instance
 {
     public Instance? ActiveScript { get; set; }
-    public bool AlignDraggedObjects { get; set; }
-    public void AnimationIdSelected(long id) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void CopyToClipboard(string? stringToCopy) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool DraggerSolveConstraints { get; set; }
-    public string? GetBadgeConfigureUrl(long badgeId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetBadgeUploadUrl() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetClassIcon(string? className) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool GetPlaceIsPersistedToCloud() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetResourceByCategory(string? category) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetStartupAssetId() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetStartupPluginId() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetTermsOfUseUrl() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public long GetUserId() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Datatypes.RaycastResult_ GizmoRaycast(Roblox.Datatypes.Vector3 origin, Roblox.Datatypes.Vector3 direction, Roblox.Datatypes.RaycastParams raycastParams) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public float GridSize { get; set; }
-    public bool HasInternalPermission() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Instance? HoverInstance { get; set; }
-    public string? InstalledPluginData { get; set; }
-    public bool IsPluginInstalled(long assetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsPluginUpToDate(long assetId, long currentAssetVersion) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal OnImportFromRoblox => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> OnOpenGameSettings => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<long, long> OnOpenManagePackagePlugin => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal OnPluginInstalledFromToolbox => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> OnPluginInstalledFromWeb => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Datatypes.Instances> OnPublishAsPlugin => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Datatypes.Instances> OnSaveToRoblox => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void OpenInBrowser_DONOTUSE(string? url) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool PivotSnapToGeometry { get; set; }
     public Instance? PromptImportFileAsync(object? fileTypeFilter) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Datatypes.Instances PromptImportFilesAsync(object? fileTypeFilter) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal PromptTransformPluginCheckEnable => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public float RotateIncrement { get; set; }
-    public Roblox.Signals.RBXScriptSignal<bool> SaveLocallyAsComplete => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public string? Secrets { get; set; }
-    public void SetPluginEnabled(long assetId, bool state) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool ShowConstraintDetails { get; set; }
-    public void ShowPublishToRoblox() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool ShowWeldDetails { get; set; }
     public string? StudioLocaleId { get; set; }
-    public void TryInstallPlugin(long assetId, long assetVersionId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void UninstallPlugin(long assetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void UpdatePluginManagement() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool UseLocalSpace { get; set; }
 }
 
@@ -3172,36 +1864,18 @@ public partial class StudioTestService : Instance
 
 public partial class StudioUserService : Instance
 {
-    public bool IsLoggedIn { get; set; }
 }
 
 public partial class StudioWidgetsService : Instance
 {
-    public void ApplyFillInBox(Roblox.Instances.StudioWidget? target) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ApplyHighlight(Roblox.Instances.StudioWidget? target, object? rowName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ApplyShadows() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ApplySpotlight(Roblox.Instances.StudioWidget? target, object? rowName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Instances.StudioWidget? GetWidgetFromLabel(string? label) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Instances.StudioWidget? GetWidgetFromPluginGui(Roblox.Instances.PluginGui? gui) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void HideSpotlight() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class StylingService : Instance
 {
-    public object? GetAppliedStyles(Instance? instance) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetStyleInfo(Roblox.Instances.StyleRule? style) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Datatypes.Instances GetStyleSheetDerivesChain(Roblox.Instances.StyleSheet? styleSheet) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetStyleSheetInfo(Roblox.Instances.StyleSheet? styleSheet) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void UpdateUnitTestOnly() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class SystemThemeService : Instance
 {
-    public Roblox.Signals.RBXScriptSignal<Roblox.Enums.SystemThemeValue> OnLuaThemeUpdated => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Enums.SystemThemeValue getSystemTheme() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.SystemThemeValue getSystemThemeAsync() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool isSystemThemeAvailable() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void setTheme(Roblox.Enums.SystemThemeValue theme) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class TaskScheduler : Instance
@@ -3218,12 +1892,10 @@ public partial class TeamCreateData : Instance
 
 public partial class TeamCreatePublishService : Instance
 {
-    public Roblox.Signals.RBXScriptSignal<Roblox.Enums.TeamCreateErrorState, object?> TeamCreateErrorStatus => throw new NotSupportedException("Roblox shim members are compile-time only.");
 }
 
 public partial class TeamCreateService : Instance
 {
-    public void CloseGameIfUserDoesntHavePerms() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class Teams : Instance
@@ -3233,44 +1905,26 @@ public partial class Teams : Instance
 
 public partial class TelemetryService : Instance
 {
-    public object? LogCounter(object? config, object? data, float value) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? LogDurationEvent(string? key) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? LogDurationEventWithTimestamp(string? key, long timestamp) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? LogEvent(object? config, object? data) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? LogStat(object? config, object? data, float value) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class TeleportService : Instance
 {
-    public void Block() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Instance? GetArrivingTeleportGui() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetLocalPlayerTeleportData() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetPlayerPlaceInstanceAsync(long userId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetTeleportSetting(string? setting) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetThirdPartyTeleportInfo(bool goForth) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Instance?, object?> LocalPlayerArrivedFromTeleport => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal MenuTeleportAttempt => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<long> OpenExperienceDetailsPrompt => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Enums.PromptExperienceDetailsResult PromptExperienceDetailsAsync(Roblox.Instances.Player? player, long universeId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void PromptExperienceDetailsCompleted(Roblox.Enums.PromptExperienceDetailsResult resultEnum, string? errorMessage) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Instance?, Roblox.Enums.TeleportResult, string?, long, Instance?> ReconnectTeleportInitFailed => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public object? ReserveServerAsync(long placeId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void SetTeleportGui(Instance? gui) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void SetTeleportSetting(string? setting, object? value) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void Teleport(long placeId, Instance? player, object? teleportData, Instance? customLoadingScreen) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Instance? TeleportAsync(long placeId, Roblox.Datatypes.Instances players, Instance? teleportOptions) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void TeleportCancel() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Instance?, Roblox.Enums.TeleportResult, string?, long, Instance?> TeleportInitFailed => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public string? TeleportPartyAsync(long placeId, Roblox.Datatypes.Instances players, object? teleportData, Instance? customLoadingScreen) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void TeleportReconnect() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void TeleportToPlaceInstance(long placeId, string? instanceId, Instance? player, string? spawnName, object? teleportData, Instance? customLoadingScreen) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void TeleportToPrivateServer(long placeId, string? reservedServerAccessCode, Roblox.Datatypes.Instances players, string? spawnName, object? teleportData, Instance? customLoadingScreen) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void TeleportToSpawnByName(long placeId, string? spawnName, Instance? player, object? teleportData, Instance? customLoadingScreen) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void TeleportTrustedBackForth(bool goForth) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void TeleportTrustedBackHistory(long placeId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? TeleportedPlacesBackHistory() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? TeleportedUniversesBackHistory() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? UnblockAsync() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class TemporaryCageMeshProvider : Instance
@@ -3286,16 +1940,12 @@ public partial class TestService : Instance
     public bool AutoRuns { get; set; }
     public void Check(bool condition, string? description, Instance? source, int line) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void Checkpoint(string? text, Instance? source, int line) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? ConvertSlimAcrToObj(string? acrFullFilePath, string? objFileName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? CreateAndSavePropertySet(Instance? source) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? CreateExtraAssetsFileFromPropertySet(string? psetFileName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public string? Description { get; set; }
     public void Done() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void Error(string? description, Instance? source, int line) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public int ErrorCount { get; set; }
     public bool ExecuteWithStudioRun { get; set; }
     public void Fail(string? description, Instance? source, int line) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? FetchExtraAssets(string? extraAssetsFileName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool IsPhysicsEnvironmentalThrottled { get; set; }
     public bool IsSleepAllowed { get; set; }
     public void Message(string? text, Instance? source, int line) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
@@ -3313,7 +1963,6 @@ public partial class TestService : Instance
     public int TestCount { get; set; }
     public bool ThrottlePhysicsToRealtime { get; set; }
     public double Timeout { get; set; }
-    public string? TranscodePropertySet(string? extraAssetsFileName, string? psetFileName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void Warn(bool condition, string? description, Instance? source, int line) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public int WarnCount { get; set; }
     public object? getTestSessionProviderStats(string? providerName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
@@ -3326,38 +1975,19 @@ public partial class TextBoxService : Instance
 
 public partial class TextChatService : Instance
 {
-    public bool AllocateUniverseChatChannelAsync(string? context) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Instance?, Roblox.Instances.TextChatMessage?> BubbleDisplayed => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public bool CanUserChatAsync(long userId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool CanUsersChatAsync(long userIdFrom, long userIdTo) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? CanUsersDirectChatAsync(long requesterUserId, object? userIds) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool CanUsersWhisperAsync(long fromUserId, long toUserId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool ChatTranslationEnabled { get; set; }
-    public bool ChatTranslationFTUXShown { get; set; }
-    public bool ChatTranslationToggleEnabled { get; set; }
-    public Roblox.Enums.ChatVersion ChatVersion { get; set; }
     public bool CreateDefaultCommands { get; set; }
     public bool CreateDefaultTextChannels { get; set; }
     public void DisplayBubble(Instance? partOrCharacter, string? message) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetChatGroupsAsync(Roblox.Datatypes.Instances players) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool HasSeenDeprecationDialog { get; set; }
-    public bool IsLegacyChatDisabled { get; set; }
     public Roblox.Signals.RBXScriptSignal<Roblox.Instances.TextChatMessage?> MessageReceived => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public object? OnBubbleAdded(Roblox.Instances.TextChatMessage? message, Instance? adornee) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? OnChatWindowAdded(Roblox.Instances.TextChatMessage? message) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? OnIncomingMessage(Roblox.Instances.TextChatMessage? message) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Instances.TextChatMessage?> OnIncomingMessageEvent => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void SendEnableChatButtonClicked() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SendEnableChatButtonShown() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SendExpChatLoadSuccess(int loadingLatency) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SendExpChatMessageClientRendered(Roblox.Instances.TextChatMessage? textChatMessage, string? messageRenderedSurface) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SendExpChatWindowScroll() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SendExpChatWindowStatusChange(int timeClosed, int timeOpen, int timeBackgroundIdle, int timeTextIdle) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Instances.TextChatMessage? SendUniverseChatMessageAsync(string? text, string? metadata) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Instances.TextChatMessage?> SendingMessage => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Instances.TextChatMessage?> UniverseChatMessageReceived => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<Roblox.Instances.TextChatMessage?> UserMessageIntentSent => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public bool setModerationModeEnabled(long userId, bool enabled) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class TextService : Instance
@@ -3365,38 +1995,17 @@ public partial class TextService : Instance
     public Roblox.Instances.TextFilterTranslatedResult? FilterAndTranslateStringAsync(string? stringToFilter, long fromUserId, object? targetLocales, Roblox.Enums.TextFilterContext textContext) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Instances.TextFilterResult? FilterStringAsync(string? stringToFilter, long fromUserId, Roblox.Enums.TextFilterContext textContext) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetFamilyInfoAsync(Roblox.Datatypes.ContentId assetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetFontMemoryData() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Datatypes.Vector2 GetTextBoundsAsync(Roblox.Instances.GetTextBoundsParams? @params) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Datatypes.Vector2 GetTextSize(string? @string, int fontSize, Roblox.Enums.Font font, Roblox.Datatypes.Vector2 frameSize) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public float GetTextSizeOffsetAsync(int fontSize, Roblox.Datatypes.Font font) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetResolutionScale(float scale) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class TextureGenerationService : Instance
 {
-    public void CancelGenerationRequest(string? jobUuid) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Instances.TextureGenerationPartGroup? CreatePartGroup(Roblox.Datatypes.Instances instances) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GenerateTexture(string? previewJobId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<object?> GenerationNotificationSignal => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public object? GetQuotasAsync() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<object?> PreviewNotificationSignal => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public object? PreviewTexture(Roblox.Instances.TextureGenerationPartGroup? partGroup, string? prompt, object? options) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class ThirdPartyUserService : Instance
 {
-    public Roblox.Signals.RBXScriptSignal<int> ActiveUserSignedOut => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Enums.ChatRestrictionStatus FriendCommunicationRestrictionStatus { get; set; }
-    public string? GetUserPlatformName() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.ChatRestrictionStatus GetVoiceChatRestrictionStatus() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool HasActiveUser { get; set; }
-    public bool HaveActiveUser() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsAccountSwitchingSupported() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsChatRestrictionSupported() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsSingleSignOnSupported() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int RegisterActiveUser(Roblox.Enums.UserInputType gamepadId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ShowAccountPicker() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.ChatRestrictionStatus VoiceChatRestrictionStatus { get; set; }
 }
 
 public partial class TimerService : Instance
@@ -3405,8 +2014,6 @@ public partial class TimerService : Instance
 
 public partial class ToastNotificationService : Instance
 {
-    public void HideNotification(string? notificationId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ShowNotification(string? message, string? notificationId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class TouchInputService : Instance
@@ -3419,19 +2026,10 @@ public partial class TraceRouteService : Instance
 
 public partial class TracerService : Instance
 {
-    public void FinishSpan(string? spanId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? StartSpan(string? name, string? parentId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class TutorialService : Instance
 {
-    public string? GetMainViewSessionId() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool HasUserCompletedTutorial() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool HideWidgets(string? commaSeparatedNames) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void PromptClosePlace() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetTutorialCompletionStatus(bool completed) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool ShouldLaunchTutorial() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool ShowWidgets(string? commaSeparatedNames) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class TweenService : Instance
@@ -3447,69 +2045,6 @@ public partial class UGCAvatarService : Instance
 
 public partial class UGCValidationService : Instance
 {
-    public float CalculateAverageEditableCageMeshDistance(Roblox.Instances.EditableMesh? innerCage, Roblox.Instances.EditableMesh? outerCage, Roblox.Instances.EditableMesh? refMesh, Roblox.Datatypes.CFrame innerTransform, Roblox.Datatypes.CFrame outerTransform) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? CalculateBodyMaxCageDistance(object? inputBodyParts) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public float CalculateEditableMeshInsideMeshPercentage(Roblox.Instances.EditableMesh? editableMeshRoot, Roblox.Instances.EditableMesh? editableMeshQuery, Roblox.Datatypes.CFrame meshQueryTransform, Roblox.Datatypes.Vector3 meshQueryScale) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? CalculateEditableMeshModifiedCageBoundingBox(object? referenceUVValues, Roblox.Instances.EditableMesh? innerCage, Roblox.Datatypes.CFrame innerTransform, Roblox.Instances.EditableMesh? outerCage, Roblox.Datatypes.CFrame outerTransform) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? CalculateEditableMeshNumModifiedCageUVsInSet(object? referenceUVValues, Roblox.Instances.EditableMesh? innerCage, Roblox.Datatypes.CFrame innerTransform, Roblox.Instances.EditableMesh? outerCage, Roblox.Datatypes.CFrame outerTransform) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public float CalculateEditableMeshTotalSurfaceArea(Roblox.Instances.EditableMesh? editableMesh, Roblox.Datatypes.Vector3 meshScale) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int CalculateEditableMeshUniqueUVCount(Roblox.Instances.EditableMesh? editableMesh) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool CanLoadAsset(string? assetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool CheckEditableMeshInCameraFrustum(Roblox.Instances.EditableMesh? editableMesh, Roblox.Datatypes.Vector3 meshScale, Roblox.Datatypes.CFrame handleWorldCF, Roblox.Datatypes.CFrame cameraWorldCF) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Instances.EditableImage? CreateEditableImageFromBinaryStringRobloxOnly(Roblox.Instances.BinaryStringValue? value) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Instances.EditableImage? CreateEditableImageOriginalSizeAsync(string? textureId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Instances.EditableMesh? CreateEditableMeshFromBinaryStringRobloxOnly(Roblox.Instances.BinaryStringValue? value) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool DoesMeshHaveSkinningData(string? meshId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool DoesSurfaceAppearanceMatchTexturePackAsync(Roblox.Instances.SurfaceAppearance? surfaceAppearance) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Datatypes.Instances FetchAssetWithFormat(Roblox.Datatypes.ContentId url, string? assetFormat) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetBoundingBoxManipulationData(object? partMeshObjects, object? partCFs, object? meshScales) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetDynamicHeadEditableMeshInactiveControls(Roblox.Instances.EditableMesh? editableMesh, object? controlNames) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetEditableCagingRelevancyMetrics(Roblox.Instances.EditableMesh? innerCage, Roblox.Instances.EditableMesh? outerCage, Roblox.Instances.EditableMesh? refMesh, Roblox.Datatypes.Vector3 offsetInner, Roblox.Datatypes.Vector3 offsetOuter) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Datatypes.Vector2 GetEditableImageSize(Roblox.Instances.EditableImage? editableImage) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int GetEditableMeshMaxNearbyVerticesCollisions(Roblox.Instances.EditableMesh? editableMesh, Roblox.Datatypes.Vector3 meshScale) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetEditableMeshSkinningTransferJointsInfo(Roblox.Instances.EditableMesh? editableMesh) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int GetEditableMeshTriCount(Roblox.Instances.EditableMesh? editableMesh) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetEditableMeshVertColors(Roblox.Instances.EditableMesh? editableMesh) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public float GetEditableMeshVerticesSimilarityRate(Roblox.Instances.EditableMesh? editableMesh, Roblox.Datatypes.Vector3 meshScale) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetEditableMeshVerts(Roblox.Instances.EditableMesh? editableMesh) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetFacsDrivenJointNamesFromEditableMesh(Roblox.Instances.EditableMesh? editableMesh) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetMaximalJointDistancesWithinFacs(Roblox.Instances.EditableMesh? editableMesh) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Instances.BinaryStringValue? GetMeshDataBinaryString(string? meshId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetMeshVerts(string? meshId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetMinAndMaxMeshSizeAcrossAllFacs(Roblox.Instances.EditableMesh? editableMesh) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetPropertyValue(Instance? instance, string? property) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? GetSkinnedJointNamesFromEditableMesh(Roblox.Instances.EditableMesh? editableMesh) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsDeformedLayeredClothingOutOfRenderBounds(Roblox.Instances.Accessory? accessory) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsEditableMeshNumCoplanarIntersectionsOverLimit(Roblox.Instances.EditableMesh? editableMesh, int limit, Roblox.Datatypes.Vector3 meshScale, bool intersectBackFaces) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RegisterAlternateMesh(string? alternateId, Roblox.Instances.BinaryStringValue? binaryStringValue) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void RegisterUGCValidationFunction(Roblox.Datatypes.Function setFunction) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ReportUGCValidationCounter(bool success, string? validationType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ReportUGCValidationFailureTelemetry(string? errorType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ReportUGCValidationTelemetry(string? assetType, object? data) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ResetCollisionFidelity(Instance? meshPart, Roblox.Enums.CollisionFidelity collisionFidelity) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ResetCollisionFidelityWithEditableMeshDataLua(Roblox.Instances.MeshPart? meshPart, Roblox.Instances.EditableMesh? editableMesh, Roblox.Enums.CollisionFidelity collisionFidelity) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetMeshIdBlocking(Instance? meshPart, string? meshId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool ValidateDynamicHeadEditableMesh(Roblox.Instances.EditableMesh? editableMesh) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? ValidateEditableMeshCageMeshIntersection(Roblox.Instances.EditableMesh? innerCage, Roblox.Instances.EditableMesh? outerCage, Roblox.Instances.EditableMesh? refMesh) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? ValidateEditableMeshCageNonManifoldAndHoles(Roblox.Instances.EditableMesh? editableMesh) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool ValidateEditableMeshCageUVCoincident(Roblox.Instances.EditableMesh? editableMesh) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool ValidateEditableMeshCageUVTriangleArea(Roblox.Instances.EditableMesh? editableMesh) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool ValidateEditableMeshFacialBounds(Roblox.Instances.EditableMesh? editableMesh, float boundsScale, Roblox.Datatypes.Vector3 partSize) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public float ValidateEditableMeshFacialExpressiveness(Roblox.Instances.EditableMesh? editableMesh, float minDelta, Roblox.Datatypes.Vector3 partSize) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool ValidateEditableMeshFullBodyCageDeletion(Roblox.Instances.EditableMesh? editableMesh) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool ValidateEditableMeshMisMatchUV(Roblox.Instances.EditableMesh? innerCage, Roblox.Instances.EditableMesh? outerCage) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool ValidateEditableMeshOverlappingVertices(Roblox.Instances.EditableMesh? editableMesh) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool ValidateEditableMeshTriangleArea(Roblox.Instances.EditableMesh? editableMesh) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool ValidateEditableMeshTriangles(Roblox.Instances.EditableMesh? editableMesh) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int ValidateEditableMeshUVDuplicates(object? referenceValues, Roblox.Instances.EditableMesh? editableMesh) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool ValidateEditableMeshUVSpace(Roblox.Instances.EditableMesh? editableMesh) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool ValidateEditableMeshUVValuesInReference(object? referenceValues, Roblox.Instances.EditableMesh? editableMesh) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool ValidateEditableMeshUniqueUVCount(Roblox.Instances.EditableMesh? editableMesh, int numRequired) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool ValidateEditableMeshVertColors(Roblox.Instances.EditableMesh? editableMesh, bool includeAlpha) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool ValidateHSRMeshIds(Instance? wrapLayerInstance, Instance? hsrInstance) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool ValidatePartBBoxAfterFullFacs(Roblox.Instances.EditableMesh? headEditableMesh, Roblox.Instances.EditableMesh? partEditableMesh, Roblox.Datatypes.Vector3 headScale, Roblox.Datatypes.Vector3 partScale, float boundsMaxMultiplier) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? ValidatePropertiesSensible(Instance? instance, object? stringLenRestrictions) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool ValidateSkinnedEditableMesh(Roblox.Instances.EditableMesh? editableMesh) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class UIDragDetectorService : Instance
@@ -3518,107 +2053,40 @@ public partial class UIDragDetectorService : Instance
 
 public partial class UniqueIdLookupService : Instance
 {
-    public Instance? GetInstanceByRfc4122String(string? id) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetOrCreateUniqueId(Instance? instance) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public string? GetOrCreateUniqueIdRemoteCommand(Instance? instance) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class UnvalidatedAssetService : Instance
 {
-    public void AppendTempAssetId(long userId, long id, Roblox.Datatypes.Vector3 lookAt, Roblox.Datatypes.Vector3 camPos, string? usage) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool AppendVantagePoint(long userId, long id, Roblox.Datatypes.Vector3 lookAt, Roblox.Datatypes.Vector3 camPos) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool UpgradeTempAssetId(long userId, long tempId, long assetId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class UserGameSettings : Instance
 {
-    public bool AllTutorialsDisabled { get; set; }
-    public bool BadgeVisible { get; set; }
-    public Roblox.Enums.CustomCameraMode CameraMode { get; set; }
-    public bool CameraYInverted { get; set; }
-    public bool ChatTranslationEnabled { get; set; }
-    public bool ChatTranslationFTUXShown { get; set; }
-    public string? ChatTranslationLocale { get; set; }
-    public bool ChatTranslationToggleEnabled { get; set; }
-    public bool ChatVisible { get; set; }
     public Roblox.Enums.ComputerCameraMovementMode ComputerCameraMovementMode { get; set; }
     public Roblox.Enums.ComputerMovementMode ComputerMovementMode { get; set; }
     public Roblox.Enums.ControlMode ControlMode { get; set; }
-    public string? DefaultCameraID { get; set; }
-    public int FramerateCap { get; set; }
-    public bool Fullscreen { get; set; }
     public Roblox.Signals.RBXScriptSignal<bool> FullscreenChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public float GamepadCameraSensitivity { get; set; }
     public int GetCameraYInvertValue() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int GetDefaultFramerateCap() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool GetOnboardingCompleted(string? onboardingId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool GetTutorialState(string? tutorialId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.GraphicsOptimizationMode GraphicsOptimizationMode { get; set; }
-    public int GraphicsQualityLevel { get; set; }
-    public float HapticStrength { get; set; }
-    public bool HasEverUsedVR { get; set; }
     public bool InFullScreen() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool InStudioMode() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsUsingCameraYInverted { get; set; }
-    public bool IsUsingGamepadCameraSensitivity { get; set; }
-    public float MasterVolume { get; set; }
-    public float MasterVolumeStudio { get; set; }
-    public bool MaxQualityEnabled { get; set; }
-    public bool MicroProfilerWebServerEnabled { get; set; }
-    public string? MicroProfilerWebServerIP { get; set; }
-    public int MicroProfilerWebServerPort { get; set; }
     public float MouseSensitivity { get; set; }
-    public Roblox.Datatypes.Vector2 MouseSensitivityFirstPerson { get; set; }
-    public Roblox.Datatypes.Vector2 MouseSensitivityThirdPerson { get; set; }
-    public bool OnScreenProfilerEnabled { get; set; }
-    public string? OnboardingsCompleted { get; set; }
-    public float PartyVoiceVolume { get; set; }
-    public Roblox.Enums.PeoplePageLayout PeoplePageLayout { get; set; }
-    public bool PerformanceStatsVisible { get; set; }
-    public Roblox.Signals.RBXScriptSignal<bool> PerformanceStatsVisibleChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public float PlayerHeight { get; set; }
-    public bool PlayerListVisible { get; set; }
-    public bool PlayerNamesEnabled { get; set; }
-    public Roblox.Enums.PreferredTextSize PreferredTextSize { get; set; }
-    public float PreferredTransparency { get; set; }
-    public int QualityResetLevel { get; set; }
     public int RCCProfilerRecordFrameRate { get; set; }
     public int RCCProfilerRecordTimeFrame { get; set; }
-    public bool ReadAloud { get; set; }
-    public bool ReducedMotion { get; set; }
-    public void ResetOnboardingCompleted(string? onboardingId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Enums.RotationType RotationType { get; set; }
     public Roblox.Enums.SavedQualitySetting SavedQualityLevel { get; set; }
     public void SetCameraYInvertVisible() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void SetGamepadCameraSensitivityVisible() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void SetOnboardingCompleted(string? onboardingId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetTutorialState(string? tutorialId, bool value) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool StartMaximized { get; set; }
-    public Roblox.Datatypes.Vector2 StartScreenPosition { get; set; }
-    public Roblox.Datatypes.Vector2 StartScreenSize { get; set; }
     public Roblox.Signals.RBXScriptSignal<bool> StudioModeChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Enums.TouchCameraMovementMode TouchCameraMovementMode { get; set; }
     public Roblox.Enums.TouchMovementMode TouchMovementMode { get; set; }
-    public bool UiNavigationKeyBindEnabled { get; set; }
-    public bool UsedCoreGuiIsVisibleToggle { get; set; }
-    public bool UsedCustomGuiIsVisibleToggle { get; set; }
-    public bool UsedHideHudShortcut { get; set; }
-    public Roblox.Enums.VRComfortSetting VRComfortSetting { get; set; }
-    public bool VREnabled { get; set; }
-    public int VRRotationIntensity { get; set; }
-    public Roblox.Enums.VRSafetyBubbleMode VRSafetyBubbleMode { get; set; }
-    public bool VRSmoothRotationEnabled { get; set; }
-    public bool VRSmoothRotationEnabledCustomOption { get; set; }
-    public bool VRThirdPersonFollowCamEnabled { get; set; }
-    public bool VRThirdPersonFollowCamEnabledCustomOption { get; set; }
-    public bool VignetteEnabled { get; set; }
-    public bool VignetteEnabledCustomOption { get; set; }
 }
 
 public partial class UserInputService : Instance
 {
     public bool AccelerometerEnabled { get; set; }
-    public Roblox.Datatypes.Vector2 BottomBarSize { get; set; }
     public Object? CreateVirtualInput() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Instances.InputObject?> DeviceAccelerationChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Instances.InputObject?> DeviceGravityChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
@@ -3630,9 +2098,7 @@ public partial class UserInputService : Instance
     public object? GetConnectedGamepads() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Instances.InputObject? GetDeviceAcceleration() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Instances.InputObject? GetDeviceGravity() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.DeviceLevel GetDeviceLevel() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetDeviceRotation() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.DeviceType GetDeviceType() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Instances.TextBox? GetFocusedTextBox() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool GetGamepadConnected(Roblox.Enums.UserInputType gamepadNum) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Datatypes.Instances GetGamepadState(Roblox.Enums.UserInputType gamepadNum) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
@@ -3643,8 +2109,6 @@ public partial class UserInputService : Instance
     public Roblox.Datatypes.Vector2 GetMouseDelta() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Datatypes.Vector2 GetMouseLocation() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetNavigationGamepads() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetPasteText() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Enums.Platform GetPlatform() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public string? GetStringForKeyCode(Roblox.Enums.KeyCode keyCode) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public object? GetSupportedGamepadKeyCodes(Roblox.Enums.UserInputType gamepadNum) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool GyroscopeEnabled { get; set; }
@@ -3664,20 +2128,13 @@ public partial class UserInputService : Instance
     public Roblox.Datatypes.ContentId MouseIcon { get; set; }
     public Roblox.Datatypes.Content MouseIconContent { get; set; }
     public bool MouseIconEnabled { get; set; }
-    public Roblox.Datatypes.Vector2 NavBarSize { get; set; }
-    public double OnScreenKeyboardAnimationDuration { get; set; }
     public Roblox.Datatypes.Vector2 OnScreenKeyboardPosition { get; set; }
     public Roblox.Datatypes.Vector2 OnScreenKeyboardSize { get; set; }
     public bool OnScreenKeyboardVisible { get; set; }
-    public Roblox.Enums.OverrideMouseIconBehavior OverrideMouseIconBehavior { get; set; }
     public Roblox.Signals.RBXScriptSignal<float, Roblox.Datatypes.Vector2, float, bool> PointerAction => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Enums.PreferredInput PreferredInput { get; set; }
     public void RecenterUserHeadCFrame() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Datatypes.Vector2 RightBarSize { get; set; }
-    public void SendAppUISizes(Roblox.Datatypes.Vector2 statusBarSize, Roblox.Datatypes.Vector2 navBarSize, Roblox.Datatypes.Vector2 bottomBarSize, Roblox.Datatypes.Vector2 rightBarSize) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void SetNavigationGamepad(Roblox.Enums.UserInputType gamepadEnum, bool enabled) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Datatypes.Vector2 StatusBarSize { get; set; }
-    public Roblox.Signals.RBXScriptSignal<Roblox.Datatypes.Vector2> StatusBarTapped => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Instances.TextBox?> TextBoxFocusReleased => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Instances.TextBox?> TextBoxFocused => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Enums.SwipeDirection, int, bool> TouchDrag => throw new NotSupportedException("Roblox shim members are compile-time only.");
@@ -3688,7 +2145,6 @@ public partial class UserInputService : Instance
     public Roblox.Signals.RBXScriptSignal<object?, Roblox.Datatypes.Vector2, Roblox.Datatypes.Vector2, Roblox.Enums.UserInputState, bool> TouchPan => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<object?, float, float, Roblox.Enums.UserInputState, bool> TouchPinch => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<object?, float, float, Roblox.Enums.UserInputState, bool> TouchRotate => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public bool TouchScreenEnabled { get; set; }
     public Roblox.Signals.RBXScriptSignal<Roblox.Instances.InputObject?, bool> TouchStarted => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Enums.SwipeDirection, int, bool> TouchSwipe => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<object?, bool> TouchTap => throw new NotSupportedException("Roblox shim members are compile-time only.");
@@ -3712,21 +2168,13 @@ public partial class VRService : Instance
     public Roblox.Enums.VRScaling AutomaticScaling { get; set; }
     public bool AvatarGestures { get; set; }
     public Roblox.Enums.VRControllerModelMode ControllerModels { get; set; }
-    public bool DidPointerHit { get; set; }
     public bool FadeOutViewOnCollision { get; set; }
     public Roblox.Enums.VRTouchpadMode GetTouchpadMode(Roblox.Enums.VRTouchpad pad) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Datatypes.CFrame GetUserCFrame(Roblox.Enums.UserCFrame type) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool GetUserCFrameEnabled(Roblox.Enums.UserCFrame type) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Enums.UserCFrame GuiInputUserCFrame { get; set; }
-    public bool IsMaquettes() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsVRAppBuild() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public float LaserDistance { get; set; }
     public Roblox.Enums.VRLaserPointerMode LaserPointer { get; set; }
-    public Roblox.Signals.RBXScriptSignal<Roblox.Instances.InputObject?> LaserPointerTriggered => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Datatypes.CFrame, Roblox.Enums.UserCFrame> NavigationRequested => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Datatypes.CFrame PointerHitCFrame { get; set; }
-    public bool QuestASWState { get; set; }
-    public float QuestDisplayRefreshRate { get; set; }
     public void RecenterUserHeadCFrame() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void RequestNavigation(Roblox.Datatypes.CFrame cframe, Roblox.Enums.UserCFrame inputUserCFrame) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public void SetTouchpadMode(Roblox.Enums.VRTouchpad pad, Roblox.Enums.VRTouchpadMode mode) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
@@ -3734,10 +2182,7 @@ public partial class VRService : Instance
     public Roblox.Signals.RBXScriptSignal<Roblox.Enums.VRTouchpad, Roblox.Enums.VRTouchpadMode> TouchpadModeChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Enums.UserCFrame, Roblox.Datatypes.CFrame> UserCFrameChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
     public Roblox.Signals.RBXScriptSignal<Roblox.Enums.UserCFrame, bool> UserCFrameEnabled => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public bool VRDeviceAvailable { get; set; }
-    public string? VRDeviceName { get; set; }
     public bool VREnabled { get; set; }
-    public Roblox.Enums.VRSessionState VRSessionState { get; set; }
 }
 
 public partial class VRStatusService : Instance
@@ -3746,18 +2191,10 @@ public partial class VRStatusService : Instance
 
 public partial class VersionControlService : Instance
 {
-    public bool ScriptCollabEnabled { get; set; }
 }
 
 public partial class VideoCaptureService : Instance
 {
-    public bool Active { get; set; }
-    public string? CameraID { get; set; }
-    public Roblox.Signals.RBXScriptSignal DevicesChanged => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?, string?> Error => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public object? GetCameraDevices() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> Started => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> Stopped => throw new NotSupportedException("Roblox shim members are compile-time only.");
 }
 
 public partial class VideoScreenCaptureService : Instance
@@ -3771,51 +2208,10 @@ public partial class VideoService : Instance
 
 public partial class VirtualInputManager : Instance
 {
-    public string? AdditionalLuaState { get; set; }
-    public void Dump() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void HandleGamepadAxisInput(int objectId, Roblox.Enums.KeyCode keyCode, float x, float y, float z) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void HandleGamepadButtonInput(int deviceId, Roblox.Enums.KeyCode keyCode, int buttonState) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void HandleGamepadConnect(int deviceId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void HandleGamepadDisconnect(int deviceId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> PlaybackCompleted => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> RecordingCompleted => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void SendAccelerometerEvent(float x, float y, float z) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SendGravityEvent(float x, float y, float z) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SendGyroscopeEvent(float quatX, float quatY, float quatZ, float quatW) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SendKeyEvent(bool isPressed, Roblox.Enums.KeyCode keyCode, bool isRepeatedKey, Instance? layerCollector) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SendMouseButtonEvent(int x, int y, int mouseButton, bool isDown, Instance? layerCollector, int repeatCount) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SendMouseMoveDeltaEvent(float deltaX, float deltaY, Instance? layerCollector) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SendMouseMoveEvent(float x, float y, Instance? layerCollector) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SendMouseWheelEvent(float x, float y, bool isForwardScroll, Instance? layerCollector) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SendScroll(float x, float y, float deltaX, float deltaY, object? options, Instance? layerCollector) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SendTextInputCharacterEvent(string? str, Instance? layerCollector) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SendTouchEvent(long touchId, int state, float x, float y) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetInputTypesToIgnore(object? inputTypesToIgnore) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void StartPlaying(string? fileName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void StartPlayingJSON(string? @string) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void StartRecording() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void StopPlaying() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void StopRecording() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void WaitForInputEventsProcessed() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void sendRobloxEvent(string? @namespace, string? detail, string? detailType) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void sendThemeChangeEvent(string? themeName) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class VirtualUser : Instance
 {
-    public void Button1Down(Roblox.Datatypes.Vector2 position, Roblox.Datatypes.CFrame camera) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void Button1Up(Roblox.Datatypes.Vector2 position, Roblox.Datatypes.CFrame camera) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void Button2Down(Roblox.Datatypes.Vector2 position, Roblox.Datatypes.CFrame camera) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void Button2Up(Roblox.Datatypes.Vector2 position, Roblox.Datatypes.CFrame camera) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void CaptureController() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ClickButton1(Roblox.Datatypes.Vector2 position, Roblox.Datatypes.CFrame camera) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void ClickButton2(Roblox.Datatypes.Vector2 position, Roblox.Datatypes.CFrame camera) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void MoveMouse(Roblox.Datatypes.Vector2 position, Roblox.Datatypes.CFrame camera) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetKeyDown(string? key) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetKeyUp(string? key) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void StartRecording() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? StopRecording() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void TypeKey(string? key) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class VisibilityCheckDispatcher : Instance
@@ -3832,19 +2228,7 @@ public partial class VisualizationModeService : Instance
 
 public partial class VoiceChatInternal : Instance
 {
-    public string? GetChannelId() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetGroupId() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetSessionId() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? GetVoiceExperienceId() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsContextVoiceEnabled() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool IsVoiceEnabledForUserIdAsync(long userId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal LocalPlayerModerated => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public bool LogPublisherWebRTCStats() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool LogSubscriptionWebRTCStats() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool SubscribeBlock(long userId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool SubscribeRetry(long userId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool SubscribeUnblock(long userId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal TempSetMicMutedToggleMic => throw new NotSupportedException("Roblox shim members are compile-time only.");
 }
 
 public partial class VoiceChatService : Instance
@@ -3854,26 +2238,6 @@ public partial class VoiceChatService : Instance
     public object? GetChatGroupsAsync(Roblox.Datatypes.Instances players) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool IsVoiceEnabledForUserIdAsync(long userId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Enums.AudioApiRollout UseAudioApi { get; set; }
-    public bool UseNewAudioApi { get; set; }
-    public bool UseNewControlPaths { get; set; }
-    public bool UseNewJoinFlow { get; set; }
-    public bool UseStreamSwitching { get; set; }
-    public bool VoiceChatEnabledForPlaceOnRcc { get; set; }
-    public bool VoiceChatEnabledForUniverseOnRcc { get; set; }
-    public Roblox.Signals.RBXScriptSignal VoiceChatStatsCollected => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public string? getInternalChannelId() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? getInternalGroupId() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool getInternalPublishPause() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public string? getInternalSessionId() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool getInternalSubscribePause(long userId) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool getInternalSubscribePauseAll() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public int getInternalVoiceChatApiVersion() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool isInternalPublishPaused() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void joinVoice() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public object? lastVoiceChatStats() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void leaveVoice(Roblox.Enums.VoiceClientLeaveReasons leaveReason) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void notifyServerACSCleanup() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void rejoinVoice() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class WebSocketService : Instance
@@ -3883,12 +2247,6 @@ public partial class WebSocketService : Instance
 
 public partial class WebViewService : Instance
 {
-    public void CloseWindow() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public bool IsAvailable() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void MutateWindow(string? url, object? title, object? isVisible, object? searchType, object? transitionAnimation, object? showDomainAsTitle, object? backButtonVisible) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal<string?> OnJavaScriptCall => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public Roblox.Signals.RBXScriptSignal OnWindowClosed => throw new NotSupportedException("Roblox shim members are compile-time only.");
-    public void OpenWindow(string? url, object? title, object? isVisible, object? searchType, object? transitionAnimation, object? showDomainAsTitle, object? backButtonVisible) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
 }
 
 public partial class Workspace : Roblox.Instances.WorldRoot
@@ -3896,16 +2254,11 @@ public partial class Workspace : Roblox.Instances.WorldRoot
     public float AirDensity { get; set; }
     public float AirTurbulenceIntensity { get; set; }
     public bool AllowThirdPartySales { get; set; }
-    public Roblox.Enums.AuthorityMode AuthorityMode { get; set; }
     public Roblox.Enums.AvatarUnificationMode AvatarUnificationMode { get; set; }
-    public float CalculateJumpDistance(float gravity, float jumpPower, float walkSpeed) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public float CalculateJumpHeight(float gravity, float jumpPower) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public float CalculateJumpPower(float gravity, float jumpHeight) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Enums.ClientAnimatorThrottlingMode ClientAnimatorThrottling { get; set; }
     public Roblox.Instances.Camera? CurrentCamera { get; set; }
     public double DistributedGameTime { get; set; }
     public Roblox.Enums.RolloutState EnableSLIMAvatars { get; set; }
-    public bool ExperimentalSolverIsEnabled() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public bool FallHeightEnabled { get; set; }
     public float FallenPartsDestroyHeight { get; set; }
     public Roblox.Enums.FluidForces FluidForces { get; set; }
@@ -3924,7 +2277,6 @@ public partial class Workspace : Roblox.Instances.WorldRoot
     public Roblox.Enums.ModelStreamingBehavior ModelStreamingBehavior { get; set; }
     public Roblox.Enums.MoverConstraintRootBehaviorMode MoverConstraintRootBehavior { get; set; }
     public Roblox.Enums.RolloutState NextGenerationReplication { get; set; }
-    public Roblox.Enums.RolloutState NextGenerationReplicationAlias { get; set; }
     public bool PGSIsEnabled() => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Enums.PathfindingUseImprovedSearch PathfindingUseImprovedSearch { get; set; }
     public Roblox.Signals.RBXScriptSignal<Roblox.Instances.Player?> PersistentLoaded => throw new NotSupportedException("Roblox shim members are compile-time only.");
@@ -3932,21 +2284,15 @@ public partial class Workspace : Roblox.Instances.WorldRoot
     public Roblox.Enums.PhysicsSteppingMethod PhysicsSteppingMethod { get; set; }
     public Roblox.Enums.PlayerCharacterDestroyBehavior PlayerCharacterDestroyBehavior { get; set; }
     public Roblox.Enums.RolloutState PlayerScriptsUseInputActionSystem { get; set; }
-    public Roblox.Enums.RolloutState PlayerScriptsUseInputActionSystemAlias { get; set; }
     public Roblox.Enums.PrimalPhysicsSolver PrimalPhysicsSolver { get; set; }
     public Roblox.Enums.RejectCharacterDeletions RejectCharacterDeletions { get; set; }
     public Roblox.Enums.RenderingCacheOptimizationMode RenderingCacheOptimizations { get; set; }
     public Roblox.Enums.ReplicateInstanceDestroySetting ReplicateInstanceDestroySetting { get; set; }
     public Roblox.Enums.AnimatorRetargetingMode Retargeting { get; set; }
     public Roblox.Enums.SandboxedInstanceMode SandboxedInstanceMode { get; set; }
-    public void SetAvatarUnificationMode(Roblox.Enums.AvatarUnificationMode value) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetMeshPartHeadsAndAccessories(Roblox.Enums.MeshPartHeadsAndAccessories value) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
-    public void SetPhysicsThrottleEnabled(bool value) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Enums.SignalBehavior SignalBehavior { get; set; }
-    public Roblox.Enums.SignalBehavior SignalBehaviorAlias { get; set; }
     public Roblox.Enums.StreamOutBehavior StreamOutBehavior { get; set; }
     public bool StreamingEnabled { get; set; }
-    public bool StreamingEnabledAlias { get; set; }
     public Roblox.Enums.StreamingIntegrityMode StreamingIntegrityMode { get; set; }
     public int StreamingMinRadius { get; set; }
     public int StreamingTargetRadius { get; set; }
@@ -3955,7 +2301,6 @@ public partial class Workspace : Roblox.Instances.WorldRoot
     public bool TouchesUseCollisionGroups { get; set; }
     public void UnjoinFromOutsiders(Roblox.Datatypes.Instances objects) => throw new NotSupportedException("Roblox shim methods are compile-time only.");
     public Roblox.Enums.RolloutState UseFixedSimulation { get; set; }
-    public Roblox.Enums.RolloutState UseFixedSimulationAlias { get; set; }
     public Roblox.Enums.RolloutState UseNewLuauTypeSolver { get; set; }
     public Roblox.Enums.RolloutState ValidateEnabledProximityPrompt { get; set; }
     public void ZoomToExtents() => throw new NotSupportedException("Roblox shim methods are compile-time only.");

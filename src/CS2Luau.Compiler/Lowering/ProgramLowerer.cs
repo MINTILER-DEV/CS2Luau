@@ -575,7 +575,7 @@ internal sealed class ProgramLowerer
             return new IrRawExpression("nil");
         }
 
-        if (roblox.IsGlobalMethod(symbol, "print") || roblox.IsGlobalMethod(symbol, "warn"))
+        if (roblox.IsGlobalMethod(symbol))
         {
             return new IrRawExpression($"{symbol.Name}({string.Join(", ", arguments)})");
         }

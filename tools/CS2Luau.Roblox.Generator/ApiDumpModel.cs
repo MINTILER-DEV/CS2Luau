@@ -15,7 +15,8 @@ internal sealed record ApiMemberDefinition(
     string Name,
     ApiTypeReference? Type,
     IReadOnlyList<ApiParameterDefinition> Parameters,
-    IReadOnlySet<string> Tags);
+    IReadOnlySet<string> Tags,
+    IReadOnlySet<string> Security);
 
 internal sealed record ApiParameterDefinition(
     string Name,
